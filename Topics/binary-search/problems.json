@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-08-15T06:11:20.643Z",
+  "updatedAt": "2026-08-15T06:11:26.362Z",
   "problems": [
     {
       "frontendId": "33",
@@ -83,6 +83,26 @@
           "path": "0704-binary-search/0704-binary-search.java",
           "sha": "77d5799dee211335291578b55e868de90e2568b9",
           "lastSyncedAt": "2026-08-15T06:10:56.512Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "852",
+      "title": "Peak Index in a Mountain Array",
+      "slug": "peak-index-in-a-mountain-array",
+      "problemName": "0852-peak-index-in-a-mountain-array",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/peak-index-in-a-mountain-array/",
+      "folderPath": "0852-peak-index-in-a-mountain-array/",
+      "readmePath": "0852-peak-index-in-a-mountain-array/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0852-peak-index-in-a-mountain-array.java",
+          "path": "0852-peak-index-in-a-mountain-array/0852-peak-index-in-a-mountain-array.java",
+          "sha": "12fe5bc2dd66a102e18d9a6e245233dac0d8081f",
+          "lastSyncedAt": "2026-08-15T06:11:26.362Z"
         }
       ]
     }
