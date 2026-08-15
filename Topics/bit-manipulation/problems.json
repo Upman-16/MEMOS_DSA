@@ -4,7 +4,7 @@
     "slug": "bit-manipulation",
     "name": "Bit Manipulation"
   },
-  "updatedAt": "2026-08-15T06:16:12.919Z",
+  "updatedAt": "2026-08-15T06:18:42.634Z",
   "problems": [
     {
       "frontendId": "3702",
@@ -22,7 +22,7 @@
           "filename": "3702-longest-subsequence-with-non-zero-bitwise-xor.java",
           "path": "3702-longest-subsequence-with-non-zero-bitwise-xor/3702-longest-subsequence-with-non-zero-bitwise-xor.java",
           "sha": "035f88025882270f54b11504b433fe18f07bdc51",
-          "lastSyncedAt": "2026-08-15T06:16:12.919Z"
+          "lastSyncedAt": "2026-08-15T06:18:42.634Z"
         }
       ]
     }
