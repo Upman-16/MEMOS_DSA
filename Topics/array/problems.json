@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:18:42.634Z",
+  "updatedAt": "2026-08-15T06:18:52.583Z",
   "problems": [
     {
       "frontendId": "16",
@@ -262,7 +262,7 @@
           "filename": "2213-longest-substring-of-one-repeating-character.java",
           "path": "2213-longest-substring-of-one-repeating-character/2213-longest-substring-of-one-repeating-character.java",
           "sha": "5812cc0c935be7813fdac29988d279eddf393cc1",
-          "lastSyncedAt": "2026-08-15T06:16:22.140Z"
+          "lastSyncedAt": "2026-08-15T06:18:52.583Z"
         }
       ]
     },
