@@ -4,8 +4,28 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:12:16.394Z",
+  "updatedAt": "2026-08-15T06:12:22.131Z",
   "problems": [
+    {
+      "frontendId": "16",
+      "title": "3Sum Closest",
+      "slug": "3sum-closest",
+      "problemName": "0016-3sum-closest",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/3sum-closest/",
+      "folderPath": "0016-3sum-closest/",
+      "readmePath": "0016-3sum-closest/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0016-3sum-closest.java",
+          "path": "0016-3sum-closest/0016-3sum-closest.java",
+          "sha": "5175cedebfc4538d789e2788c2c07d4c8261a71c",
+          "lastSyncedAt": "2026-08-15T06:12:22.131Z"
+        }
+      ]
+    },
     {
       "frontendId": "33",
       "title": "Search in Rotated Sorted Array",
