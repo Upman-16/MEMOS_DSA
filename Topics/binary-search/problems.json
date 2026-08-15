@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-08-15T06:21:56.439Z",
+  "updatedAt": "2026-08-15T06:22:24.458Z",
   "problems": [
     {
       "frontendId": "33",
@@ -122,7 +122,7 @@
           "filename": "0278-first-bad-version.java",
           "path": "0278-first-bad-version/0278-first-bad-version.java",
           "sha": "1e15db2e158ff76b9379e25cfd627901af9e2e41",
-          "lastSyncedAt": "2026-08-15T06:21:56.439Z"
+          "lastSyncedAt": "2026-08-15T06:22:24.458Z"
         }
       ]
     },
