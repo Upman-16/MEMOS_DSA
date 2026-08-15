@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:11:48.084Z",
+  "updatedAt": "2026-08-15T06:12:16.394Z",
   "problems": [
     {
       "frontendId": "33",
@@ -43,6 +43,26 @@
           "path": "0035-search-insert-position/0035-search-insert-position.java",
           "sha": "221c3723f2244128d9f30474b1b1d055e26c1716",
           "lastSyncedAt": "2026-08-15T06:11:48.084Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "41",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "problemName": "0041-first-missing-positive",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/first-missing-positive/",
+      "folderPath": "0041-first-missing-positive/",
+      "readmePath": "0041-first-missing-positive/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0041-first-missing-positive.java",
+          "path": "0041-first-missing-positive/0041-first-missing-positive.java",
+          "sha": "df33b91971b1392fa34f9c863e1db9e83cd13fca",
+          "lastSyncedAt": "2026-08-15T06:12:16.394Z"
         }
       ]
     },
