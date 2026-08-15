@@ -10,6 +10,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ---
 
+## 🔗 Profiles
+
+- 💻 GitHub: [@Upman-16](https://github.com/Upman-16)
+- 🧩 LeetCode: [@Danger_exe_fr](https://leetcode.com/u/Danger_exe_fr/)
+
 ## 🏆 LeetCode Stats
 
 | 📊 Metric         | 🔥 Progress |
