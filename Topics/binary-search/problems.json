@@ -4,6 +4,27 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-08-15T06:10:05.773Z",
-  "problems": []
+  "updatedAt": "2026-08-15T06:10:48.953Z",
+  "problems": [
+    {
+      "frontendId": "278",
+      "title": "First Bad Version",
+      "slug": "first-bad-version",
+      "problemName": "0278-first-bad-version",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/first-bad-version/",
+      "folderPath": "0278-first-bad-version/",
+      "readmePath": "0278-first-bad-version/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0278-first-bad-version.java",
+          "path": "0278-first-bad-version/0278-first-bad-version.java",
+          "sha": "1e15db2e158ff76b9379e25cfd627901af9e2e41",
+          "lastSyncedAt": "2026-08-15T06:10:48.953Z"
+        }
+      ]
+    }
+  ]
 }
