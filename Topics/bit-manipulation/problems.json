@@ -4,6 +4,27 @@
     "slug": "bit-manipulation",
     "name": "Bit Manipulation"
   },
-  "updatedAt": "2026-08-15T06:10:05.773Z",
-  "problems": []
+  "updatedAt": "2026-08-15T06:10:19.787Z",
+  "problems": [
+    {
+      "frontendId": "3702",
+      "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+      "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+      "problemName": "3702-longest-subsequence-with-non-zero-bitwise-xor",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+      "folderPath": "3702-longest-subsequence-with-non-zero-bitwise-xor/",
+      "readmePath": "3702-longest-subsequence-with-non-zero-bitwise-xor/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3702-longest-subsequence-with-non-zero-bitwise-xor.java",
+          "path": "3702-longest-subsequence-with-non-zero-bitwise-xor/3702-longest-subsequence-with-non-zero-bitwise-xor.java",
+          "sha": "035f88025882270f54b11504b433fe18f07bdc51",
+          "lastSyncedAt": "2026-08-15T06:10:19.787Z"
+        }
+      ]
+    }
+  ]
 }
