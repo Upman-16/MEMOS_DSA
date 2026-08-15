@@ -4,7 +4,7 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-08-15T06:17:09.713Z",
+  "updatedAt": "2026-08-15T06:17:40.475Z",
   "problems": [
     {
       "frontendId": "16",
@@ -22,7 +22,7 @@
           "filename": "0016-3sum-closest.java",
           "path": "0016-3sum-closest/0016-3sum-closest.java",
           "sha": "5175cedebfc4538d789e2788c2c07d4c8261a71c",
-          "lastSyncedAt": "2026-08-15T06:12:22.131Z"
+          "lastSyncedAt": "2026-08-15T06:17:40.475Z"
         }
       ]
     },
