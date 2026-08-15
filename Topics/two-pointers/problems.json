@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-08-15T06:17:40.475Z",
+  "updatedAt": "2026-08-15T06:18:03.771Z",
   "problems": [
     {
       "frontendId": "16",
@@ -42,7 +42,7 @@
           "filename": "0031-next-permutation.java",
           "path": "0031-next-permutation/0031-next-permutation.java",
           "sha": "f8fef92bce1383911887d1442a9335a166bbceef",
-          "lastSyncedAt": "2026-08-15T06:12:54.842Z"
+          "lastSyncedAt": "2026-08-15T06:18:03.771Z"
         }
       ]
     },
