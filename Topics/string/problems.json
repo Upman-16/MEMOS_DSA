@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-08-15T06:10:37.838Z",
+  "updatedAt": "2026-08-15T06:13:00.872Z",
   "problems": [
     {
       "frontendId": "2213",
@@ -43,6 +43,26 @@
           "path": "3090-maximum-length-substring-with-two-occurrences/3090-maximum-length-substring-with-two-occurrences.java",
           "sha": "85d720772a16b7525f6cf8b1aee8f3af70261cab",
           "lastSyncedAt": "2026-08-15T06:10:27.443Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3302",
+      "title": "Find the Lexicographically Smallest Valid Sequence",
+      "slug": "find-the-lexicographically-smallest-valid-sequence",
+      "problemName": "3302-find-the-lexicographically-smallest-valid-sequence",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
+      "folderPath": "3302-find-the-lexicographically-smallest-valid-sequence/",
+      "readmePath": "3302-find-the-lexicographically-smallest-valid-sequence/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3302-find-the-lexicographically-smallest-valid-sequence.java",
+          "path": "3302-find-the-lexicographically-smallest-valid-sequence/3302-find-the-lexicographically-smallest-valid-sequence.java",
+          "sha": "f1c2d69f296cc018cd106ce344986d3fd791ea4f",
+          "lastSyncedAt": "2026-08-15T06:13:00.872Z"
         }
       ]
     }
