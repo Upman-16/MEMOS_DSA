@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-15T06:16:16.874Z",
+  "updatedAt": "2026-08-15T06:16:40.308Z",
   "problems": [
     {
       "frontendId": "41",
@@ -42,7 +42,7 @@
           "filename": "2958-length-of-longest-subarray-with-at-most-k-frequency.java",
           "path": "2958-length-of-longest-subarray-with-at-most-k-frequency/2958-length-of-longest-subarray-with-at-most-k-frequency.java",
           "sha": "bf8a22a8e0c215b2a7b8779fca74b3ee8e516283",
-          "lastSyncedAt": "2026-08-15T06:11:01.612Z"
+          "lastSyncedAt": "2026-08-15T06:16:40.308Z"
         }
       ]
     },
