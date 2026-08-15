@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-08-15T06:11:34.410Z",
+  "updatedAt": "2026-08-15T06:11:48.084Z",
   "problems": [
     {
       "frontendId": "33",
@@ -23,6 +23,26 @@
           "path": "0033-search-in-rotated-sorted-array/0033-search-in-rotated-sorted-array.java",
           "sha": "64c6ee3f5881f7ad0e1837fd3b46eb62e5fc53a5",
           "lastSyncedAt": "2026-08-15T06:11:14.428Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "35",
+      "title": "Search Insert Position",
+      "slug": "search-insert-position",
+      "problemName": "0035-search-insert-position",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/",
+      "folderPath": "0035-search-insert-position/",
+      "readmePath": "0035-search-insert-position/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0035-search-insert-position.java",
+          "path": "0035-search-insert-position/0035-search-insert-position.java",
+          "sha": "221c3723f2244128d9f30474b1b1d055e26c1716",
+          "lastSyncedAt": "2026-08-15T06:11:48.084Z"
         }
       ]
     },
