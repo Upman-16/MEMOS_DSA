@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:22:28.385Z",
+  "updatedAt": "2026-08-15T06:22:31.851Z",
   "problems": [
     {
       "frontendId": "16",
@@ -282,7 +282,7 @@
           "filename": "2958-length-of-longest-subarray-with-at-most-k-frequency.java",
           "path": "2958-length-of-longest-subarray-with-at-most-k-frequency/2958-length-of-longest-subarray-with-at-most-k-frequency.java",
           "sha": "bf8a22a8e0c215b2a7b8779fca74b3ee8e516283",
-          "lastSyncedAt": "2026-08-15T06:19:04.661Z"
+          "lastSyncedAt": "2026-08-15T06:22:31.851Z"
         }
       ]
     },
