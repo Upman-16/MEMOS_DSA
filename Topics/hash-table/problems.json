@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-15T06:17:09.713Z",
+  "updatedAt": "2026-08-15T06:17:35.426Z",
   "problems": [
     {
       "frontendId": "41",
@@ -22,7 +22,7 @@
           "filename": "0041-first-missing-positive.java",
           "path": "0041-first-missing-positive/0041-first-missing-positive.java",
           "sha": "df33b91971b1392fa34f9c863e1db9e83cd13fca",
-          "lastSyncedAt": "2026-08-15T06:12:16.394Z"
+          "lastSyncedAt": "2026-08-15T06:17:35.426Z"
         }
       ]
     },
