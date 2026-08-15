@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:23:22.091Z",
+  "updatedAt": "2026-08-15T06:23:26.970Z",
   "problems": [
     {
       "frontendId": "16",
@@ -242,7 +242,7 @@
           "filename": "1140-stone-game-ii.java",
           "path": "1140-stone-game-ii/1140-stone-game-ii.java",
           "sha": "03aacca4144819cf02137c69169fce9818032122",
-          "lastSyncedAt": "2026-08-15T06:17:48.425Z"
+          "lastSyncedAt": "2026-08-15T06:23:26.970Z"
         }
       ]
     },
