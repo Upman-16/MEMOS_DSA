@@ -4,6 +4,27 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-08-15T06:10:05.773Z",
-  "problems": []
+  "updatedAt": "2026-08-15T06:11:39.616Z",
+  "problems": [
+    {
+      "frontendId": "2996",
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "problemName": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+      "folderPath": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/",
+      "readmePath": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
+          "path": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
+          "sha": "39e55d98bf2a79388d424b21d81ae190fe530126",
+          "lastSyncedAt": "2026-08-15T06:11:39.616Z"
+        }
+      ]
+    }
+  ]
 }
