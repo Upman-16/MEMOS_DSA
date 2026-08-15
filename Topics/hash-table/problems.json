@@ -4,8 +4,28 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-15T06:11:39.616Z",
+  "updatedAt": "2026-08-15T06:12:16.394Z",
   "problems": [
+    {
+      "frontendId": "41",
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "problemName": "0041-first-missing-positive",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/first-missing-positive/",
+      "folderPath": "0041-first-missing-positive/",
+      "readmePath": "0041-first-missing-positive/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0041-first-missing-positive.java",
+          "path": "0041-first-missing-positive/0041-first-missing-positive.java",
+          "sha": "df33b91971b1392fa34f9c863e1db9e83cd13fca",
+          "lastSyncedAt": "2026-08-15T06:12:16.394Z"
+        }
+      ]
+    },
     {
       "frontendId": "2958",
       "title": "Length of Longest Subarray With at Most K Frequency",
