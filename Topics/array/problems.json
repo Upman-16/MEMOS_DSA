@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-15T06:19:04.661Z",
+  "updatedAt": "2026-08-15T06:21:39.931Z",
   "problems": [
     {
       "frontendId": "16",
@@ -322,7 +322,7 @@
           "filename": "3702-longest-subsequence-with-non-zero-bitwise-xor.java",
           "path": "3702-longest-subsequence-with-non-zero-bitwise-xor/3702-longest-subsequence-with-non-zero-bitwise-xor.java",
           "sha": "035f88025882270f54b11504b433fe18f07bdc51",
-          "lastSyncedAt": "2026-08-15T06:18:42.634Z"
+          "lastSyncedAt": "2026-08-15T06:21:39.931Z"
         }
       ]
     }
