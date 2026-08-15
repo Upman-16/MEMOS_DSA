@@ -4,8 +4,28 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-15T06:23:26.970Z",
+  "updatedAt": "2026-08-15T07:53:08.482Z",
   "problems": [
+    {
+      "frontendId": "231",
+      "title": "Power of Two",
+      "slug": "power-of-two",
+      "problemName": "0231-power-of-two",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/power-of-two/",
+      "folderPath": "0231-power-of-two/",
+      "readmePath": "0231-power-of-two/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0231-power-of-two.java",
+          "path": "0231-power-of-two/0231-power-of-two.java",
+          "sha": "f61ac7e30c23a87abe4739d9010dda7f736bc864",
+          "lastSyncedAt": "2026-08-15T07:53:08.482Z"
+        }
+      ]
+    },
     {
       "frontendId": "1140",
       "title": "Stone Game II",
