@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-15T06:11:01.612Z",
+  "updatedAt": "2026-08-15T06:11:39.616Z",
   "problems": [
     {
       "frontendId": "2958",
@@ -23,6 +23,26 @@
           "path": "2958-length-of-longest-subarray-with-at-most-k-frequency/2958-length-of-longest-subarray-with-at-most-k-frequency.java",
           "sha": "bf8a22a8e0c215b2a7b8779fca74b3ee8e516283",
           "lastSyncedAt": "2026-08-15T06:11:01.612Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2996",
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "problemName": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+      "folderPath": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/",
+      "readmePath": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
+          "path": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
+          "sha": "39e55d98bf2a79388d424b21d81ae190fe530126",
+          "lastSyncedAt": "2026-08-15T06:11:39.616Z"
         }
       ]
     },
