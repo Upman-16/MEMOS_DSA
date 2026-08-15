@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-08-15T06:23:02.176Z",
+  "updatedAt": "2026-08-15T06:23:36.810Z",
   "problems": [
     {
       "frontendId": "33",
@@ -42,7 +42,7 @@
           "filename": "0034-find-first-and-last-position-of-element-in-sorted-array.java",
           "path": "0034-find-first-and-last-position-of-element-in-sorted-array/0034-find-first-and-last-position-of-element-in-sorted-array.java",
           "sha": "7d45b5065709ff3f16c454d2dcdfc72e8c0bf10d",
-          "lastSyncedAt": "2026-08-15T06:17:59.077Z"
+          "lastSyncedAt": "2026-08-15T06:23:36.810Z"
         }
       ]
     },
