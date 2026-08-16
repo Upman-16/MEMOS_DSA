@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "counting",
+    "name": "Counting"
+  },
+  "updatedAt": "2026-08-16T06:02:24.959Z",
+  "problems": [
+    {
+      "frontendId": "2029",
+      "title": "Stone Game IX",
+      "slug": "stone-game-ix",
+      "problemName": "2029-stone-game-ix",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/stone-game-ix/",
+      "folderPath": "2029-stone-game-ix/",
+      "readmePath": "2029-stone-game-ix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2029-stone-game-ix.java",
+          "path": "2029-stone-game-ix/2029-stone-game-ix.java",
+          "sha": "268dad3337c7c029864c4c6b0b7c01014983e91e",
+          "lastSyncedAt": "2026-08-16T06:02:24.959Z"
+        }
+      ]
+    }
+  ]
+}
