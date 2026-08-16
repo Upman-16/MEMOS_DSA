@@ -19,22 +19,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric         | 🔥 Progress |
 | :---------------- | ----------: |
-| **Total Solved**  |      **20** |
-| 🟢 Easy           |       **6** |
-| 🟡 Medium         |      **11** |
-| 🔴 Hard           |       **3** |
-| 🔥 Current Streak |  **8 days** |
-| ⚡ Best Streak     |  **8 days** |
-| 📅 Active Days    |       **8** |
+| **Total Solved**  |      **84** |
+| 🟢 Easy           |       **48** |
+| 🟡 Medium         |      **27** |
+| 🔴 Hard           |       **9** |
+| 🔥 Current Streak |  **11 days** |
+| ⚡ Best Streak     |  **11 days** |
+| 📅 Active Days    |       **26** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ██████                    6
-🟡 Medium    ███████████               11
-🔴 Hard      ███                       3
+🟢 Easy      ███████████          48
+🟡 Medium    ██████               27
+🔴 Hard      ███                   9
 
-             TOTAL → 20
+             TOTAL → 84
 ```
 
 ---
