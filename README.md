@@ -1,11 +1,33 @@
 # ⚡ MEMOS_DSA
 
+<p align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Data+Structures+%26+Algorithms;LeetCode+Problem+Solving;Think.+Code.+Debug.+Optimize.+Repeat.;Building+One+Problem+At+a+Time.">
+
+</p>
+
+<p align="center">
+
 [![Update LeetCode Dashboard](https://github.com/Upman-16/MEMOS_DSA/actions/workflows/update-leetcode-stats.yml/badge.svg)](https://github.com/Upman-16/MEMOS_DSA/actions/workflows/update-leetcode-stats.yml)
 
-### 🧠 Data Structures & Algorithms • LeetCode • Problem Solving
+</p>
 
-> **Think. Code. Debug. Optimize. Repeat.**
+<p align="center">
 
+🧠 <b>DSA</b> &nbsp; • &nbsp;
+⚡ <b>LeetCode</b> &nbsp; • &nbsp;
+💻 <b>Problem Solving</b> &nbsp; • &nbsp;
+🚀 <b>Continuous Learning</b>
+
+</p>
+
+> **"Think. Code. Debug. Optimize. Repeat."**
+
+---
+
+Welcome to **MEMOS_DSA** — a continuously evolving repository documenting my journey through **LeetCode, Data Structures, Algorithms, and problem solving**.
+
+Every accepted solution represents another concept understood, another approach tested, and another step forward. 🚀
 Welcome to **MEMOS_DSA** — my personal DSA repository where I document my journey through **LeetCode, algorithms, data structures, and problem solving**.
 
 Every accepted solution here represents one more problem understood, optimized, and conquered. 🚀
