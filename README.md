@@ -1,5 +1,7 @@
 # ⚡ MEMOS_DSA
 
+[![Update LeetCode Dashboard](https://github.com/Upman-16/MEMOS_DSA/actions/workflows/update-leetcode-stats.yml/badge.svg)](https://github.com/Upman-16/MEMOS_DSA/actions/workflows/update-leetcode-stats.yml)
+
 ### 🧠 Data Structures & Algorithms • LeetCode • Problem Solving
 
 > **Think. Code. Debug. Optimize. Repeat.**
