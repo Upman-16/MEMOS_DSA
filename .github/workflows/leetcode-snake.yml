@@ -1,0 +1,397 @@
+name: Generate LeetCode Snake
+
+on:
+  schedule:
+    - cron: "45 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch LeetCode calendar
+        run: |
+          python3 <<'PY'
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          username = "Danger_exe_fr"
+          year = datetime.now(timezone.utc).year
+
+          query = """
+          query userCalendar($username: String!, $year: Int) {
+            matchedUser(username: $username) {
+              userCalendar(year: $year) {
+                submissionCalendar
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "username": username,
+                  "year": year
+              }
+          }).encode()
+
+          request = urllib.request.Request(
+              "https://leetcode.com/graphql",
+              data=payload,
+              headers={
+                  "Content-Type": "application/json",
+                  "Accept": "application/json",
+                  "User-Agent": "Mozilla/5.0",
+                  "Referer": "https://leetcode.com/"
+              }
+          )
+
+          with urllib.request.urlopen(
+              request,
+              timeout=30
+          ) as response:
+              data = json.loads(
+                  response.read().decode()
+              )
+
+          if "errors" in data:
+              raise RuntimeError(
+                  json.dumps(data["errors"], indent=2)
+              )
+
+          user = data["data"]["matchedUser"]
+
+          if not user:
+              raise RuntimeError(
+                  "LeetCode user not found."
+              )
+
+          calendar = json.loads(
+              user["userCalendar"]["submissionCalendar"]
+          )
+
+          with open(
+              "leetcode-calendar.json",
+              "w"
+          ) as file:
+              json.dump(calendar, file)
+
+          print(
+              f"Loaded {len(calendar)} activity entries."
+          )
+
+          PY
+
+      - name: Generate animated snake
+        run: |
+          mkdir -p assets
+
+          python3 <<'PY'
+          import json
+          import html
+          from datetime import datetime, timedelta
+
+          calendar = json.load(
+              open(
+                  "leetcode-calendar.json",
+                  encoding="utf-8"
+              )
+          )
+
+          CELL = 13
+          GAP = 3
+
+          LEFT = 45
+          TOP = 30
+
+          WEEKS = 53
+
+          WIDTH = (
+              LEFT
+              + WEEKS * (CELL + GAP)
+              + 10
+          )
+
+          HEIGHT = (
+              TOP
+              + 7 * (CELL + GAP)
+              + 35
+          )
+
+          today = datetime.utcnow().date()
+
+          start = today - timedelta(
+              days=364
+          )
+
+          while start.weekday() != 6:
+              start -= timedelta(days=1)
+
+          values = [
+              int(v)
+              for v in calendar.values()
+          ]
+
+          maximum = max(
+              values
+          ) if values else 1
+
+          colors = {
+              0: "#161b22",
+              1: "#0e4429",
+              2: "#006d32",
+              3: "#26a641",
+              4: "#39d353"
+          }
+
+          def level(value):
+
+              if value <= 0:
+                  return 0
+
+              ratio = value / maximum
+
+              if ratio <= 0.25:
+                  return 1
+
+              if ratio <= 0.50:
+                  return 2
+
+              if ratio <= 0.75:
+                  return 3
+
+              return 4
+
+          cells = []
+
+          for week in range(WEEKS):
+
+              for day in range(7):
+
+                  date = start + timedelta(
+                      days=week * 7 + day
+                  )
+
+                  timestamp = int(
+                      datetime(
+                          date.year,
+                          date.month,
+                          date.day
+                      ).timestamp()
+                  )
+
+                  value = int(
+                      calendar.get(
+                          str(timestamp),
+                          0
+                      )
+                  )
+
+                  x = (
+                      LEFT
+                      + week * (CELL + GAP)
+                  )
+
+                  y = (
+                      TOP
+                      + day * (CELL + GAP)
+                  )
+
+                  cells.append(
+                      {
+                          "x": x,
+                          "y": y,
+                          "value": value,
+                          "date": str(date)
+                      }
+                  )
+
+          # --------------------------------------------------
+          # Build SVG
+          # --------------------------------------------------
+
+          svg = []
+
+          svg.append(
+              f'<svg xmlns="http://www.w3.org/2000/svg" '
+              f'width="{WIDTH}" height="{HEIGHT}" '
+              f'viewBox="0 0 {WIDTH} {HEIGHT}">'
+          )
+
+          svg.append(
+              '<rect width="100%" height="100%" '
+              'rx="10" fill="#0d1117"/>'
+          )
+
+          svg.append(
+              '<text x="12" y="18" '
+              'font-family="Arial" '
+              'font-size="12" '
+              'fill="#8b949e">'
+              'LeetCode Activity • 🐍'
+              '</text>'
+          )
+
+          # --------------------------------------------------
+          # Heatmap
+          # --------------------------------------------------
+
+          for cell in cells:
+
+              fill = colors[
+                  level(cell["value"])
+              ]
+
+              title = html.escape(
+                  f"{cell['date']}: "
+                  f"{cell['value']} submissions"
+              )
+
+              svg.append(
+                  f'<rect x="{cell["x"]}" '
+                  f'y="{cell["y"]}" '
+                  f'width="{CELL}" '
+                  f'height="{CELL}" '
+                  f'rx="2" '
+                  f'fill="{fill}">'
+                  f'<title>{title}</title>'
+                  f'</rect>'
+              )
+
+          # --------------------------------------------------
+          # Snake path
+          #
+          # The snake follows the heatmap path:
+          # left -> right on one row,
+          # right -> left on the next.
+          # --------------------------------------------------
+
+          path_points = []
+
+          for week in range(WEEKS):
+
+              column = [
+                  c for c in cells
+                  if (
+                      c["x"]
+                      ==
+                      LEFT
+                      + week * (CELL + GAP)
+                  )
+              ]
+
+              column.sort(
+                  key=lambda c: c["y"]
+              )
+
+              if week % 2 == 1:
+                  column.reverse()
+
+              for cell in column:
+                  path_points.append(
+                      (
+                          cell["x"]
+                          + CELL / 2,
+                          cell["y"]
+                          + CELL / 2
+                      )
+                  )
+
+          points = " ".join(
+              f"{x},{y}"
+              for x, y in path_points
+          )
+
+          svg.append(
+              f'<polyline '
+              f'points="{points}" '
+              f'fill="none" '
+              f'stroke="#ff7b72" '
+              f'stroke-width="3" '
+              f'stroke-linecap="round" '
+              f'stroke-linejoin="round" '
+              f'stroke-dasharray="12 900">'
+              f'<animate '
+              f'attributeName="stroke-dashoffset" '
+              f'from="0" '
+              f'to="-912" '
+              f'dur="18s" '
+              f'repeatCount="indefinite"/>'
+              f'</polyline>'
+          )
+
+          # --------------------------------------------------
+          # Moving snake head
+          # --------------------------------------------------
+
+          svg.append(
+              f'<circle '
+              f'cx="{path_points[0][0]}" '
+              f'cy="{path_points[0][1]}" '
+              f'r="4" '
+              f'fill="#ff7b72">'
+              f'<animateMotion '
+              f'dur="18s" '
+              f'repeatCount="indefinite" '
+              f'path="M '
+              + " L ".join(
+                  f"{x},{y}"
+                  for x, y in path_points
+              )
+              + '"/>'
+              f'</circle>'
+          )
+
+          # --------------------------------------------------
+          # Legend
+          # --------------------------------------------------
+
+          svg.append(
+              f'<text x="{LEFT}" '
+              f'y="{HEIGHT - 8}" '
+              f'font-family="Arial" '
+              f'font-size="8" '
+              f'fill="#8b949e">'
+              f'LeetCode activity'
+              f'</text>'
+          )
+
+          svg.append("</svg>")
+
+          with open(
+              "assets/leetcode-snake.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+              file.write(
+                  "\n".join(svg)
+              )
+
+          print(
+              "Animated LeetCode snake generated."
+          )
+
+          PY
+
+      - name: Commit snake animation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/leetcode-snake.svg
+
+          if git diff --cached --quiet; then
+            echo "No snake changes detected."
+          else
+            git commit -m "Update LeetCode snake"
+            git push
+          fi
