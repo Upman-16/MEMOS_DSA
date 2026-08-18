@@ -12,10 +12,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ---
 
-## 🔗 Profiles
+## 🔗 Developer Profiles
 
-- 💻 GitHub: [@Upman-16](https://github.com/Upman-16)
-- 🧩 LeetCode: [@Danger_exe_fr](https://leetcode.com/u/Danger_exe_fr/)
+[![GitHub](https://img.shields.io/badge/GitHub-Upman--16-181717?style=for-the-badge&logo=github)](https://github.com/Upman-16)
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-Danger__exe__fr-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Danger_exe_fr/)
 
 ---
 
