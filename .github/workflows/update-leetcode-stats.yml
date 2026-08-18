@@ -1,4 +1,4 @@
-name: Update LeetCode Stats
+name: Update LeetCode Dashboard
 
 on:
   schedule:
@@ -9,101 +9,235 @@ permissions:
   contents: write
 
 jobs:
-  update-stats:
+  update-dashboard:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch LeetCode stats
-        id: stats
+      - name: Fetch LeetCode data
         env:
           LEETCODE_USERNAME: Danger_exe_fr
         run: |
-          QUERY='query {
-            matchedUser(username: "Danger_exe_fr") {
-              submitStats {
+          python3 <<'PY'
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          username = "Danger_exe_fr"
+
+          query = """
+          query userData($username: String!, $year: Int) {
+            matchedUser(username: $username) {
+              username
+
+              submitStats: submitStatsGlobal {
                 acSubmissionNum {
                   difficulty
                   count
                 }
               }
+
+              userCalendar(year: $year) {
+                streak
+                totalActiveDays
+                submissionCalendar
+              }
             }
-          }'
 
-          RESPONSE=$(curl -s \
-            -H "Content-Type: application/json" \
-            --data "$(jq -n --arg query "$QUERY" '{query: $query}')" \
-            "https://leetcode.com/graphql")
+            recentAcSubmissionList(username: $username, limit: 10) {
+              id
+              title
+              titleSlug
+              timestamp
+            }
+          }
+          """
 
-          echo "$RESPONSE" > leetcode.json
+          current_year = datetime.now(timezone.utc).year
 
-          if ! jq -e '.data.matchedUser.submitStats.acSubmissionNum' leetcode.json > /dev/null; then
-            echo "ERROR: Could not fetch LeetCode statistics."
-            cat leetcode.json
-            exit 1
-          fi
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "username": username,
+                  "year": current_year
+              }
+          }).encode("utf-8")
 
-          EASY=$(jq -r '
-            .data.matchedUser.submitStats.acSubmissionNum[]
-            | select(.difficulty == "Easy")
-            | .count
-          ' leetcode.json)
+          request = urllib.request.Request(
+              "https://leetcode.com/graphql",
+              data=payload,
+              headers={
+                  "Content-Type": "application/json",
+                  "User-Agent": "Mozilla/5.0"
+              }
+          )
 
-          MEDIUM=$(jq -r '
-            .data.matchedUser.submitStats.acSubmissionNum[]
-            | select(.difficulty == "Medium")
-            | .count
-          ' leetcode.json)
+          with urllib.request.urlopen(request, timeout=30) as response:
+              data = json.loads(response.read().decode("utf-8"))
 
-          HARD=$(jq -r '
-            .data.matchedUser.submitStats.acSubmissionNum[]
-            | select(.difficulty == "Hard")
-            | .count
-          ' leetcode.json)
+          if "errors" in data:
+              raise RuntimeError(json.dumps(data["errors"], indent=2))
 
-          TOTAL=$((EASY + MEDIUM + HARD))
+          user = data["data"]["matchedUser"]
 
-          echo "easy=$EASY" >> "$GITHUB_OUTPUT"
-          echo "medium=$MEDIUM" >> "$GITHUB_OUTPUT"
-          echo "hard=$HARD" >> "$GITHUB_OUTPUT"
-          echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+          if not user:
+              raise RuntimeError("LeetCode user not found.")
 
-          echo "LeetCode Stats:"
-          echo "Easy: $EASY"
-          echo "Medium: $MEDIUM"
-          echo "Hard: $HARD"
-          echo "Total: $TOTAL"
+          stats = user["submitStats"]["acSubmissionNum"]
+
+          easy = 0
+          medium = 0
+          hard = 0
+
+          for item in stats:
+              if item["difficulty"] == "Easy":
+                  easy = item["count"]
+              elif item["difficulty"] == "Medium":
+                  medium = item["count"]
+              elif item["difficulty"] == "Hard":
+                  hard = item["count"]
+
+          total = easy + medium + hard
+
+          calendar = user["userCalendar"]
+
+          current_streak = calendar["streak"]
+          active_days = calendar["totalActiveDays"]
+
+          submission_calendar = json.loads(
+              calendar["submissionCalendar"]
+          )
+
+          daily_activity = []
+
+          for timestamp, count in submission_calendar.items():
+              date = datetime.fromtimestamp(
+                  int(timestamp),
+                  tz=timezone.utc
+              ).strftime("%Y-%m-%d")
+
+              daily_activity.append({
+                  "date": date,
+                  "count": int(count)
+              })
+
+          daily_activity.sort(
+              key=lambda x: x["date"],
+              reverse=True
+          )
+
+          recent_activity = daily_activity[:10]
+
+          # Calculate best streak from available calendar data.
+          dates = sorted(
+              datetime.strptime(x["date"], "%Y-%m-%d").date()
+              for x in daily_activity
+              if x["count"] > 0
+          )
+
+          best_streak = 0
+          current_run = 0
+          previous = None
+
+          for date in dates:
+              if previous and (date - previous).days == 1:
+                  current_run += 1
+              else:
+                  current_run = 1
+
+              best_streak = max(best_streak, current_run)
+              previous = date
+
+          recent_submissions = data["data"].get(
+              "recentAcSubmissionList"
+          ) or []
+
+          output = {
+              "username": username,
+              "total": total,
+              "easy": easy,
+              "medium": medium,
+              "hard": hard,
+              "current_streak": current_streak,
+              "best_streak": best_streak,
+              "active_days": active_days,
+              "recent_activity": recent_activity,
+              "recent_submissions": recent_submissions,
+              "updated": datetime.now(timezone.utc).strftime(
+                  "%Y-%m-%d %H:%M UTC"
+              )
+          }
+
+          with open("leetcode-data.json", "w", encoding="utf-8") as f:
+              json.dump(output, f, indent=2)
+
+          print(json.dumps(output, indent=2))
+          PY
 
       - name: Update README
-        env:
-          EASY: ${{ steps.stats.outputs.easy }}
-          MEDIUM: ${{ steps.stats.outputs.medium }}
-          HARD: ${{ steps.stats.outputs.hard }}
-          TOTAL: ${{ steps.stats.outputs.total }}
         run: |
           python3 <<'PY'
-          import os
+          import json
           from pathlib import Path
 
-          path = Path("README.md")
-          text = path.read_text(encoding="utf-8")
+          data = json.loads(
+              Path("leetcode-data.json").read_text(
+                  encoding="utf-8"
+              )
+          )
 
-          start_marker = "<!-- LEETCODE-STATS:START -->"
-          end_marker = "<!-- LEETCODE-STATS:END -->"
+          total = data["total"]
+          easy = data["easy"]
+          medium = data["medium"]
+          hard = data["hard"]
+          current_streak = data["current_streak"]
+          best_streak = data["best_streak"]
+          active_days = data["active_days"]
+          updated = data["updated"]
 
-          if start_marker not in text or end_marker not in text:
-              raise SystemExit(
-                  "ERROR: LeetCode stats markers were not found in README.md"
+          def bar(value, maximum=20):
+              if total == 0:
+                  return "░" * maximum
+
+              filled = round((value / total) * maximum)
+              return "█" * filled + "░" * (maximum - filled)
+
+          activity_lines = []
+
+          for item in data["recent_activity"]:
+              blocks = "█" * min(item["count"], 10)
+              activity_lines.append(
+                  f"| {item['date']} | {item['count']} | {blocks} |"
               )
 
-          easy = os.environ["EASY"]
-          medium = os.environ["MEDIUM"]
-          hard = os.environ["HARD"]
-          total = os.environ["TOTAL"]
+          if not activity_lines:
+              activity_lines.append(
+                  "| No activity yet | 0 | |"
+              )
 
-          new_stats = f"""<!-- LEETCODE-STATS:START -->
+          submission_lines = []
+
+          for item in data["recent_submissions"]:
+              title = item["title"]
+              slug = item["titleSlug"]
+
+              submission_lines.append(
+                  f"- 🧩 [{title}]"
+                  f"(https://leetcode.com/problems/{slug}/)"
+              )
+
+          if not submission_lines:
+              submission_lines.append(
+                  "- No recent accepted submissions found."
+              )
+
+          dashboard = f"""<!-- LEETCODE-DASHBOARD:START -->
+
+          ## 🏆 Live LeetCode Dashboard
+
+          > 🔄 **Automatically synced from LeetCode**
 
           | 📊 Metric | 🔥 Progress |
           | :--- | ---: |
@@ -111,33 +245,72 @@ jobs:
           | 🟢 Easy | **{easy}** |
           | 🟡 Medium | **{medium}** |
           | 🔴 Hard | **{hard}** |
+          | 🔥 Current Streak | **{current_streak} days** |
+          | 🏆 Best Streak | **{best_streak} days** |
+          | 📅 Active Days | **{active_days}** |
 
           ### 📈 Difficulty Distribution
 
           ```text
-          🟢 Easy      {('█' * min(int(easy) // 4, 20)):20}  {easy}
-          🟡 Medium    {('█' * min(int(medium) // 4, 20)):20}  {medium}
-          🔴 Hard      {('█' * min(int(hard) // 4, 20)):20}  {hard}
+          🟢 Easy      {bar(easy)}  {easy}
+          🟡 Medium    {bar(medium)}  {medium}
+          🔴 Hard      {bar(hard)}  {hard}
 
                        TOTAL → {total}
           ```
 
-          > 🔄 **Stats automatically updated from LeetCode**
+          ### 📅 Recent Coding Activity
 
-          <!-- LEETCODE-STATS:END -->"""
+          | Date | Problems | Activity |
+          | :--- | ---: | :--- |
+          {chr(10).join(activity_lines)}
 
-          before = text.split(start_marker, 1)[0]
-          after = text.split(end_marker, 1)[1]
+          ### 🧩 Latest Accepted Problems
 
-          path.write_text(
-              before + new_stats + after,
-              encoding="utf-8"
-          )
+          {chr(10).join(submission_lines)}
 
-          print(f"README updated successfully: {total} total solved.")
+          ### 🔥 Consistency
+
+          ```text
+          Current Streak : {current_streak} days
+          Best Streak    : {best_streak} days
+          Active Days    : {active_days}
+          ```
+
+          > 🕐 Last synchronized: **{updated}**
+
+          <!-- LEETCODE-DASHBOARD:END -->"""
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          start = "<!-- LEETCODE-DASHBOARD:START -->"
+          end = "<!-- LEETCODE-DASHBOARD:END -->"
+
+          if start in text and end in text:
+              before = text.split(start, 1)[0]
+              after = text.split(end, 1)[1]
+
+              text = before + dashboard + after
+
+          elif "<!-- LEETCODE-STATS:START -->" in text:
+              old_start = "<!-- LEETCODE-STATS:START -->"
+              old_end = "<!-- LEETCODE-STATS:END -->"
+
+              before = text.split(old_start, 1)[0]
+              after = text.split(old_end, 1)[1]
+
+              text = before + dashboard + after
+
+          else:
+              text = dashboard + "\n\n" + text
+
+          path.write_text(text, encoding="utf-8")
+
+          print("README dashboard updated successfully.")
           PY
 
-      - name: Commit README changes
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -145,8 +318,8 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No README changes detected."
           else
-            git commit -m "Update LeetCode stats"
+            git commit -m "Update LeetCode dashboard"
             git push
           fi
