@@ -1,0 +1,152 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch LeetCode stats
+        id: stats
+        env:
+          LEETCODE_USERNAME: Danger_exe_fr
+        run: |
+          QUERY='query {
+            matchedUser(username: "Danger_exe_fr") {
+              submitStats {
+                acSubmissionNum {
+                  difficulty
+                  count
+                }
+              }
+            }
+          }'
+
+          RESPONSE=$(curl -s \
+            -H "Content-Type: application/json" \
+            --data "$(jq -n --arg query "$QUERY" '{query: $query}')" \
+            "https://leetcode.com/graphql")
+
+          echo "$RESPONSE" > leetcode.json
+
+          if ! jq -e '.data.matchedUser.submitStats.acSubmissionNum' leetcode.json > /dev/null; then
+            echo "ERROR: Could not fetch LeetCode statistics."
+            cat leetcode.json
+            exit 1
+          fi
+
+          EASY=$(jq -r '
+            .data.matchedUser.submitStats.acSubmissionNum[]
+            | select(.difficulty == "Easy")
+            | .count
+          ' leetcode.json)
+
+          MEDIUM=$(jq -r '
+            .data.matchedUser.submitStats.acSubmissionNum[]
+            | select(.difficulty == "Medium")
+            | .count
+          ' leetcode.json)
+
+          HARD=$(jq -r '
+            .data.matchedUser.submitStats.acSubmissionNum[]
+            | select(.difficulty == "Hard")
+            | .count
+          ' leetcode.json)
+
+          TOTAL=$((EASY + MEDIUM + HARD))
+
+          echo "easy=$EASY" >> "$GITHUB_OUTPUT"
+          echo "medium=$MEDIUM" >> "$GITHUB_OUTPUT"
+          echo "hard=$HARD" >> "$GITHUB_OUTPUT"
+          echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+
+          echo "LeetCode Stats:"
+          echo "Easy: $EASY"
+          echo "Medium: $MEDIUM"
+          echo "Hard: $HARD"
+          echo "Total: $TOTAL"
+
+      - name: Update README
+        env:
+          EASY: ${{ steps.stats.outputs.easy }}
+          MEDIUM: ${{ steps.stats.outputs.medium }}
+          HARD: ${{ steps.stats.outputs.hard }}
+          TOTAL: ${{ steps.stats.outputs.total }}
+        run: |
+          python3 <<'PY'
+          import os
+          from pathlib import Path
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          start_marker = "<!-- LEETCODE-STATS:START -->"
+          end_marker = "<!-- LEETCODE-STATS:END -->"
+
+          if start_marker not in text or end_marker not in text:
+              raise SystemExit(
+                  "ERROR: LeetCode stats markers were not found in README.md"
+              )
+
+          easy = os.environ["EASY"]
+          medium = os.environ["MEDIUM"]
+          hard = os.environ["HARD"]
+          total = os.environ["TOTAL"]
+
+          new_stats = f"""<!-- LEETCODE-STATS:START -->
+
+          | 📊 Metric | 🔥 Progress |
+          | :--- | ---: |
+          | **Total Solved** | **{total}** |
+          | 🟢 Easy | **{easy}** |
+          | 🟡 Medium | **{medium}** |
+          | 🔴 Hard | **{hard}** |
+
+          ### 📈 Difficulty Distribution
+
+          ```text
+          🟢 Easy      {('█' * min(int(easy) // 4, 20)):20}  {easy}
+          🟡 Medium    {('█' * min(int(medium) // 4, 20)):20}  {medium}
+          🔴 Hard      {('█' * min(int(hard) // 4, 20)):20}  {hard}
+
+                       TOTAL → {total}
+          ```
+
+          > 🔄 **Stats automatically updated from LeetCode**
+
+          <!-- LEETCODE-STATS:END -->"""
+
+          before = text.split(start_marker, 1)[0]
+          after = text.split(end_marker, 1)[1]
+
+          path.write_text(
+              before + new_stats + after,
+              encoding="utf-8"
+          )
+
+          print(f"README updated successfully: {total} total solved.")
+          PY
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update LeetCode stats"
+            git push
+          fi
