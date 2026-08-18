@@ -15,17 +15,18 @@ Every accepted solution here represents one more problem understood, optimized, 
 - 💻 GitHub: [@Upman-16](https://github.com/Upman-16)
 - 🧩 LeetCode: [@Danger_exe_fr](https://leetcode.com/u/Danger_exe_fr/)
 
+---
+
 ## 🏆 LeetCode Stats
 
-| 📊 Metric         | 🔥 Progress |
-| :---------------- | ----------: |
-| **Total Solved**  |      **84** |
-| 🟢 Easy           |       **48** |
-| 🟡 Medium         |      **27** |
-| 🔴 Hard           |       **9** |
-| 🔥 Current Streak |  **11 days** |
-| ⚡ Best Streak     |  **11 days** |
-| 📅 Active Days    |       **26** |
+<!-- LEETCODE-STATS:START -->
+
+| 📊 Metric | 🔥 Progress |
+| :--- | ---: |
+| **Total Solved** | **84** |
+| 🟢 Easy | **48** |
+| 🟡 Medium | **27** |
+| 🔴 Hard | **9** |
 
 ### 📈 Difficulty Distribution
 
@@ -37,6 +38,14 @@ Every accepted solution here represents one more problem understood, optimized, 
              TOTAL → 84
 ```
 
+> 🔄 **Stats automatically updated from LeetCode**
+
+<!-- LEETCODE-STATS:END -->
+
+🔥 **Current Streak:** 11 Days  
+🏆 **Best Streak:** 11 Days  
+📅 **Active Days:** 26
+
 ---
 
 ## 💻 Tech Stack
@@ -46,7 +55,6 @@ Every accepted solution here represents one more problem understood, optimized, 
 ⚡ C++
 🐍 Python
 🟨 JavaScript
-💎 Ruby
 ```
 
 > Languages vary depending on the problem and the approach being explored.
@@ -57,18 +65,18 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ### 🔥 Most Practiced
 
-| Topic                  | Problems | Coverage |
-| :--------------------- | -------: | -------: |
-| 🔢 Array               |       16 |      80% |
-| 🔍 Binary Search       |        8 |      40% |
-| #️⃣ Hash Table         |        4 |      20% |
-| 🧠 Dynamic Programming |        3 |      15% |
-| 🔤 String              |        3 |      15% |
-| 👉 Two Pointers        |        3 |      15% |
-| 🎮 Game Theory         |        2 |      10% |
-| ➕ Math                 |        2 |      10% |
-| 🎯 Minimax             |        2 |      10% |
-| 🪟 Sliding Window      |        2 |      10% |
+| Topic | Problems | Coverage |
+| :--- | ---: | ---: |
+| 🔢 Array | 16 | 80% |
+| 🔍 Binary Search | 8 | 40% |
+| #️⃣ Hash Table | 4 | 20% |
+| 🧠 Dynamic Programming | 3 | 15% |
+| 🔤 String | 3 | 15% |
+| 👉 Two Pointers | 3 | 15% |
+| 🎮 Game Theory | 2 | 10% |
+| ➕ Math | 2 | 10% |
+| 🎯 Minimax | 2 | 10% |
+| 🪟 Sliding Window | 2 | 10% |
 
 ---
 
@@ -175,16 +183,16 @@ Each problem is maintained in its own folder for easy navigation and revision.
 
 ## 📅 Coding Activity
 
-| Date       | Problems Solved |
-| :--------- | --------------: |
-| 2026-08-08 |               3 |
-| 2026-08-09 |               3 |
-| 2026-08-10 |               2 |
-| 2026-08-11 |               6 |
-| 2026-08-12 |               1 |
-| 2026-08-13 |               3 |
-| 2026-08-14 |               1 |
-| 2026-08-15 |               1 |
+| Date | Problems Solved |
+| :--- | ---: |
+| 2026-08-08 | 3 |
+| 2026-08-09 | 3 |
+| 2026-08-10 | 2 |
+| 2026-08-11 | 6 |
+| 2026-08-12 | 1 |
+| 2026-08-13 | 3 |
+| 2026-08-14 | 1 |
+| 2026-08-15 | 1 |
 
 ### 🔥 Consistency
 
@@ -199,8 +207,8 @@ Each problem is maintained in its own folder for easy navigation and revision.
 15 Aug  █
 ```
 
-**Current Streak:** 🔥 8 Days
-**Best Streak:** 🏆 8 Days
+**Current Streak:** 🔥 11 Days  
+**Best Streak:** 🏆 11 Days
 
 ---
 
@@ -238,8 +246,8 @@ Test
 ACCEPTED ✓
 ```
 
-> **An accepted solution is good.
-> An understood and optimized solution is better.**
+> **An accepted solution is good.**  
+> **An understood and optimized solution is better.**
 
 ---
 
@@ -284,7 +292,7 @@ Dynamic Programming    ████░░░░░░░░░░░░░░░
                      │
                      ▼
               ┌──────────────┐
-              │   DEBUG      │
+              │    DEBUG     │
               └──────┬───────┘
                      │
                      ▼
@@ -294,20 +302,20 @@ Dynamic Programming    ████░░░░░░░░░░░░░░░
                      │
                      ▼
               ┌──────────────┐
-              │   MASTER     │
+              │    MASTER    │
               └──────────────┘
 ```
 
 ### 💻 Keep Building. Keep Solving. Keep Learning.
 
-> **Consistency beats intensity.**
+> **Consistency beats intensity.**  
 > One problem at a time. One concept at a time. One commit at a time. ⚡
 
 ---
 
 ## 🏁 Status
 
-**20 Problems Solved** • **8 Day Streak** • **DSA Journey in Progress**
+**84 Problems Solved** • **11 Day Streak** • **DSA Journey in Progress** 🚀
 
 ```text
 while (not_mastered_DSA) {
@@ -321,6 +329,8 @@ while (not_mastered_DSA) {
 ---
 
 ### ⚡ MEMOS_DSA
+
+> **Code today. Master tomorrow. 🚀**
 
 **Built with curiosity, caffeine & code. ☕💻**
 
