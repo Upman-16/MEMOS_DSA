@@ -45,6 +45,57 @@ Every accepted solution here represents one more problem understood, optimized, 
              TOTAL → 86
 ```
 
+### 🧩 Automatic Topic Statistics
+
+> 📡 Topic counts are generated from the
+> LeetHub problem folders in this repository.
+
+| 🏷️ Topic | Problems |
+| :--- | ---: |
+| `Array` | **21** |
+| `Binary Search` | **8** |
+| `Math` | **7** |
+| `Game Theory` | **5** |
+| `Hash Table` | **5** |
+| `Bit Manipulation` | **4** |
+| `Dynamic Programming` | **4** |
+| `Minimax` | **4** |
+| `Zero-Sum Game` | **4** |
+| `Greedy` | **3** |
+| `Nim Game` | **3** |
+| `String` | **3** |
+| `Two Pointers` | **3** |
+| `Counting` | **2** |
+| `Recursion` | **2** |
+| `Sliding Window` | **2** |
+| `Sorting` | **2** |
+| `Interactive` | **1** |
+| `Ordered Set` | **1** |
+| `Prefix Sum` | **1** |
+| `Segment Tree` | **1** |
+| `Sprague–Grundy Theorem` | **1** |
+| `Ternary Search` | **1** |
+
+### 📊 Topic Distribution
+
+```text
+Array                    ████████████████████ 21
+Binary Search            ████████░░░░░░░░░░░░ 8
+Math                     ███████░░░░░░░░░░░░░ 7
+Game Theory              █████░░░░░░░░░░░░░░░ 5
+Hash Table               █████░░░░░░░░░░░░░░░ 5
+Bit Manipulation         ████░░░░░░░░░░░░░░░░ 4
+Dynamic Programming      ████░░░░░░░░░░░░░░░░ 4
+Minimax                  ████░░░░░░░░░░░░░░░░ 4
+Zero-Sum Game            ████░░░░░░░░░░░░░░░░ 4
+Greedy                   ███░░░░░░░░░░░░░░░░░ 3
+Nim Game                 ███░░░░░░░░░░░░░░░░░ 3
+String                   ███░░░░░░░░░░░░░░░░░ 3
+Two Pointers             ███░░░░░░░░░░░░░░░░░ 3
+Counting                 ██░░░░░░░░░░░░░░░░░░ 2
+Recursion                ██░░░░░░░░░░░░░░░░░░ 2
+```
+
 ### 📅 Recent Coding Activity
 
 | Date | Problems | Activity |
@@ -85,7 +136,7 @@ Best Streak    : 15 days
 Active Days    : 28
 ```
 
-> 🕐 Last synchronized: **2026-08-18 20:44 IST**
+> 🕐 Last synchronized: **2026-08-18 15:20 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
