@@ -23,15 +23,15 @@ jobs:
           python3 <<'PY'
           import json
           import urllib.request
-          from datetime import datetime, timezone
+          from datetime import datetime, timezone, timedelta
           from zoneinfo import ZoneInfo
 
-          username = "Danger_exe_fr"
+          USERNAME = "Danger_exe_fr"
+          INDIA = ZoneInfo("Asia/Kolkata")
 
-          query = """
+          QUERY = """
           query userData($username: String!, $year: Int) {
             matchedUser(username: $username) {
-              username
 
               submitStats: submitStatsGlobal {
                 acSubmissionNum {
@@ -46,7 +46,10 @@ jobs:
               }
             }
 
-            recentAcSubmissionList(username: $username, limit: 10) {
+            recentAcSubmissionList(
+              username: $username
+              limit: 10
+            ) {
               id
               title
               titleSlug
@@ -55,14 +58,13 @@ jobs:
           }
           """
 
-          current_year = datetime.now(
-              ZoneInfo("Asia/Kolkata")
-          ).year
+          now = datetime.now(INDIA)
+          current_year = now.year
 
           payload = json.dumps({
-              "query": query,
+              "query": QUERY,
               "variables": {
-                  "username": username,
+                  "username": USERNAME,
                   "year": current_year
               }
           }).encode("utf-8")
@@ -88,10 +90,7 @@ jobs:
 
           if "errors" in data:
               raise RuntimeError(
-                  json.dumps(
-                      data["errors"],
-                      indent=2
-                  )
+                  json.dumps(data["errors"], indent=2)
               )
 
           user = data["data"]["matchedUser"]
@@ -101,17 +100,16 @@ jobs:
                   "LeetCode user not found."
               )
 
-          # -------------------------------------------------
+          # ================================================
           # SOLVED COUNTS
-          # -------------------------------------------------
-
-          stats = user["submitStats"]["acSubmissionNum"]
+          # ================================================
 
           easy = 0
           medium = 0
           hard = 0
 
-          for item in stats:
+          for item in user["submitStats"]["acSubmissionNum"]:
+
               difficulty = item["difficulty"]
               count = int(item["count"])
 
@@ -126,9 +124,9 @@ jobs:
 
           total = easy + medium + hard
 
-          # -------------------------------------------------
-          # SUBMISSION CALENDAR
-          # -------------------------------------------------
+          # ================================================
+          # ACTIVITY CALENDAR
+          # ================================================
 
           calendar = user["userCalendar"]
 
@@ -140,110 +138,108 @@ jobs:
               calendar["submissionCalendar"]
           )
 
-          india = ZoneInfo("Asia/Kolkata")
-
           daily_activity = []
 
           for timestamp, count in submission_calendar.items():
 
-              local_date = datetime.fromtimestamp(
+              local_datetime = datetime.fromtimestamp(
                   int(timestamp),
                   tz=timezone.utc
-              ).astimezone(india).date()
+              ).astimezone(INDIA)
 
               daily_activity.append({
-                  "date": local_date,
+                  "date": local_datetime.date(),
                   "count": int(count)
               })
 
-          daily_activity.sort(
-              key=lambda x: x["date"]
-          )
+          # Merge entries belonging to the same Indian date.
+          merged = {}
 
-          # -------------------------------------------------
-          # ACTIVE DATES
-          # -------------------------------------------------
+          for item in daily_activity:
+
+              date = item["date"]
+
+              merged[date] = (
+                  merged.get(date, 0)
+                  + item["count"]
+              )
 
           active_dates = sorted(
-              {
-                  item["date"]
-                  for item in daily_activity
-                  if item["count"] > 0
-              }
+              date
+              for date, count in merged.items()
+              if count > 0
           )
 
-          # -------------------------------------------------
+          # ================================================
           # CURRENT STREAK
-          # -------------------------------------------------
+          # ================================================
 
           current_streak = 0
 
           if active_dates:
 
-              current_streak = 1
+              today = now.date()
 
-              for i in range(
-                  len(active_dates) - 1,
-                  0,
-                  -1
-              ):
+              # If today has activity, start from today.
+              # Otherwise start from yesterday.
+              if today in active_dates:
+                  check_date = today
 
-                  difference = (
-                      active_dates[i]
-                      - active_dates[i - 1]
-                  ).days
+              else:
+                  check_date = today - timedelta(days=1)
 
-                  if difference == 1:
-                      current_streak += 1
-                  else:
-                      break
+              active_set = set(active_dates)
 
-          # -------------------------------------------------
+              while check_date in active_set:
+
+                  current_streak += 1
+                  check_date -= timedelta(days=1)
+
+          # ================================================
           # BEST STREAK
-          # -------------------------------------------------
+          # ================================================
 
           best_streak = 0
-          running_streak = 0
-          previous_date = None
+          running = 0
+          previous = None
 
           for date in active_dates:
 
               if (
-                  previous_date is not None
-                  and (date - previous_date).days == 1
+                  previous is not None
+                  and (date - previous).days == 1
               ):
-                  running_streak += 1
+                  running += 1
+
               else:
-                  running_streak = 1
+                  running = 1
 
               best_streak = max(
                   best_streak,
-                  running_streak
+                  running
               )
 
-              previous_date = date
+              previous = date
 
-          # -------------------------------------------------
+          # ================================================
           # RECENT ACTIVITY
-          # -------------------------------------------------
+          # ================================================
 
-          recent_activity = sorted(
-              [
-                  {
-                      "date": item["date"].strftime(
-                          "%Y-%m-%d"
-                      ),
-                      "count": item["count"]
-                  }
-                  for item in daily_activity
-              ],
-              key=lambda x: x["date"],
+          recent_activity = []
+
+          for date in sorted(
+              merged.keys(),
               reverse=True
-          )[:10]
+          )[:14]:
 
-          # -------------------------------------------------
-          # RECENT ACCEPTED SUBMISSIONS
-          # -------------------------------------------------
+              recent_activity.append({
+                  "date": date.strftime("%Y-%m-%d"),
+                  "count": merged[date]
+              })
+
+          # ================================================
+          # RECENT ACCEPTED PROBLEMS
+          # ================================================
 
           recent_submissions = (
               data["data"].get(
@@ -251,12 +247,12 @@ jobs:
               ) or []
           )
 
-          # -------------------------------------------------
-          # OUTPUT DATA
-          # -------------------------------------------------
+          # ================================================
+          # SAVE DATA
+          # ================================================
 
           output = {
-              "username": username,
+              "username": USERNAME,
               "total": total,
               "easy": easy,
               "medium": medium,
@@ -266,19 +262,20 @@ jobs:
               "active_days": active_days,
               "recent_activity": recent_activity,
               "recent_submissions": recent_submissions,
-              "updated": datetime.now(
-                  timezone.utc
-              ).strftime("%Y-%m-%d %H:%M UTC")
+              "updated": now.strftime(
+                  "%Y-%m-%d %H:%M IST"
+              )
           }
 
           with open(
               "leetcode-data.json",
               "w",
               encoding="utf-8"
-          ) as f:
+          ) as file:
+
               json.dump(
                   output,
-                  f,
+                  file,
                   indent=2
               )
 
@@ -307,14 +304,16 @@ jobs:
           easy = data["easy"]
           medium = data["medium"]
           hard = data["hard"]
+
           current_streak = data["current_streak"]
           best_streak = data["best_streak"]
           active_days = data["active_days"]
+
           updated = data["updated"]
 
-          # -------------------------------------------------
+          # ================================================
           # PROGRESS BAR
-          # -------------------------------------------------
+          # ================================================
 
           def bar(value, maximum=20):
 
@@ -322,7 +321,7 @@ jobs:
                   return "░" * maximum
 
               filled = round(
-                  (value / total) * maximum
+                  value / total * maximum
               )
 
               filled = max(
@@ -340,9 +339,9 @@ jobs:
                   )
               )
 
-          # -------------------------------------------------
+          # ================================================
           # ACTIVITY TABLE
-          # -------------------------------------------------
+          # ================================================
 
           activity_lines = []
 
@@ -365,9 +364,9 @@ jobs:
                   "| No activity yet | 0 | |"
               )
 
-          # -------------------------------------------------
-          # RECENT ACCEPTED PROBLEMS
-          # -------------------------------------------------
+          # ================================================
+          # ACCEPTED PROBLEMS
+          # ================================================
 
           submission_lines = []
 
@@ -387,9 +386,9 @@ jobs:
                   "- No recent accepted submissions found."
               )
 
-          # -------------------------------------------------
+          # ================================================
           # DASHBOARD
-          # -------------------------------------------------
+          # ================================================
 
           dashboard = f"""<!-- LEETCODE-DASHBOARD:START -->
 
@@ -439,13 +438,13 @@ jobs:
 
           <!-- LEETCODE-DASHBOARD:END -->"""
 
-          # -------------------------------------------------
+          # ================================================
           # UPDATE README
-          # -------------------------------------------------
+          # ================================================
 
-          path = Path("README.md")
+          readme = Path("README.md")
 
-          text = path.read_text(
+          text = readme.read_text(
               encoding="utf-8"
           )
 
@@ -457,62 +456,29 @@ jobs:
               "<!-- LEETCODE-DASHBOARD:END -->"
           )
 
-          if start in text and end in text:
+          if start not in text or end not in text:
 
-              before = text.split(
-                  start,
-                  1
-              )[0]
-
-              after = text.split(
-                  end,
-                  1
-              )[1]
-
-              text = (
-                  before
-                  + dashboard
-                  + after
+              raise SystemExit(
+                  "Dashboard markers not found in README.md"
               )
 
-          elif (
-              "<!-- LEETCODE-STATS:START -->"
-              in text
-          ):
+          before = text.split(
+              start,
+              1
+          )[0]
 
-              old_start = (
-                  "<!-- LEETCODE-STATS:START -->"
-              )
+          after = text.split(
+              end,
+              1
+          )[1]
 
-              old_end = (
-                  "<!-- LEETCODE-STATS:END -->"
-              )
+          text = (
+              before
+              + dashboard
+              + after
+          )
 
-              before = text.split(
-                  old_start,
-                  1
-              )[0]
-
-              after = text.split(
-                  old_end,
-                  1
-              )[1]
-
-              text = (
-                  before
-                  + dashboard
-                  + after
-              )
-
-          else:
-
-              text = (
-                  dashboard
-                  + "\n\n"
-                  + text
-              )
-
-          path.write_text(
+          readme.write_text(
               text,
               encoding="utf-8"
           )
