@@ -165,6 +165,24 @@ Active Days    : 28
 
 <!-- LEETCODE-DASHBOARD:END -->
 
+---
+
+## 🐍 LeetCode Activity
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/Upman-16/MEMOS_DSA/main/assets/leetcode-heatmap.svg" alt="LeetCode Activity Heatmap">
+
+</p>
+
+<p align="center">
+
+🔥 <b>Consistency • Practice • Progress</b> 🔥
+
+</p>
+
+---
+
 🔥 **Current Streak:** 11 Days  
 🏆 **Best Streak:** 11 Days  
 📅 **Active Days:** 26
