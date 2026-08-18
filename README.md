@@ -19,7 +19,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ## 🏆 LeetCode Stats
 
-<!-- LEETCODE-STATS:START -->
+<!-- LEETCODE-DASHBOARD:START -->
+
+## 🏆 Live LeetCode Dashboard
+
+> 🔄 **Automatically synced from LeetCode**
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
@@ -27,20 +31,59 @@ Every accepted solution here represents one more problem understood, optimized, 
 | 🟢 Easy | **49** |
 | 🟡 Medium | **27** |
 | 🔴 Hard | **10** |
+| 🔥 Current Streak | **15 days** |
+| 🏆 Best Streak | **15 days** |
+| 📅 Active Days | **28** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ████████████          49
-🟡 Medium    ██████                27
-🔴 Hard      ██                    10
+🟢 Easy      ███████████░░░░░░░░░  49
+🟡 Medium    ██████░░░░░░░░░░░░░░  27
+🔴 Hard      ██░░░░░░░░░░░░░░░░░░  10
 
              TOTAL → 86
 ```
 
-> 🔄 **Stats automatically updated from LeetCode**
+### 📅 Recent Coding Activity
 
-<!-- LEETCODE-STATS:END -->
+| Date | Problems | Activity |
+| :--- | ---: | :--- |
+| 2026-08-18 | 1 | █ |
+| 2026-08-17 | 1 | █ |
+| 2026-08-16 | 1 | █ |
+| 2026-08-15 | 3 | ███ |
+| 2026-08-14 | 1 | █ |
+| 2026-08-13 | 4 | ████ |
+| 2026-08-12 | 1 | █ |
+| 2026-08-11 | 12 | ██████████ |
+| 2026-08-10 | 2 | ██ |
+| 2026-08-09 | 3 | ███ |
+
+### 🧩 Latest Accepted Problems
+
+- 🧩 [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/)
+- 🧩 [Stone Game V](https://leetcode.com/problems/stone-game-v/)
+- 🧩 [Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
+- 🧩 [Power of Two](https://leetcode.com/problems/power-of-two/)
+- 🧩 [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/)
+- 🧩 [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)
+- 🧩 [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/)
+- 🧩 [First Bad Version](https://leetcode.com/problems/first-bad-version/)
+- 🧩 [Binary Search](https://leetcode.com/problems/binary-search/)
+- 🧩 [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)
+
+### 🔥 Consistency
+
+```text
+Current Streak : 15 days
+Best Streak    : 15 days
+Active Days    : 28
+```
+
+> 🕐 Last synchronized: **2026-08-18 14:57 UTC**
+
+<!-- LEETCODE-DASHBOARD:END -->
 
 🔥 **Current Streak:** 11 Days  
 🏆 **Best Streak:** 11 Days  
