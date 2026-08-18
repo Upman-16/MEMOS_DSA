@@ -1,0 +1,433 @@
+name: Generate LeetCode Heatmap
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-heatmap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch LeetCode activity
+        run: |
+          python3 <<'PY'
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          username = "Danger_exe_fr"
+
+          query = """
+          query userCalendar($username: String!, $year: Int) {
+            matchedUser(username: $username) {
+              userCalendar(year: $year) {
+                submissionCalendar
+              }
+            }
+          }
+          """
+
+          year = datetime.now(timezone.utc).year
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "username": username,
+                  "year": year
+              }
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://leetcode.com/graphql",
+              data=payload,
+              headers={
+                  "Content-Type": "application/json",
+                  "Accept": "application/json",
+                  "User-Agent": "Mozilla/5.0",
+                  "Referer": "https://leetcode.com/"
+              }
+          )
+
+          with urllib.request.urlopen(
+              request,
+              timeout=30
+          ) as response:
+              data = json.loads(
+                  response.read().decode("utf-8")
+              )
+
+          if "errors" in data:
+              raise RuntimeError(
+                  json.dumps(data["errors"], indent=2)
+              )
+
+          user = data["data"]["matchedUser"]
+
+          if not user:
+              raise RuntimeError(
+                  "LeetCode user not found."
+              )
+
+          calendar = user["userCalendar"]
+
+          submission_calendar = json.loads(
+              calendar["submissionCalendar"]
+          )
+
+          with open(
+              "leetcode-calendar.json",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              json.dump(
+                  submission_calendar,
+                  file,
+                  indent=2
+              )
+
+          print(
+              f"Fetched {len(submission_calendar)} activity entries."
+          )
+
+          PY
+
+      - name: Generate heatmap
+        run: |
+          mkdir -p assets
+
+          python3 <<'PY'
+          import json
+          import math
+          from datetime import datetime, timedelta
+
+          calendar = json.load(
+              open(
+                  "leetcode-calendar.json",
+                  encoding="utf-8"
+              )
+          )
+
+          # --------------------------------------------------
+          # Configuration
+          # --------------------------------------------------
+
+          CELL = 13
+          GAP = 3
+
+          LEFT = 45
+          TOP = 30
+          BOTTOM = 35
+
+          WEEKS = 53
+
+          WIDTH = (
+              LEFT
+              + WEEKS * (CELL + GAP)
+              + 10
+          )
+
+          HEIGHT = (
+              TOP
+              + 7 * (CELL + GAP)
+              + BOTTOM
+          )
+
+          # --------------------------------------------------
+          # Determine date range
+          # --------------------------------------------------
+
+          today = datetime.utcnow().date()
+
+          # Start on the Sunday of the week
+          # approximately one year ago.
+          start = today - timedelta(days=364)
+
+          while start.weekday() != 6:
+              start -= timedelta(days=1)
+
+          # --------------------------------------------------
+          # Find maximum activity
+          # --------------------------------------------------
+
+          values = [
+              int(value)
+              for value in calendar.values()
+          ]
+
+          maximum = max(values) if values else 1
+
+          # --------------------------------------------------
+          # SVG helpers
+          # --------------------------------------------------
+
+          def escape(text):
+              return (
+                  str(text)
+                  .replace("&", "&amp;")
+                  .replace("<", "&lt;")
+                  .replace(">", "&gt;")
+              )
+
+          def intensity(value):
+
+              if value <= 0:
+                  return 0
+
+              ratio = value / maximum
+
+              if ratio <= 0.25:
+                  return 1
+
+              if ratio <= 0.50:
+                  return 2
+
+              if ratio <= 0.75:
+                  return 3
+
+              return 4
+
+          # --------------------------------------------------
+          # Colors
+          # --------------------------------------------------
+
+          colors = {
+              0: "#161b22",
+              1: "#0e4429",
+              2: "#006d32",
+              3: "#26a641",
+              4: "#39d353"
+          }
+
+          svg = []
+
+          svg.append(
+              f'<svg xmlns="http://www.w3.org/2000/svg" '
+              f'width="{WIDTH}" height="{HEIGHT}" '
+              f'viewBox="0 0 {WIDTH} {HEIGHT}">'
+          )
+
+          svg.append(
+              '<rect width="100%" height="100%" '
+              'fill="#0d1117" rx="10"/>'
+          )
+
+          svg.append(
+              '<text x="12" y="18" '
+              'font-family="Arial, sans-serif" '
+              'font-size="12" fill="#8b949e">'
+              'LeetCode Activity'
+              '</text>'
+          )
+
+          # --------------------------------------------------
+          # Month labels
+          # --------------------------------------------------
+
+          current_month = None
+
+          for week in range(WEEKS):
+
+              date = start + timedelta(
+                  days=week * 7
+              )
+
+              month = date.strftime("%b")
+
+              if month != current_month:
+
+                  x = (
+                      LEFT
+                      + week * (CELL + GAP)
+                  )
+
+                  svg.append(
+                      f'<text x="{x}" y="27" '
+                      f'font-family="Arial, sans-serif" '
+                      f'font-size="9" '
+                      f'fill="#8b949e">'
+                      f'{month}'
+                      f'</text>'
+                  )
+
+                  current_month = month
+
+          # --------------------------------------------------
+          # Day labels
+          # --------------------------------------------------
+
+          labels = {
+              1: "Mon",
+              3: "Wed",
+              5: "Fri"
+          }
+
+          for row, label in labels.items():
+
+              y = (
+                  TOP
+                  + row * (CELL + GAP)
+                  + 10
+              )
+
+              svg.append(
+                  f'<text x="5" y="{y}" '
+                  f'font-family="Arial, sans-serif" '
+                  f'font-size="8" '
+                  f'fill="#8b949e">'
+                  f'{label}'
+                  f'</text>'
+              )
+
+          # --------------------------------------------------
+          # Heatmap cells
+          # --------------------------------------------------
+
+          for week in range(WEEKS):
+
+              for day in range(7):
+
+                  date = start + timedelta(
+                      days=week * 7 + day
+                  )
+
+                  timestamp = int(
+                      datetime(
+                          date.year,
+                          date.month,
+                          date.day
+                      ).timestamp()
+                  )
+
+                  value = int(
+                      calendar.get(
+                          str(timestamp),
+                          0
+                      )
+                  )
+
+                  # LeetCode timestamps can differ slightly,
+                  # so also check neighboring timestamps.
+                  if value == 0:
+
+                      for offset in (-86400, 86400):
+
+                          value = max(
+                              value,
+                              int(
+                                  calendar.get(
+                                      str(
+                                          timestamp
+                                          + offset
+                                      ),
+                                      0
+                                  )
+                              )
+                          )
+
+                  level = intensity(value)
+
+                  x = (
+                      LEFT
+                      + week * (CELL + GAP)
+                  )
+
+                  y = (
+                      TOP
+                      + day * (CELL + GAP)
+                  )
+
+                  title = (
+                      f"{date.isoformat()}: "
+                      f"{value} submissions"
+                  )
+
+                  svg.append(
+                      f'<rect x="{x}" y="{y}" '
+                      f'width="{CELL}" '
+                      f'height="{CELL}" '
+                      f'rx="2" '
+                      f'fill="{colors[level]}">'
+                      f'<title>{escape(title)}</title>'
+                      f'</rect>'
+                  )
+
+          # --------------------------------------------------
+          # Legend
+          # --------------------------------------------------
+
+          legend_y = HEIGHT - 17
+
+          svg.append(
+              f'<text x="{LEFT}" y="{legend_y}" '
+              f'font-family="Arial, sans-serif" '
+              f'font-size="8" fill="#8b949e">'
+              'Less'
+              '</text>'
+          )
+
+          for i in range(5):
+
+              x = (
+                  LEFT
+                  + 25
+                  + i * (CELL + GAP)
+              )
+
+              svg.append(
+                  f'<rect x="{x}" '
+                  f'y="{HEIGHT - 25}" '
+                  f'width="{CELL}" '
+                  f'height="{CELL}" '
+                  f'rx="2" '
+                  f'fill="{colors[i]}"/>'
+              )
+
+          svg.append(
+              f'<text x="{LEFT + 25 + 5 * (CELL + GAP)}" '
+              f'y="{legend_y}" '
+              f'font-family="Arial, sans-serif" '
+              f'font-size="8" fill="#8b949e">'
+              'More'
+              '</text>'
+          )
+
+          svg.append("</svg>")
+
+          with open(
+              "assets/leetcode-heatmap.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              file.write(
+                  "\n".join(svg)
+              )
+
+          print(
+              "LeetCode heatmap generated successfully."
+          )
+
+          PY
+
+      - name: Commit heatmap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/leetcode-heatmap.svg
+
+          if git diff --cached --quiet; then
+            echo "No heatmap changes detected."
+          else
+            git commit -m "Update LeetCode heatmap"
+            git push
+          fi
