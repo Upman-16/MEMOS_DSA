@@ -23,19 +23,19 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **84** |
-| 🟢 Easy | **48** |
+| **Total Solved** | **86** |
+| 🟢 Easy | **49** |
 | 🟡 Medium | **27** |
-| 🔴 Hard | **9** |
+| 🔴 Hard | **10** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████          48
-🟡 Medium    ██████               27
-🔴 Hard      ███                   9
+🟢 Easy      ████████████          49
+🟡 Medium    ██████                27
+🔴 Hard      ██                    10
 
-             TOTAL → 84
+             TOTAL → 86
 ```
 
 > 🔄 **Stats automatically updated from LeetCode**
