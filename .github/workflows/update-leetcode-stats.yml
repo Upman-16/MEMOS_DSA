@@ -22,16 +22,58 @@ jobs:
         run: |
           python3 <<'PY'
           import json
+          import re
+          import time
           import urllib.request
-          from datetime import datetime, timezone, timedelta
-          from zoneinfo import ZoneInfo
+          from collections import Counter
+          from datetime import datetime, timezone
+          from pathlib import Path
 
-          USERNAME = "Danger_exe_fr"
-          INDIA = ZoneInfo("Asia/Kolkata")
+          username = "Danger_exe_fr"
 
-          QUERY = """
+          # ---------------------------------------------------------
+          # GraphQL helper
+          # ---------------------------------------------------------
+
+          def graphql(query, variables):
+              payload = json.dumps({
+                  "query": query,
+                  "variables": variables
+              }).encode("utf-8")
+
+              request = urllib.request.Request(
+                  "https://leetcode.com/graphql",
+                  data=payload,
+                  headers={
+                      "Content-Type": "application/json",
+                      "Accept": "application/json",
+                      "User-Agent": "Mozilla/5.0"
+                  }
+              )
+
+              with urllib.request.urlopen(
+                  request,
+                  timeout=30
+              ) as response:
+                  result = json.loads(
+                      response.read().decode("utf-8")
+                  )
+
+              if "errors" in result:
+                  raise RuntimeError(
+                      json.dumps(result["errors"], indent=2)
+                  )
+
+              return result["data"]
+
+          # ---------------------------------------------------------
+          # User statistics
+          # ---------------------------------------------------------
+
+          user_query = """
           query userData($username: String!, $year: Int) {
             matchedUser(username: $username) {
+              username
 
               submitStats: submitStatsGlobal {
                 acSubmissionNum {
@@ -41,6 +83,7 @@ jobs:
               }
 
               userCalendar(year: $year) {
+                streak
                 totalActiveDays
                 submissionCalendar
               }
@@ -58,81 +101,53 @@ jobs:
           }
           """
 
-          now = datetime.now(INDIA)
-          current_year = now.year
+          current_year = datetime.now(timezone.utc).year
 
-          payload = json.dumps({
-              "query": QUERY,
-              "variables": {
-                  "username": USERNAME,
+          data = graphql(
+              user_query,
+              {
+                  "username": username,
                   "year": current_year
-              }
-          }).encode("utf-8")
-
-          request = urllib.request.Request(
-              "https://leetcode.com/graphql",
-              data=payload,
-              headers={
-                  "Content-Type": "application/json",
-                  "Accept": "application/json",
-                  "User-Agent": "Mozilla/5.0",
-                  "Referer": "https://leetcode.com/"
               }
           )
 
-          with urllib.request.urlopen(
-              request,
-              timeout=30
-          ) as response:
-              data = json.loads(
-                  response.read().decode("utf-8")
-              )
-
-          if "errors" in data:
-              raise RuntimeError(
-                  json.dumps(data["errors"], indent=2)
-              )
-
-          user = data["data"]["matchedUser"]
+          user = data["matchedUser"]
 
           if not user:
               raise RuntimeError(
                   "LeetCode user not found."
               )
 
-          # ================================================
-          # SOLVED COUNTS
-          # ================================================
+          # ---------------------------------------------------------
+          # Difficulty statistics
+          # ---------------------------------------------------------
+
+          stats = user["submitStats"]["acSubmissionNum"]
 
           easy = 0
           medium = 0
           hard = 0
 
-          for item in user["submitStats"]["acSubmissionNum"]:
+          for item in stats:
+              if item["difficulty"] == "Easy":
+                  easy = item["count"]
 
-              difficulty = item["difficulty"]
-              count = int(item["count"])
+              elif item["difficulty"] == "Medium":
+                  medium = item["count"]
 
-              if difficulty == "Easy":
-                  easy = count
-
-              elif difficulty == "Medium":
-                  medium = count
-
-              elif difficulty == "Hard":
-                  hard = count
+              elif item["difficulty"] == "Hard":
+                  hard = item["count"]
 
           total = easy + medium + hard
 
-          # ================================================
-          # ACTIVITY CALENDAR
-          # ================================================
+          # ---------------------------------------------------------
+          # Calendar / streak
+          # ---------------------------------------------------------
 
           calendar = user["userCalendar"]
 
-          active_days = int(
-              calendar["totalActiveDays"]
-          )
+          current_streak = calendar["streak"]
+          active_days = calendar["totalActiveDays"]
 
           submission_calendar = json.loads(
               calendar["submissionCalendar"]
@@ -141,118 +156,207 @@ jobs:
           daily_activity = []
 
           for timestamp, count in submission_calendar.items():
-
-              local_datetime = datetime.fromtimestamp(
+              date = datetime.fromtimestamp(
                   int(timestamp),
                   tz=timezone.utc
-              ).astimezone(INDIA)
+              ).strftime("%Y-%m-%d")
 
               daily_activity.append({
-                  "date": local_datetime.date(),
+                  "date": date,
                   "count": int(count)
               })
 
-          # Merge entries belonging to the same Indian date.
-          merged = {}
-
-          for item in daily_activity:
-
-              date = item["date"]
-
-              merged[date] = (
-                  merged.get(date, 0)
-                  + item["count"]
-              )
-
-          active_dates = sorted(
-              date
-              for date, count in merged.items()
-              if count > 0
+          daily_activity.sort(
+              key=lambda x: x["date"],
+              reverse=True
           )
 
-          # ================================================
-          # CURRENT STREAK
-          # ================================================
+          recent_activity = daily_activity[:14]
 
-          current_streak = 0
+          # ---------------------------------------------------------
+          # Best streak
+          # ---------------------------------------------------------
 
-          if active_dates:
+          dates = sorted(
+              datetime.strptime(
+                  x["date"],
+                  "%Y-%m-%d"
+              ).date()
 
-              today = now.date()
+              for x in daily_activity
 
-              # If today has activity, start from today.
-              # Otherwise start from yesterday.
-              if today in active_dates:
-                  check_date = today
-
-              else:
-                  check_date = today - timedelta(days=1)
-
-              active_set = set(active_dates)
-
-              while check_date in active_set:
-
-                  current_streak += 1
-                  check_date -= timedelta(days=1)
-
-          # ================================================
-          # BEST STREAK
-          # ================================================
+              if x["count"] > 0
+          )
 
           best_streak = 0
-          running = 0
+          current_run = 0
           previous = None
 
-          for date in active_dates:
+          for date in dates:
 
-              if (
-                  previous is not None
-                  and (date - previous).days == 1
-              ):
-                  running += 1
+              if previous and (
+                  date - previous
+              ).days == 1:
+
+                  current_run += 1
 
               else:
-                  running = 1
+
+                  current_run = 1
 
               best_streak = max(
                   best_streak,
-                  running
+                  current_run
               )
 
               previous = date
 
-          # ================================================
-          # RECENT ACTIVITY
-          # ================================================
-
-          recent_activity = []
-
-          for date in sorted(
-              merged.keys(),
-              reverse=True
-          )[:14]:
-
-              recent_activity.append({
-                  "date": date.strftime("%Y-%m-%d"),
-                  "count": merged[date]
-              })
-
-          # ================================================
-          # RECENT ACCEPTED PROBLEMS
-          # ================================================
+          # ---------------------------------------------------------
+          # Recent accepted submissions
+          # ---------------------------------------------------------
 
           recent_submissions = (
-              data["data"].get(
-                  "recentAcSubmissionList"
-              ) or []
+              data.get("recentAcSubmissionList") or []
           )
 
-          # ================================================
-          # SAVE DATA
-          # ================================================
+          # ---------------------------------------------------------
+          # Automatic topic statistics
+          #
+          # LeetHub folders:
+          #
+          # 0016-3sum-closest
+          # 0031-next-permutation
+          # 0704-binary-search
+          #
+          # We extract:
+          #
+          # 3sum-closest
+          # next-permutation
+          # binary-search
+          # ---------------------------------------------------------
+
+          topic_counts = Counter()
+          problem_topics = {}
+
+          problem_pattern = re.compile(
+              r"^\d+-[a-z0-9][a-z0-9-]*$"
+          )
+
+          problem_folders = []
+
+          for path in Path(".").iterdir():
+
+              if not path.is_dir():
+                  continue
+
+              if path.name in {
+                  ".git",
+                  ".github",
+                  "Topics"
+              }:
+                  continue
+
+              if problem_pattern.match(path.name):
+                  problem_folders.append(path)
+
+          problem_folders.sort(
+              key=lambda p: p.name
+          )
+
+          print(
+              f"Found {len(problem_folders)} "
+              "LeetCode problem folders."
+          )
+
+          question_query = """
+          query questionData($titleSlug: String!) {
+            question(titleSlug: $titleSlug) {
+              questionFrontendId
+              title
+              titleSlug
+              difficulty
+              topicTags {
+                name
+                slug
+              }
+            }
+          }
+          """
+
+          for folder in problem_folders:
+
+              slug = folder.name.split(
+                  "-",
+                  1
+              )[1]
+
+              try:
+
+                  question_data = graphql(
+                      question_query,
+                      {
+                          "titleSlug": slug
+                      }
+                  )
+
+                  question = question_data.get(
+                      "question"
+                  )
+
+                  if not question:
+                      print(
+                          f"Could not find: {slug}"
+                      )
+                      continue
+
+                  tags = question.get(
+                      "topicTags"
+                  ) or []
+
+                  problem_topics[slug] = [
+                      tag["name"]
+                      for tag in tags
+                  ]
+
+                  for tag in tags:
+                      topic_counts[
+                          tag["name"]
+                      ] += 1
+
+                  print(
+                      f"{folder.name} -> "
+                      f"{', '.join(problem_topics[slug])}"
+                  )
+
+                  # Small delay to avoid hammering
+                  # the LeetCode endpoint.
+                  time.sleep(0.15)
+
+              except Exception as error:
+
+                  print(
+                      f"Topic fetch failed for "
+                      f"{slug}: {error}"
+                  )
+
+          # ---------------------------------------------------------
+          # Sort topics by number of solved problems
+          # ---------------------------------------------------------
+
+          topic_statistics = sorted(
+              topic_counts.items(),
+              key=lambda item: (
+                  -item[1],
+                  item[0].lower()
+              )
+          )
+
+          # ---------------------------------------------------------
+          # Save machine-readable data
+          # ---------------------------------------------------------
 
           output = {
-              "username": USERNAME,
+              "username": username,
               "total": total,
               "easy": easy,
               "medium": medium,
@@ -262,20 +366,22 @@ jobs:
               "active_days": active_days,
               "recent_activity": recent_activity,
               "recent_submissions": recent_submissions,
-              "updated": now.strftime(
-                  "%Y-%m-%d %H:%M IST"
-              )
+              "topic_statistics": topic_statistics,
+              "problem_topics": problem_topics,
+              "updated": datetime.now(
+                  timezone.utc
+              ).strftime("%Y-%m-%d %H:%M UTC")
           }
 
           with open(
               "leetcode-data.json",
               "w",
               encoding="utf-8"
-          ) as file:
+          ) as f:
 
               json.dump(
                   output,
-                  file,
+                  f,
                   indent=2
               )
 
@@ -311,9 +417,9 @@ jobs:
 
           updated = data["updated"]
 
-          # ================================================
-          # PROGRESS BAR
-          # ================================================
+          # ---------------------------------------------------------
+          # Progress bar
+          # ---------------------------------------------------------
 
           def bar(value, maximum=20):
 
@@ -321,27 +427,28 @@ jobs:
                   return "░" * maximum
 
               filled = round(
-                  value / total * maximum
+                  (value / total) * maximum
               )
 
               filled = max(
                   0,
                   min(
-                      filled,
-                      maximum
+                      maximum,
+                      filled
                   )
               )
 
               return (
                   "█" * filled
-                  + "░" * (
+                  +
+                  "░" * (
                       maximum - filled
                   )
               )
 
-          # ================================================
-          # ACTIVITY TABLE
-          # ================================================
+          # ---------------------------------------------------------
+          # Recent activity
+          # ---------------------------------------------------------
 
           activity_lines = []
 
@@ -364,9 +471,9 @@ jobs:
                   "| No activity yet | 0 | |"
               )
 
-          # ================================================
-          # ACCEPTED PROBLEMS
-          # ================================================
+          # ---------------------------------------------------------
+          # Recent accepted problems
+          # ---------------------------------------------------------
 
           submission_lines = []
 
@@ -377,18 +484,89 @@ jobs:
 
               submission_lines.append(
                   f"- 🧩 [{title}]"
-                  f"(https://leetcode.com/problems/{slug}/)"
+                  f"(https://leetcode.com/problems/"
+                  f"{slug}/)"
               )
 
           if not submission_lines:
 
               submission_lines.append(
-                  "- No recent accepted submissions found."
+                  "- No recent accepted "
+                  "submissions found."
               )
 
-          # ================================================
-          # DASHBOARD
-          # ================================================
+          # ---------------------------------------------------------
+          # Topic statistics
+          # ---------------------------------------------------------
+
+          topic_lines = []
+
+          for topic, count in data[
+              "topic_statistics"
+          ]:
+
+              topic_lines.append(
+                  f"| `{topic}` | **{count}** |"
+              )
+
+          if not topic_lines:
+
+              topic_lines.append(
+                  "| No topic data yet | **0** |"
+              )
+
+          # ---------------------------------------------------------
+          # Topic progress bars
+          # ---------------------------------------------------------
+
+          topic_bar_lines = []
+
+          for topic, count in data[
+              "topic_statistics"
+          ][:15]:
+
+              maximum = max(
+                  1,
+                  data["topic_statistics"][0][1]
+              )
+
+              width = 20
+
+              filled = round(
+                  (count / maximum) * width
+              )
+
+              filled = max(
+                  1,
+                  min(
+                      width,
+                      filled
+                  )
+              )
+
+              topic_bar = (
+                  "█" * filled
+                  +
+                  "░" * (
+                      width - filled
+                  )
+              )
+
+              topic_bar_lines.append(
+                  f"{topic:<24} "
+                  f"{topic_bar} "
+                  f"{count}"
+              )
+
+          if not topic_bar_lines:
+
+              topic_bar_lines.append(
+                  "No topic data yet."
+              )
+
+          # ---------------------------------------------------------
+          # Dashboard
+          # ---------------------------------------------------------
 
           dashboard = f"""<!-- LEETCODE-DASHBOARD:START -->
 
@@ -416,6 +594,21 @@ jobs:
                        TOTAL → {total}
           ```
 
+          ### 🧩 Automatic Topic Statistics
+
+          > 📡 Topic counts are generated from the
+          > LeetHub problem folders in this repository.
+
+          | 🏷️ Topic | Problems |
+          | :--- | ---: |
+          {chr(10).join(topic_lines)}
+
+          ### 📊 Topic Distribution
+
+          ```text
+          {chr(10).join(topic_bar_lines)}
+          ```
+
           ### 📅 Recent Coding Activity
 
           | Date | Problems | Activity |
@@ -438,13 +631,13 @@ jobs:
 
           <!-- LEETCODE-DASHBOARD:END -->"""
 
-          # ================================================
-          # UPDATE README
-          # ================================================
+          # ---------------------------------------------------------
+          # Replace existing dashboard
+          # ---------------------------------------------------------
 
-          readme = Path("README.md")
+          path = Path("README.md")
 
-          text = readme.read_text(
+          text = path.read_text(
               encoding="utf-8"
           )
 
@@ -456,29 +649,68 @@ jobs:
               "<!-- LEETCODE-DASHBOARD:END -->"
           )
 
-          if start not in text or end not in text:
+          if start in text and end in text:
 
-              raise SystemExit(
-                  "Dashboard markers not found in README.md"
+              before = text.split(
+                  start,
+                  1
+              )[0]
+
+              after = text.split(
+                  end,
+                  1
+              )[1]
+
+              text = (
+                  before
+                  +
+                  dashboard
+                  +
+                  after
               )
 
-          before = text.split(
-              start,
-              1
-          )[0]
+          elif (
+              "<!-- LEETCODE-STATS:START -->"
+              in text
+          ):
 
-          after = text.split(
-              end,
-              1
-          )[1]
+              old_start = (
+                  "<!-- LEETCODE-STATS:START -->"
+              )
 
-          text = (
-              before
-              + dashboard
-              + after
-          )
+              old_end = (
+                  "<!-- LEETCODE-STATS:END -->"
+              )
 
-          readme.write_text(
+              before = text.split(
+                  old_start,
+                  1
+              )[0]
+
+              after = text.split(
+                  old_end,
+                  1
+              )[1]
+
+              text = (
+                  before
+                  +
+                  dashboard
+                  +
+                  after
+              )
+
+          else:
+
+              text = (
+                  dashboard
+                  +
+                  "\n\n"
+                  +
+                  text
+              )
+
+          path.write_text(
               text,
               encoding="utf-8"
           )
@@ -494,10 +726,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add README.md
+          git add README.md leetcode-data.json
 
           if git diff --cached --quiet; then
-            echo "No README changes detected."
+            echo "No changes detected."
           else
             git commit -m "Update LeetCode dashboard"
             git push
