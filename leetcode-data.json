@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 86,
+  "total": 87,
   "easy": 49,
-  "medium": 27,
+  "medium": 28,
   "hard": 10,
-  "current_streak": 15,
-  "best_streak": 15,
-  "active_days": 28,
+  "current_streak": 16,
+  "best_streak": 16,
+  "active_days": 29,
   "recent_activity": [
+    {
+      "date": "2026-08-19",
+      "count": 1
+    },
     {
       "date": "2026-08-18",
       "count": 1
@@ -59,13 +63,15 @@
     {
       "date": "2026-08-06",
       "count": 2
-    },
-    {
-      "date": "2026-08-05",
-      "count": 1
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2112855012",
+      "title": "Cinema Seat Allocation",
+      "titleSlug": "cinema-seat-allocation",
+      "timestamp": "1787152632"
+    },
     {
       "id": "2111507306",
       "title": "Find the Largest Almost Missing Integer",
@@ -119,18 +125,12 @@
       "title": "Binary Search",
       "titleSlug": "binary-search",
       "timestamp": "1786597604"
-    },
-    {
-      "id": "2104268999",
-      "title": "Length of Longest Subarray With at Most K Frequency",
-      "titleSlug": "length-of-longest-subarray-with-at-most-k-frequency",
-      "timestamp": "1786543570"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      21
+      22
     ],
     [
       "Binary Search",
@@ -141,19 +141,23 @@
       7
     ],
     [
+      "Hash Table",
+      6
+    ],
+    [
+      "Bit Manipulation",
+      5
+    ],
+    [
       "Game Theory",
       5
     ],
     [
-      "Hash Table",
-      5
-    ],
-    [
-      "Bit Manipulation",
+      "Dynamic Programming",
       4
     ],
     [
-      "Dynamic Programming",
+      "Greedy",
       4
     ],
     [
@@ -163,10 +167,6 @@
     [
       "Zero-Sum Game",
       4
-    ],
-    [
-      "Greedy",
-      3
     ],
     [
       "Nim Game",
@@ -285,6 +285,12 @@
       "Game Theory",
       "Zero-Sum Game"
     ],
+    "cinema-seat-allocation": [
+      "Array",
+      "Hash Table",
+      "Greedy",
+      "Bit Manipulation"
+    ],
     "stone-game-iv": [
       "Math",
       "Dynamic Programming",
@@ -346,5 +352,5 @@
       "Bit Manipulation"
     ]
   },
-  "updated": "2026-08-18 18:40 UTC"
+  "updated": "2026-08-19 18:38 UTC"
 }
