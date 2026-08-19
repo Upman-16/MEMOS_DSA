@@ -59,18 +59,28 @@ jobs:
               }
           )
 
-          with urllib.request.urlopen(request, timeout=30) as response:
-              data = json.loads(response.read().decode("utf-8"))
+          with urllib.request.urlopen(
+              request,
+              timeout=30
+          ) as response:
+              data = json.loads(
+                  response.read().decode("utf-8")
+              )
 
           if "errors" in data:
               raise RuntimeError(
-                  json.dumps(data["errors"], indent=2)
+                  json.dumps(
+                      data["errors"],
+                      indent=2
+                  )
               )
 
           user = data["data"]["matchedUser"]
 
           if not user:
-              raise RuntimeError("LeetCode user not found.")
+              raise RuntimeError(
+                  "LeetCode user not found."
+              )
 
           calendar = json.loads(
               user["userCalendar"]["submissionCalendar"]
@@ -94,13 +104,12 @@ jobs:
 
           python3 <<'PY'
           import json
-          import math
           from datetime import datetime, timedelta
           from PIL import Image, ImageDraw
 
-          # --------------------------------------------------
+          # -----------------------------------------------
           # Configuration
-          # --------------------------------------------------
+          # -----------------------------------------------
 
           CELL = 13
           GAP = 3
@@ -111,8 +120,19 @@ jobs:
           WEEKS = 53
           DAYS = 7
 
-          WIDTH = LEFT + WEEKS * (CELL + GAP) + 15
-          HEIGHT = TOP + DAYS * (CELL + GAP) + 38
+          WIDTH = (
+              LEFT
+              + WEEKS * (CELL + GAP)
+              + 18
+          )
+
+          HEIGHT = (
+              TOP
+              + DAYS * (CELL + GAP)
+              + 42
+          )
+
+          FRAME_COUNT = 120
 
           BG = (13, 17, 23)
 
@@ -128,9 +148,9 @@ jobs:
           SNAKE_BODY = (255, 123, 114)
           SNAKE_EYE = (13, 17, 23)
 
-          # --------------------------------------------------
-          # Load calendar
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Load LeetCode calendar
+          # -----------------------------------------------
 
           with open(
               "leetcode-calendar.json",
@@ -139,13 +159,13 @@ jobs:
               calendar = json.load(f)
 
           values = [
-              int(v)
-              for v in calendar.values()
+              int(value)
+              for value in calendar.values()
           ]
 
           maximum = max(values) if values else 1
 
-          def level(value):
+          def get_level(value):
               if value <= 0:
                   return 0
 
@@ -160,9 +180,9 @@ jobs:
               else:
                   return 4
 
-          # --------------------------------------------------
-          # Date range
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Calculate heatmap start date
+          # -----------------------------------------------
 
           today = datetime.utcnow().date()
 
@@ -171,14 +191,13 @@ jobs:
           while start.weekday() != 6:
               start -= timedelta(days=1)
 
-          # --------------------------------------------------
-          # Heatmap cells
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Create heatmap cells
+          # -----------------------------------------------
 
           cells = []
 
           for week in range(WEEKS):
-
               for day in range(DAYS):
 
                   date = start + timedelta(
@@ -200,97 +219,113 @@ jobs:
                       )
                   )
 
-                  x = LEFT + week * (CELL + GAP)
-                  y = TOP + day * (CELL + GAP)
+                  x = (
+                      LEFT
+                      + week * (CELL + GAP)
+                  )
+
+                  y = (
+                      TOP
+                      + day * (CELL + GAP)
+                  )
 
                   cells.append(
                       (x, y, value)
                   )
 
-          # --------------------------------------------------
-          # Snake path
+          # -----------------------------------------------
+          # Create snake path
           #
-          # The snake travels through the vertical gaps
-          # between heatmap columns.
-          # --------------------------------------------------
+          # The snake moves through the GAPS between
+          # heatmap cells, never through green cells.
+          # -----------------------------------------------
 
           path = []
 
-          for week in range(WEEKS + 1):
+          top_gap = TOP - GAP / 2
 
-              x = LEFT - GAP / 2 + week * (CELL + GAP)
+          bottom_gap = (
+              TOP
+              + DAYS * (CELL + GAP)
+              - GAP / 2
+          )
 
-              if week % 2 == 0:
+          for column in range(WEEKS + 1):
 
-                  for i in range(80):
+              x = (
+                  LEFT
+                  - GAP / 2
+                  + column * (CELL + GAP)
+              )
 
-                      y = (
-                          TOP - GAP / 2
-                          +
-                          i / 79
-                          * (
-                              DAYS * (CELL + GAP)
-                              - GAP
-                          )
-                      )
+              if column % 2 == 0:
 
-                      path.append((x, y))
+                  path.append(
+                      (x, top_gap)
+                  )
+
+                  path.append(
+                      (x, bottom_gap)
+                  )
 
               else:
 
-                  for i in range(80):
+                  path.append(
+                      (x, bottom_gap)
+                  )
 
-                      y = (
-                          TOP
-                          + DAYS * (CELL + GAP)
-                          - GAP / 2
-                          -
-                          i / 79
-                          * (
-                              DAYS * (CELL + GAP)
-                              - GAP
-                          )
-                      )
+                  path.append(
+                      (x, top_gap)
+                  )
 
-                      path.append((x, y))
-
-          # --------------------------------------------------
-          # Interpolate path so animation is smooth
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Interpolate path for smooth animation
+          # -----------------------------------------------
 
           smooth_path = []
 
-          for i in range(len(path) - 1):
+          for index in range(
+              len(path) - 1
+          ):
 
-              x1, y1 = path[i]
-              x2, y2 = path[i + 1]
+              x1, y1 = path[index]
+              x2, y2 = path[index + 1]
 
-              distance = math.hypot(
-                  x2 - x1,
-                  y2 - y1
+              distance = (
+                  (
+                      (x2 - x1) ** 2
+                      + (y2 - y1) ** 2
+                  ) ** 0.5
               )
 
               steps = max(
-                  1,
+                  2,
                   int(distance / 2)
               )
 
-              for j in range(steps):
+              for step in range(steps):
 
-                  t = j / steps
+                  t = step / steps
+
+                  x = (
+                      x1
+                      + (x2 - x1) * t
+                  )
+
+                  y = (
+                      y1
+                      + (y2 - y1) * t
+                  )
 
                   smooth_path.append(
-                      (
-                          x1 + (x2 - x1) * t,
-                          y1 + (y2 - y1) * t
-                      )
+                      (x, y)
                   )
 
           smooth_path.append(path[-1])
 
-          # --------------------------------------------------
-          # Draw frame
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Draw one animation frame
+          # -----------------------------------------------
 
           def draw_frame(frame):
 
@@ -320,16 +355,24 @@ jobs:
                           y + CELL
                       ],
                       radius=2,
-                      fill=GREEN[level(value)]
+                      fill=GREEN[
+                          get_level(value)
+                      ]
                   )
 
-              # ------------------------------------------------
-              # Snake
-              # ------------------------------------------------
+              # -------------------------------------------
+              # Snake position
+              # -------------------------------------------
 
-              head_index = (
-                  frame * 7
-              ) % len(smooth_path)
+              head_index = int(
+                  frame
+                  * (
+                      len(smooth_path) - 1
+                  )
+                  / (
+                      FRAME_COUNT - 1
+                  )
+              )
 
               body_length = 18
 
@@ -337,15 +380,19 @@ jobs:
 
               for i in range(body_length):
 
-                  index = (
+                  index = max(
+                      0,
                       head_index - i * 3
-                  ) % len(smooth_path)
+                  )
 
                   body_points.append(
                       smooth_path[index]
                   )
 
-              # Draw body
+              # -------------------------------------------
+              # Draw snake body
+              # -------------------------------------------
+
               for i in range(
                   len(body_points) - 1,
                   -1,
@@ -369,7 +416,10 @@ jobs:
                       fill=SNAKE_BODY
                   )
 
-              # Draw head
+              # -------------------------------------------
+              # Draw snake head
+              # -------------------------------------------
+
               hx, hy = body_points[0]
 
               head_radius = 6
@@ -405,7 +455,10 @@ jobs:
                   fill=SNAKE_EYE
               )
 
+              # -------------------------------------------
               # Legend
+              # -------------------------------------------
+
               draw.text(
                   (LEFT, HEIGHT - 17),
                   "Less",
@@ -445,28 +498,29 @@ jobs:
 
               return image
 
-          # --------------------------------------------------
-          # Generate frames
-          # --------------------------------------------------
+          # -----------------------------------------------
+          # Generate animation frames
+          # -----------------------------------------------
 
           frames = []
 
-          FRAME_COUNT = 80
-
-          for frame_number in range(FRAME_COUNT):
+          for frame_number in range(
+              FRAME_COUNT
+          ):
 
               print(
                   f"Generating frame "
-                  f"{frame_number + 1}/{FRAME_COUNT}"
+                  f"{frame_number + 1}/"
+                  f"{FRAME_COUNT}"
               )
 
               frames.append(
                   draw_frame(frame_number)
               )
 
-          # --------------------------------------------------
+          # -----------------------------------------------
           # Save GIF
-          # --------------------------------------------------
+          # -----------------------------------------------
 
           output = (
               "assets/leetcode-snake.gif"
@@ -490,7 +544,7 @@ jobs:
         run: |
           rm -f assets/leetcode-snake.svg
 
-      - name: Commit and push
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -501,6 +555,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected."
           else
-            git commit -m "Add animated LeetCode snake GIF"
+            git commit -m "Fix full-width LeetCode snake animation"
             git push
           fi
