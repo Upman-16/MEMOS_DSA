@@ -171,8 +171,7 @@ Active Days    : 28
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/Upman-16/MEMOS_DSA/main/assets/leetcode-heatmap.svg" alt="LeetCode Activity Heatmap">
-
+<img src="https://raw.githubusercontent.com/Upman-16/MEMOS_DSA/main/assets/leetcode-snake.gif" alt="LeetCode Contribution Snake">
 </p>
 
 <p align="center">
