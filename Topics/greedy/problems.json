@@ -4,8 +4,28 @@
     "slug": "greedy",
     "name": "Greedy"
   },
-  "updatedAt": "2026-08-16T06:02:24.959Z",
+  "updatedAt": "2026-08-19T15:17:25.903Z",
   "problems": [
+    {
+      "frontendId": "1386",
+      "title": "Cinema Seat Allocation",
+      "slug": "cinema-seat-allocation",
+      "problemName": "1386-cinema-seat-allocation",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/cinema-seat-allocation/",
+      "folderPath": "1386-cinema-seat-allocation/",
+      "readmePath": "1386-cinema-seat-allocation/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1386-cinema-seat-allocation.java",
+          "path": "1386-cinema-seat-allocation/1386-cinema-seat-allocation.java",
+          "sha": "4e8c3e216520f4aa9e8a59793618b4357c3a95d3",
+          "lastSyncedAt": "2026-08-19T15:17:25.903Z"
+        }
+      ]
+    },
     {
       "frontendId": "2029",
       "title": "Stone Game IX",
