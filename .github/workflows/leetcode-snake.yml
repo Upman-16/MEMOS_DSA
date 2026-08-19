@@ -16,6 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Pillow
+        run: |
+          python3 -m pip install --upgrade pillow
+
       - name: Fetch LeetCode activity
         run: |
           python3 <<'PY'
@@ -56,7 +60,7 @@ jobs:
           )
 
           with urllib.request.urlopen(request, timeout=30) as response:
-              data = json.loads(response.read().decode())
+              data = json.loads(response.read().decode("utf-8"))
 
           if "errors" in data:
               raise RuntimeError(
@@ -76,32 +80,26 @@ jobs:
               "leetcode-calendar.json",
               "w",
               encoding="utf-8"
-          ) as file:
-              json.dump(calendar, file)
+          ) as f:
+              json.dump(calendar, f)
 
           print(
-              f"Loaded {len(calendar)} LeetCode activity entries."
+              f"Loaded {len(calendar)} activity entries."
           )
           PY
 
-      - name: Generate heatmap and single snake
+      - name: Generate animated LeetCode snake GIF
         run: |
           mkdir -p assets
 
           python3 <<'PY'
           import json
-          import html
+          import math
           from datetime import datetime, timedelta
-
-          calendar = json.load(
-              open(
-                  "leetcode-calendar.json",
-                  encoding="utf-8"
-              )
-          )
+          from PIL import Image, ImageDraw
 
           # --------------------------------------------------
-          # Layout
+          # Configuration
           # --------------------------------------------------
 
           CELL = 13
@@ -111,9 +109,60 @@ jobs:
           TOP = 32
 
           WEEKS = 53
+          DAYS = 7
 
           WIDTH = LEFT + WEEKS * (CELL + GAP) + 15
-          HEIGHT = TOP + 7 * (CELL + GAP) + 38
+          HEIGHT = TOP + DAYS * (CELL + GAP) + 38
+
+          BG = (13, 17, 23)
+
+          GREEN = {
+              0: (22, 27, 34),
+              1: (14, 68, 41),
+              2: (0, 109, 50),
+              3: (38, 166, 65),
+              4: (57, 211, 83)
+          }
+
+          SNAKE_HEAD = (255, 123, 114)
+          SNAKE_BODY = (255, 123, 114)
+          SNAKE_EYE = (13, 17, 23)
+
+          # --------------------------------------------------
+          # Load calendar
+          # --------------------------------------------------
+
+          with open(
+              "leetcode-calendar.json",
+              encoding="utf-8"
+          ) as f:
+              calendar = json.load(f)
+
+          values = [
+              int(v)
+              for v in calendar.values()
+          ]
+
+          maximum = max(values) if values else 1
+
+          def level(value):
+              if value <= 0:
+                  return 0
+
+              ratio = value / maximum
+
+              if ratio <= 0.25:
+                  return 1
+              elif ratio <= 0.50:
+                  return 2
+              elif ratio <= 0.75:
+                  return 3
+              else:
+                  return 4
+
+          # --------------------------------------------------
+          # Date range
+          # --------------------------------------------------
 
           today = datetime.utcnow().date()
 
@@ -123,51 +172,14 @@ jobs:
               start -= timedelta(days=1)
 
           # --------------------------------------------------
-          # Activity levels
-          # --------------------------------------------------
-
-          values = [
-              int(v)
-              for v in calendar.values()
-          ]
-
-          maximum = max(values) if values else 1
-
-          colors = {
-              0: "#161b22",
-              1: "#0e4429",
-              2: "#006d32",
-              3: "#26a641",
-              4: "#39d353"
-          }
-
-          def get_level(value):
-
-              if value <= 0:
-                  return 0
-
-              ratio = value / maximum
-
-              if ratio <= 0.25:
-                  return 1
-
-              if ratio <= 0.50:
-                  return 2
-
-              if ratio <= 0.75:
-                  return 3
-
-              return 4
-
-          # --------------------------------------------------
-          # Build cells
+          # Heatmap cells
           # --------------------------------------------------
 
           cells = []
 
           for week in range(WEEKS):
 
-              for day in range(7):
+              for day in range(DAYS):
 
                   date = start + timedelta(
                       days=week * 7 + day
@@ -191,246 +203,304 @@ jobs:
                   x = LEFT + week * (CELL + GAP)
                   y = TOP + day * (CELL + GAP)
 
-                  cells.append({
-                      "week": week,
-                      "day": day,
-                      "x": x,
-                      "y": y,
-                      "date": date,
-                      "value": value
-                  })
+                  cells.append(
+                      (x, y, value)
+                  )
 
           # --------------------------------------------------
           # Snake path
           #
-          # The snake moves through the GAPS:
-          #
-          #       ───────────────
-          #  🟩 🟩 🟩 🟩 🟩 🟩
-          #       │
-          #       ───────────────
-          #  🟩 🟩 🟩 🟩 🟩 🟩
-          #
-          # It never travels through the center
-          # of a contribution square.
+          # The snake travels through the vertical gaps
+          # between heatmap columns.
           # --------------------------------------------------
 
-          snake_points = []
+          path = []
 
-          corridor_x = LEFT - (GAP / 2)
+          for week in range(WEEKS + 1):
 
-          for week in range(WEEKS):
-
-              x = LEFT + week * (CELL + GAP) - GAP / 2
+              x = LEFT - GAP / 2 + week * (CELL + GAP)
 
               if week % 2 == 0:
 
-                  # Vertical corridor: top -> bottom
-                  snake_points.append(
-                      (x, TOP - GAP / 2)
-                  )
+                  for i in range(80):
 
-                  snake_points.append(
-                      (
-                          x,
-                          TOP
-                          + 7 * (CELL + GAP)
-                          - GAP / 2
+                      y = (
+                          TOP - GAP / 2
+                          +
+                          i / 79
+                          * (
+                              DAYS * (CELL + GAP)
+                              - GAP
+                          )
                       )
-                  )
+
+                      path.append((x, y))
 
               else:
 
-                  # Vertical corridor: bottom -> top
-                  snake_points.append(
-                      (
-                          x,
+                  for i in range(80):
+
+                      y = (
                           TOP
-                          + 7 * (CELL + GAP)
+                          + DAYS * (CELL + GAP)
                           - GAP / 2
+                          -
+                          i / 79
+                          * (
+                              DAYS * (CELL + GAP)
+                              - GAP
+                          )
+                      )
+
+                      path.append((x, y))
+
+          # --------------------------------------------------
+          # Interpolate path so animation is smooth
+          # --------------------------------------------------
+
+          smooth_path = []
+
+          for i in range(len(path) - 1):
+
+              x1, y1 = path[i]
+              x2, y2 = path[i + 1]
+
+              distance = math.hypot(
+                  x2 - x1,
+                  y2 - y1
+              )
+
+              steps = max(
+                  1,
+                  int(distance / 2)
+              )
+
+              for j in range(steps):
+
+                  t = j / steps
+
+                  smooth_path.append(
+                      (
+                          x1 + (x2 - x1) * t,
+                          y1 + (y2 - y1) * t
                       )
                   )
 
-                  snake_points.append(
-                      (x, TOP - GAP / 2)
+          smooth_path.append(path[-1])
+
+          # --------------------------------------------------
+          # Draw frame
+          # --------------------------------------------------
+
+          def draw_frame(frame):
+
+              image = Image.new(
+                  "RGB",
+                  (WIDTH, HEIGHT),
+                  BG
+              )
+
+              draw = ImageDraw.Draw(image)
+
+              # Title
+              draw.text(
+                  (12, 10),
+                  "LeetCode Activity",
+                  fill=(139, 148, 158)
+              )
+
+              # Heatmap
+              for x, y, value in cells:
+
+                  draw.rounded_rectangle(
+                      [
+                          x,
+                          y,
+                          x + CELL,
+                          y + CELL
+                      ],
+                      radius=2,
+                      fill=GREEN[level(value)]
                   )
 
-          path_data = (
-              "M "
-              +
-              " L ".join(
-                  f"{x:.1f},{y:.1f}"
-                  for x, y in snake_points
-              )
-          )
+              # ------------------------------------------------
+              # Snake
+              # ------------------------------------------------
 
-          # --------------------------------------------------
-          # SVG
-          # --------------------------------------------------
+              head_index = (
+                  frame * 7
+              ) % len(smooth_path)
 
-          svg = []
+              body_length = 18
 
-          svg.append(
-              f'<svg xmlns="http://www.w3.org/2000/svg" '
-              f'width="{WIDTH}" '
-              f'height="{HEIGHT}" '
-              f'viewBox="0 0 {WIDTH} {HEIGHT}">'
-          )
+              body_points = []
 
-          svg.append(
-              '<rect width="100%" '
-              'height="100%" '
-              'rx="10" '
-              'fill="#0d1117"/>'
-          )
+              for i in range(body_length):
 
-          svg.append(
-              '<text x="12" y="19" '
-              'font-family="Arial, sans-serif" '
-              'font-size="12" '
-              'font-weight="bold" '
-              'fill="#8b949e">'
-              'LeetCode Activity • 🐍'
-              '</text>'
-          )
+                  index = (
+                      head_index - i * 3
+                  ) % len(smooth_path)
 
-          # --------------------------------------------------
-          # Heatmap cells
-          # --------------------------------------------------
+                  body_points.append(
+                      smooth_path[index]
+                  )
 
-          for cell in cells:
+              # Draw body
+              for i in range(
+                  len(body_points) - 1,
+                  -1,
+                  -1
+              ):
 
-              fill = colors[
-                  get_level(cell["value"])
-              ]
+                  x, y = body_points[i]
 
-              title = html.escape(
-                  f"{cell['date']}: "
-                  f"{cell['value']} submissions"
-              )
+                  radius = max(
+                      2.0,
+                      5.0 - i * 0.15
+                  )
 
-              svg.append(
-                  f'<rect '
-                  f'x="{cell["x"]}" '
-                  f'y="{cell["y"]}" '
-                  f'width="{CELL}" '
-                  f'height="{CELL}" '
-                  f'rx="2" '
-                  f'fill="{fill}">'
-                  f'<title>{title}</title>'
-                  f'</rect>'
+                  draw.ellipse(
+                      [
+                          x - radius,
+                          y - radius,
+                          x + radius,
+                          y + radius
+                      ],
+                      fill=SNAKE_BODY
+                  )
+
+              # Draw head
+              hx, hy = body_points[0]
+
+              head_radius = 6
+
+              draw.ellipse(
+                  [
+                      hx - head_radius,
+                      hy - head_radius,
+                      hx + head_radius,
+                      hy + head_radius
+                  ],
+                  fill=SNAKE_HEAD
               )
 
+              # Eyes
+              draw.ellipse(
+                  [
+                      hx - 3,
+                      hy - 2,
+                      hx - 1,
+                      hy
+                  ],
+                  fill=SNAKE_EYE
+              )
+
+              draw.ellipse(
+                  [
+                      hx + 1,
+                      hy - 2,
+                      hx + 3,
+                      hy
+                  ],
+                  fill=SNAKE_EYE
+              )
+
+              # Legend
+              draw.text(
+                  (LEFT, HEIGHT - 17),
+                  "Less",
+                  fill=(139, 148, 158)
+              )
+
+              for i in range(5):
+
+                  x = (
+                      LEFT
+                      + 28
+                      + i * (CELL + GAP)
+                  )
+
+                  draw.rounded_rectangle(
+                      [
+                          x,
+                          HEIGHT - 20,
+                          x + CELL,
+                          HEIGHT - 7
+                      ],
+                      radius=2,
+                      fill=GREEN[i]
+                  )
+
+              draw.text(
+                  (
+                      LEFT
+                      + 28
+                      + 5 * (CELL + GAP)
+                      + 3,
+                      HEIGHT - 17
+                  ),
+                  "More",
+                  fill=(139, 148, 158)
+              )
+
+              return image
+
           # --------------------------------------------------
-          # SINGLE SNAKE
+          # Generate frames
           # --------------------------------------------------
 
-          svg.append(
-              f'<path '
-              f'd="{path_data}" '
-              f'fill="none" '
-              f'stroke="#ff7b72" '
-              f'stroke-width="4" '
-              f'stroke-linecap="round" '
-              f'stroke-linejoin="round" '
-              f'stroke-dasharray="42 1800">'
-              f'<animate '
-              f'attributeName="stroke-dashoffset" '
-              f'from="0" '
-              f'to="-1842" '
-              f'dur="18s" '
-              f'repeatCount="indefinite"/>'
-              f'</path>'
-          )
+          frames = []
 
-          # --------------------------------------------------
-          # Day labels
-          # --------------------------------------------------
+          FRAME_COUNT = 80
 
-          labels = {
-              1: "Mon",
-              3: "Wed",
-              5: "Fri"
-          }
+          for frame_number in range(FRAME_COUNT):
 
-          for row, label in labels.items():
+              print(
+                  f"Generating frame "
+                  f"{frame_number + 1}/{FRAME_COUNT}"
+              )
 
-              y = TOP + row * (CELL + GAP) + 10
-
-              svg.append(
-                  f'<text x="5" y="{y}" '
-                  f'font-family="Arial, sans-serif" '
-                  f'font-size="8" '
-                  f'fill="#8b949e">'
-                  f'{label}'
-                  f'</text>'
+              frames.append(
+                  draw_frame(frame_number)
               )
 
           # --------------------------------------------------
-          # Legend
+          # Save GIF
           # --------------------------------------------------
 
-          legend_y = HEIGHT - 10
-
-          svg.append(
-              f'<text x="{LEFT}" y="{legend_y}" '
-              f'font-family="Arial, sans-serif" '
-              f'font-size="8" '
-              f'fill="#8b949e">'
-              f'Less'
-              f'</text>'
+          output = (
+              "assets/leetcode-snake.gif"
           )
 
-          for i in range(5):
-
-              x = LEFT + 25 + i * (CELL + GAP)
-
-              svg.append(
-                  f'<rect x="{x}" '
-                  f'y="{HEIGHT - 18}" '
-                  f'width="{CELL}" '
-                  f'height="{CELL}" '
-                  f'rx="2" '
-                  f'fill="{colors[i]}"/>'
-              )
-
-          svg.append(
-              f'<text '
-              f'x="{LEFT + 25 + 5 * (CELL + GAP)}" '
-              f'y="{legend_y}" '
-              f'font-family="Arial, sans-serif" '
-              f'font-size="8" '
-              f'fill="#8b949e">'
-              f'More'
-              f'</text>'
+          frames[0].save(
+              output,
+              save_all=True,
+              append_images=frames[1:],
+              duration=100,
+              loop=0,
+              optimize=False
           )
-
-          svg.append("</svg>")
-
-          with open(
-              "assets/leetcode-snake.svg",
-              "w",
-              encoding="utf-8"
-          ) as file:
-              file.write(
-                  "\n".join(svg)
-              )
 
           print(
-              "Single gap-traveling LeetCode snake generated."
+              f"Created {output}"
           )
           PY
 
-      - name: Commit snake
+      - name: Remove old SVG
+        run: |
+          rm -f assets/leetcode-snake.svg
+
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/leetcode-snake.svg
+          git add assets/leetcode-snake.gif
+          git add -u assets/leetcode-snake.svg
 
           if git diff --cached --quiet; then
-            echo "No snake changes detected."
+            echo "No changes detected."
           else
-            git commit -m "Fix LeetCode snake path"
+            git commit -m "Add animated LeetCode snake GIF"
             git push
           fi
