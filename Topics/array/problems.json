@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-19T15:17:25.903Z",
+  "updatedAt": "2026-08-20T14:22:07.108Z",
   "problems": [
     {
       "frontendId": "16",
@@ -363,6 +363,26 @@
           "path": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
           "sha": "39e55d98bf2a79388d424b21d81ae190fe530126",
           "lastSyncedAt": "2026-08-15T06:22:55.845Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3069",
+      "title": "Distribute Elements Into Two Arrays I",
+      "slug": "distribute-elements-into-two-arrays-i",
+      "problemName": "3069-distribute-elements-into-two-arrays-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+      "folderPath": "3069-distribute-elements-into-two-arrays-i/",
+      "readmePath": "3069-distribute-elements-into-two-arrays-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3069-distribute-elements-into-two-arrays-i.java",
+          "path": "3069-distribute-elements-into-two-arrays-i/3069-distribute-elements-into-two-arrays-i.java",
+          "sha": "9765b4fa15641e8aadb75760fe706d87ec53aa91",
+          "lastSyncedAt": "2026-08-20T14:22:07.108Z"
         }
       ]
     },
