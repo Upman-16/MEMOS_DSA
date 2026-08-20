@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **87** |
-| 🟢 Easy | **49** |
+| **Total Solved** | **88** |
+| 🟢 Easy | **50** |
 | 🟡 Medium | **28** |
 | 🔴 Hard | **10** |
-| 🔥 Current Streak | **16 days** |
-| 🏆 Best Streak | **16 days** |
-| 📅 Active Days | **29** |
+| 🔥 Current Streak | **17 days** |
+| 🏆 Best Streak | **17 days** |
+| 📅 Active Days | **30** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████░░░░░░░░░  49
+🟢 Easy      ███████████░░░░░░░░░  50
 🟡 Medium    ██████░░░░░░░░░░░░░░  28
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  10
 
-             TOTAL → 87
+             TOTAL → 88
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,7 +77,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **22** |
+| `Array` | **23** |
 | `Binary Search` | **8** |
 | `Math` | **7** |
 | `Hash Table` | **6** |
@@ -98,22 +98,23 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Ordered Set` | **1** |
 | `Prefix Sum` | **1** |
 | `Segment Tree` | **1** |
+| `Simulation` | **1** |
 | `Sprague–Grundy Theorem` | **1** |
 | `Ternary Search` | **1** |
 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 22
+Array                    ████████████████████ 23
 Binary Search            ███████░░░░░░░░░░░░░ 8
 Math                     ██████░░░░░░░░░░░░░░ 7
 Hash Table               █████░░░░░░░░░░░░░░░ 6
-Bit Manipulation         █████░░░░░░░░░░░░░░░ 5
-Game Theory              █████░░░░░░░░░░░░░░░ 5
-Dynamic Programming      ████░░░░░░░░░░░░░░░░ 4
-Greedy                   ████░░░░░░░░░░░░░░░░ 4
-Minimax                  ████░░░░░░░░░░░░░░░░ 4
-Zero-Sum Game            ████░░░░░░░░░░░░░░░░ 4
+Bit Manipulation         ████░░░░░░░░░░░░░░░░ 5
+Game Theory              ████░░░░░░░░░░░░░░░░ 5
+Dynamic Programming      ███░░░░░░░░░░░░░░░░░ 4
+Greedy                   ███░░░░░░░░░░░░░░░░░ 4
+Minimax                  ███░░░░░░░░░░░░░░░░░ 4
+Zero-Sum Game            ███░░░░░░░░░░░░░░░░░ 4
 Nim Game                 ███░░░░░░░░░░░░░░░░░ 3
 String                   ███░░░░░░░░░░░░░░░░░ 3
 Two Pointers             ███░░░░░░░░░░░░░░░░░ 3
@@ -125,6 +126,7 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-08-20 | 1 | █ |
 | 2026-08-19 | 1 | █ |
 | 2026-08-18 | 1 | █ |
 | 2026-08-17 | 1 | █ |
@@ -138,10 +140,10 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 | 2026-08-09 | 3 | ███ |
 | 2026-08-08 | 4 | ████ |
 | 2026-08-07 | 1 | █ |
-| 2026-08-06 | 2 | ██ |
 
 ### 🧩 Latest Accepted Problems
 
+- 🧩 [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)
 - 🧩 [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)
 - 🧩 [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/)
 - 🧩 [Stone Game V](https://leetcode.com/problems/stone-game-v/)
@@ -151,17 +153,16 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 - 🧩 [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)
 - 🧩 [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/)
 - 🧩 [First Bad Version](https://leetcode.com/problems/first-bad-version/)
-- 🧩 [Binary Search](https://leetcode.com/problems/binary-search/)
 
 ### 🔥 Consistency
 
 ```text
-Current Streak : 16 days
-Best Streak    : 16 days
-Active Days    : 29
+Current Streak : 17 days
+Best Streak    : 17 days
+Active Days    : 30
 ```
 
-> 🕐 Last synchronized: **2026-08-19 18:38 UTC**
+> 🕐 Last synchronized: **2026-08-20 18:42 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
