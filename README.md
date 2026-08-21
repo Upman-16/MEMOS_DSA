@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **88** |
+| **Total Solved** | **89** |
 | 🟢 Easy | **50** |
 | 🟡 Medium | **28** |
-| 🔴 Hard | **10** |
-| 🔥 Current Streak | **17 days** |
-| 🏆 Best Streak | **17 days** |
-| 📅 Active Days | **30** |
+| 🔴 Hard | **11** |
+| 🔥 Current Streak | **18 days** |
+| 🏆 Best Streak | **18 days** |
+| 📅 Active Days | **31** |
 
 ### 📈 Difficulty Distribution
 
 ```text
 🟢 Easy      ███████████░░░░░░░░░  50
 🟡 Medium    ██████░░░░░░░░░░░░░░  28
-🔴 Hard      ██░░░░░░░░░░░░░░░░░░  10
+🔴 Hard      ██░░░░░░░░░░░░░░░░░░  11
 
-             TOTAL → 88
+             TOTAL → 89
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,11 +77,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **23** |
-| `Binary Search` | **8** |
-| `Math` | **7** |
+| `Array` | **24** |
+| `Binary Search` | **9** |
+| `Math` | **8** |
+| `Bit Manipulation` | **6** |
 | `Hash Table` | **6** |
-| `Bit Manipulation` | **5** |
 | `Game Theory` | **5** |
 | `Dynamic Programming` | **4** |
 | `Greedy` | **4** |
@@ -94,7 +94,9 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Recursion` | **2** |
 | `Sliding Window` | **2** |
 | `Sorting` | **2** |
+| `Combinatorics` | **1** |
 | `Interactive` | **1** |
+| `Number Theory` | **1** |
 | `Ordered Set` | **1** |
 | `Prefix Sum` | **1** |
 | `Segment Tree` | **1** |
@@ -105,19 +107,19 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 23
-Binary Search            ███████░░░░░░░░░░░░░ 8
-Math                     ██████░░░░░░░░░░░░░░ 7
+Array                    ████████████████████ 24
+Binary Search            ████████░░░░░░░░░░░░ 9
+Math                     ███████░░░░░░░░░░░░░ 8
+Bit Manipulation         █████░░░░░░░░░░░░░░░ 6
 Hash Table               █████░░░░░░░░░░░░░░░ 6
-Bit Manipulation         ████░░░░░░░░░░░░░░░░ 5
 Game Theory              ████░░░░░░░░░░░░░░░░ 5
 Dynamic Programming      ███░░░░░░░░░░░░░░░░░ 4
 Greedy                   ███░░░░░░░░░░░░░░░░░ 4
 Minimax                  ███░░░░░░░░░░░░░░░░░ 4
 Zero-Sum Game            ███░░░░░░░░░░░░░░░░░ 4
-Nim Game                 ███░░░░░░░░░░░░░░░░░ 3
-String                   ███░░░░░░░░░░░░░░░░░ 3
-Two Pointers             ███░░░░░░░░░░░░░░░░░ 3
+Nim Game                 ██░░░░░░░░░░░░░░░░░░ 3
+String                   ██░░░░░░░░░░░░░░░░░░ 3
+Two Pointers             ██░░░░░░░░░░░░░░░░░░ 3
 Counting                 ██░░░░░░░░░░░░░░░░░░ 2
 Recursion                ██░░░░░░░░░░░░░░░░░░ 2
 ```
@@ -126,6 +128,7 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-08-21 | 1 | █ |
 | 2026-08-20 | 1 | █ |
 | 2026-08-19 | 1 | █ |
 | 2026-08-18 | 1 | █ |
@@ -139,10 +142,10 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 | 2026-08-10 | 2 | ██ |
 | 2026-08-09 | 3 | ███ |
 | 2026-08-08 | 4 | ████ |
-| 2026-08-07 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
+- 🧩 [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/)
 - 🧩 [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)
 - 🧩 [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)
 - 🧩 [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/)
@@ -152,17 +155,16 @@ Recursion                ██░░░░░░░░░░░░░░░░�
 - 🧩 [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/)
 - 🧩 [Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)
 - 🧩 [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/)
-- 🧩 [First Bad Version](https://leetcode.com/problems/first-bad-version/)
 
 ### 🔥 Consistency
 
 ```text
-Current Streak : 17 days
-Best Streak    : 17 days
-Active Days    : 30
+Current Streak : 18 days
+Best Streak    : 18 days
+Active Days    : 31
 ```
 
-> 🕐 Last synchronized: **2026-08-20 18:42 UTC**
+> 🕐 Last synchronized: **2026-08-21 18:39 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 

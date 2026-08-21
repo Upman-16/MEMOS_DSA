@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 88,
+  "total": 89,
   "easy": 50,
   "medium": 28,
-  "hard": 10,
-  "current_streak": 17,
-  "best_streak": 17,
-  "active_days": 30,
+  "hard": 11,
+  "current_streak": 18,
+  "best_streak": 18,
+  "active_days": 31,
   "recent_activity": [
+    {
+      "date": "2026-08-21",
+      "count": 1
+    },
     {
       "date": "2026-08-20",
       "count": 1
@@ -59,13 +63,15 @@
     {
       "date": "2026-08-08",
       "count": 4
-    },
-    {
-      "date": "2026-08-07",
-      "count": 1
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2115123118",
+      "title": "Kth Smallest Amount With Single Denomination Combination",
+      "titleSlug": "kth-smallest-amount-with-single-denomination-combination",
+      "timestamp": "1787321317"
+    },
     {
       "id": "2114026568",
       "title": "Distribute Elements Into Two Arrays I",
@@ -119,34 +125,28 @@
       "title": "Longest Substring of One Repeating Character",
       "titleSlug": "longest-substring-of-one-repeating-character",
       "timestamp": "1786639879"
-    },
-    {
-      "id": "2104986812",
-      "title": "First Bad Version",
-      "titleSlug": "first-bad-version",
-      "timestamp": "1786598090"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      23
+      24
     ],
     [
       "Binary Search",
-      8
+      9
     ],
     [
       "Math",
-      7
+      8
+    ],
+    [
+      "Bit Manipulation",
+      6
     ],
     [
       "Hash Table",
       6
-    ],
-    [
-      "Bit Manipulation",
-      5
     ],
     [
       "Game Theory",
@@ -197,7 +197,15 @@
       2
     ],
     [
+      "Combinatorics",
+      1
+    ],
+    [
       "Interactive",
+      1
+    ],
+    [
+      "Number Theory",
       1
     ],
     [
@@ -345,6 +353,14 @@
       "String",
       "Sliding Window"
     ],
+    "kth-smallest-amount-with-single-denomination-combination": [
+      "Array",
+      "Math",
+      "Binary Search",
+      "Bit Manipulation",
+      "Combinatorics",
+      "Number Theory"
+    ],
     "find-the-lexicographically-smallest-valid-sequence": [
       "Two Pointers",
       "String",
@@ -360,5 +376,5 @@
       "Bit Manipulation"
     ]
   },
-  "updated": "2026-08-20 18:42 UTC"
+  "updated": "2026-08-21 18:39 UTC"
 }
