@@ -4,8 +4,28 @@
     "slug": "counting",
     "name": "Counting"
   },
-  "updatedAt": "2026-08-16T06:02:24.959Z",
+  "updatedAt": "2026-08-22T08:24:35.385Z",
   "problems": [
+    {
+      "frontendId": "169",
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "problemName": "0169-majority-element",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
+      "folderPath": "0169-majority-element/",
+      "readmePath": "0169-majority-element/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0169-majority-element.java",
+          "path": "0169-majority-element/0169-majority-element.java",
+          "sha": "78b14e7477cc482520e0bef12245586ad324b737",
+          "lastSyncedAt": "2026-08-22T08:24:35.385Z"
+        }
+      ]
+    },
     {
       "frontendId": "2029",
       "title": "Stone Game IX",
