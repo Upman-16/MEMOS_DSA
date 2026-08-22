@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 89,
-  "easy": 50,
+  "total": 92,
+  "easy": 53,
   "medium": 28,
   "hard": 11,
-  "current_streak": 18,
-  "best_streak": 18,
-  "active_days": 31,
+  "current_streak": 19,
+  "best_streak": 19,
+  "active_days": 32,
   "recent_activity": [
+    {
+      "date": "2026-08-22",
+      "count": 5
+    },
     {
       "date": "2026-08-21",
       "count": 1
@@ -59,13 +63,27 @@
     {
       "date": "2026-08-09",
       "count": 3
-    },
-    {
-      "date": "2026-08-08",
-      "count": 4
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2115909219",
+      "title": "Contains Duplicate",
+      "titleSlug": "contains-duplicate",
+      "timestamp": "1787387609"
+    },
+    {
+      "id": "2115901786",
+      "title": "Majority Element",
+      "titleSlug": "majority-element",
+      "timestamp": "1787387066"
+    },
+    {
+      "id": "2115876487",
+      "title": "Check Divisibility by Digit Sum and Product",
+      "titleSlug": "check-divisibility-by-digit-sum-and-product",
+      "timestamp": "1787385193"
+    },
     {
       "id": "2115123118",
       "title": "Kth Smallest Amount With Single Denomination Combination",
@@ -107,30 +125,12 @@
       "title": "Power of Two",
       "titleSlug": "power-of-two",
       "timestamp": "1786780376"
-    },
-    {
-      "id": "2107268573",
-      "title": "Longest Subsequence With Non-Zero Bitwise XOR",
-      "titleSlug": "longest-subsequence-with-non-zero-bitwise-xor",
-      "timestamp": "1786772980"
-    },
-    {
-      "id": "2106684857",
-      "title": "Maximum Length Substring With Two Occurrences",
-      "titleSlug": "maximum-length-substring-with-two-occurrences",
-      "timestamp": "1786717376"
-    },
-    {
-      "id": "2105707323",
-      "title": "Longest Substring of One Repeating Character",
-      "titleSlug": "longest-substring-of-one-repeating-character",
-      "timestamp": "1786639879"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      24
+      26
     ],
     [
       "Binary Search",
@@ -138,14 +138,14 @@
     ],
     [
       "Math",
+      9
+    ],
+    [
+      "Hash Table",
       8
     ],
     [
       "Bit Manipulation",
-      6
-    ],
-    [
-      "Hash Table",
       6
     ],
     [
@@ -165,8 +165,16 @@
       4
     ],
     [
+      "Sorting",
+      4
+    ],
+    [
       "Zero-Sum Game",
       4
+    ],
+    [
+      "Counting",
+      3
     ],
     [
       "Nim Game",
@@ -181,10 +189,6 @@
       3
     ],
     [
-      "Counting",
-      2
-    ],
-    [
       "Recursion",
       2
     ],
@@ -193,11 +197,15 @@
       2
     ],
     [
-      "Sorting",
-      2
+      "Boyer\u2013Moore Majority Vote Algorithm",
+      1
     ],
     [
       "Combinatorics",
+      1
+    ],
+    [
+      "Divide and Conquer",
       1
     ],
     [
@@ -266,6 +274,19 @@
     "find-peak-element": [
       "Array",
       "Binary Search"
+    ],
+    "majority-element": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Sorting",
+      "Counting",
+      "Boyer\u2013Moore Majority Vote Algorithm"
+    ],
+    "contains-duplicate": [
+      "Array",
+      "Hash Table",
+      "Sorting"
     ],
     "power-of-two": [
       "Math",
@@ -371,10 +392,13 @@
       "Array",
       "Hash Table"
     ],
+    "check-divisibility-by-digit-sum-and-product": [
+      "Math"
+    ],
     "longest-subsequence-with-non-zero-bitwise-xor": [
       "Array",
       "Bit Manipulation"
     ]
   },
-  "updated": "2026-08-21 18:39 UTC"
+  "updated": "2026-08-22 18:33 UTC"
 }
