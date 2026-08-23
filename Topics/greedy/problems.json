@@ -4,7 +4,7 @@
     "slug": "greedy",
     "name": "Greedy"
   },
-  "updatedAt": "2026-08-19T15:17:25.903Z",
+  "updatedAt": "2026-08-23T07:52:28.753Z",
   "problems": [
     {
       "frontendId": "1386",
@@ -23,6 +23,26 @@
           "path": "1386-cinema-seat-allocation/1386-cinema-seat-allocation.java",
           "sha": "4e8c3e216520f4aa9e8a59793618b4357c3a95d3",
           "lastSyncedAt": "2026-08-19T15:17:25.903Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1927",
+      "title": "Sum Game",
+      "slug": "sum-game",
+      "problemName": "1927-sum-game",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/sum-game/",
+      "folderPath": "1927-sum-game/",
+      "readmePath": "1927-sum-game/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1927-sum-game.java",
+          "path": "1927-sum-game/1927-sum-game.java",
+          "sha": "cf1a81e7acd8fcbd762d47bab1994897fe249ae0",
+          "lastSyncedAt": "2026-08-23T07:52:28.753Z"
         }
       ]
     },
