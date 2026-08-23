@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-08-15T06:23:43.107Z",
+  "updatedAt": "2026-08-23T05:31:32.948Z",
   "problems": [
     {
       "frontendId": "16",
@@ -43,6 +43,26 @@
           "path": "0031-next-permutation/0031-next-permutation.java",
           "sha": "f8fef92bce1383911887d1442a9335a166bbceef",
           "lastSyncedAt": "2026-08-15T06:23:40.042Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "349",
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "problemName": "0349-intersection-of-two-arrays",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-arrays/",
+      "folderPath": "0349-intersection-of-two-arrays/",
+      "readmePath": "0349-intersection-of-two-arrays/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0349-intersection-of-two-arrays.java",
+          "path": "0349-intersection-of-two-arrays/0349-intersection-of-two-arrays.java",
+          "sha": "72e36d4c4dd3d7373f67c561ab14ff86dbde4112",
+          "lastSyncedAt": "2026-08-23T05:31:32.948Z"
         }
       ]
     },
