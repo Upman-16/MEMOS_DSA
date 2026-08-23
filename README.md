@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **92** |
-| 🟢 Easy | **53** |
-| 🟡 Medium | **28** |
+| **Total Solved** | **96** |
+| 🟢 Easy | **56** |
+| 🟡 Medium | **29** |
 | 🔴 Hard | **11** |
-| 🔥 Current Streak | **19 days** |
-| 🏆 Best Streak | **19 days** |
-| 📅 Active Days | **32** |
+| 🔥 Current Streak | **20 days** |
+| 🏆 Best Streak | **20 days** |
+| 📅 Active Days | **33** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ████████████░░░░░░░░  53
-🟡 Medium    ██████░░░░░░░░░░░░░░  28
+🟢 Easy      ████████████░░░░░░░░  56
+🟡 Medium    ██████░░░░░░░░░░░░░░  29
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  11
 
-             TOTAL → 92
+             TOTAL → 96
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,21 +77,21 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **26** |
-| `Binary Search` | **9** |
-| `Math` | **9** |
-| `Hash Table` | **8** |
-| `Bit Manipulation` | **6** |
-| `Game Theory` | **5** |
+| `Array` | **29** |
+| `Binary Search` | **11** |
+| `Math` | **11** |
+| `Hash Table` | **10** |
+| `Bit Manipulation` | **7** |
+| `Sorting` | **7** |
+| `Game Theory` | **6** |
+| `Greedy` | **5** |
 | `Dynamic Programming` | **4** |
-| `Greedy` | **4** |
 | `Minimax` | **4** |
-| `Sorting` | **4** |
+| `String` | **4** |
+| `Two Pointers` | **4** |
 | `Zero-Sum Game` | **4** |
 | `Counting` | **3** |
 | `Nim Game` | **3** |
-| `String` | **3** |
-| `Two Pointers` | **3** |
 | `Recursion` | **2** |
 | `Sliding Window` | **2** |
 | `Boyer–Moore Majority Vote Algorithm` | **1** |
@@ -109,27 +109,28 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 26
-Binary Search            ███████░░░░░░░░░░░░░ 9
-Math                     ███████░░░░░░░░░░░░░ 9
-Hash Table               ██████░░░░░░░░░░░░░░ 8
-Bit Manipulation         █████░░░░░░░░░░░░░░░ 6
-Game Theory              ████░░░░░░░░░░░░░░░░ 5
+Array                    ████████████████████ 29
+Binary Search            ████████░░░░░░░░░░░░ 11
+Math                     ████████░░░░░░░░░░░░ 11
+Hash Table               ███████░░░░░░░░░░░░░ 10
+Bit Manipulation         █████░░░░░░░░░░░░░░░ 7
+Sorting                  █████░░░░░░░░░░░░░░░ 7
+Game Theory              ████░░░░░░░░░░░░░░░░ 6
+Greedy                   ███░░░░░░░░░░░░░░░░░ 5
 Dynamic Programming      ███░░░░░░░░░░░░░░░░░ 4
-Greedy                   ███░░░░░░░░░░░░░░░░░ 4
 Minimax                  ███░░░░░░░░░░░░░░░░░ 4
-Sorting                  ███░░░░░░░░░░░░░░░░░ 4
+String                   ███░░░░░░░░░░░░░░░░░ 4
+Two Pointers             ███░░░░░░░░░░░░░░░░░ 4
 Zero-Sum Game            ███░░░░░░░░░░░░░░░░░ 4
 Counting                 ██░░░░░░░░░░░░░░░░░░ 3
 Nim Game                 ██░░░░░░░░░░░░░░░░░░ 3
-String                   ██░░░░░░░░░░░░░░░░░░ 3
-Two Pointers             ██░░░░░░░░░░░░░░░░░░ 3
 ```
 
 ### 📅 Recent Coding Activity
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-08-23 | 5 | █████ |
 | 2026-08-22 | 5 | █████ |
 | 2026-08-21 | 1 | █ |
 | 2026-08-20 | 1 | █ |
@@ -143,30 +144,29 @@ Two Pointers             ██░░░░░░░░░░░░░░░░�
 | 2026-08-12 | 1 | █ |
 | 2026-08-11 | 12 | ██████████ |
 | 2026-08-10 | 2 | ██ |
-| 2026-08-09 | 3 | ███ |
 
 ### 🧩 Latest Accepted Problems
 
+- 🧩 [Sum Game](https://leetcode.com/problems/sum-game/)
+- 🧩 [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
+- 🧩 [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+- 🧩 [Missing Number](https://leetcode.com/problems/missing-number/)
 - 🧩 [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - 🧩 [Majority Element](https://leetcode.com/problems/majority-element/)
 - 🧩 [Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/)
 - 🧩 [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/)
 - 🧩 [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)
 - 🧩 [Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)
-- 🧩 [Find the Largest Almost Missing Integer](https://leetcode.com/problems/find-the-largest-almost-missing-integer/)
-- 🧩 [Stone Game V](https://leetcode.com/problems/stone-game-v/)
-- 🧩 [Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
-- 🧩 [Power of Two](https://leetcode.com/problems/power-of-two/)
 
 ### 🔥 Consistency
 
 ```text
-Current Streak : 19 days
-Best Streak    : 19 days
-Active Days    : 32
+Current Streak : 20 days
+Best Streak    : 20 days
+Active Days    : 33
 ```
 
-> 🕐 Last synchronized: **2026-08-22 18:33 UTC**
+> 🕐 Last synchronized: **2026-08-23 18:33 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 

@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 92,
-  "easy": 53,
-  "medium": 28,
+  "total": 96,
+  "easy": 56,
+  "medium": 29,
   "hard": 11,
-  "current_streak": 19,
-  "best_streak": 19,
-  "active_days": 32,
+  "current_streak": 20,
+  "best_streak": 20,
+  "active_days": 33,
   "recent_activity": [
+    {
+      "date": "2026-08-23",
+      "count": 5
+    },
     {
       "date": "2026-08-22",
       "count": 5
@@ -59,13 +63,33 @@
     {
       "date": "2026-08-10",
       "count": 2
-    },
-    {
-      "date": "2026-08-09",
-      "count": 3
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2117087526",
+      "title": "Sum Game",
+      "titleSlug": "sum-game",
+      "timestamp": "1787471538"
+    },
+    {
+      "id": "2116957735",
+      "title": "Third Maximum Number",
+      "titleSlug": "third-maximum-number",
+      "timestamp": "1787463333"
+    },
+    {
+      "id": "2116953972",
+      "title": "Intersection of Two Arrays",
+      "titleSlug": "intersection-of-two-arrays",
+      "timestamp": "1787463084"
+    },
+    {
+      "id": "2116943441",
+      "title": "Missing Number",
+      "titleSlug": "missing-number",
+      "timestamp": "1787462361"
+    },
     {
       "id": "2115909219",
       "title": "Contains Duplicate",
@@ -101,55 +125,39 @@
       "title": "Cinema Seat Allocation",
       "titleSlug": "cinema-seat-allocation",
       "timestamp": "1787152632"
-    },
-    {
-      "id": "2111507306",
-      "title": "Find the Largest Almost Missing Integer",
-      "titleSlug": "find-the-largest-almost-missing-integer",
-      "timestamp": "1787062019"
-    },
-    {
-      "id": "2110295723",
-      "title": "Stone Game V",
-      "titleSlug": "stone-game-v",
-      "timestamp": "1786980100"
-    },
-    {
-      "id": "2108604268",
-      "title": "Stone Game IX",
-      "titleSlug": "stone-game-ix",
-      "timestamp": "1786860133"
-    },
-    {
-      "id": "2107390038",
-      "title": "Power of Two",
-      "titleSlug": "power-of-two",
-      "timestamp": "1786780376"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      26
+      29
     ],
     [
       "Binary Search",
-      9
+      11
     ],
     [
       "Math",
-      9
+      11
     ],
     [
       "Hash Table",
-      8
+      10
     ],
     [
       "Bit Manipulation",
-      6
+      7
+    ],
+    [
+      "Sorting",
+      7
     ],
     [
       "Game Theory",
+      6
+    ],
+    [
+      "Greedy",
       5
     ],
     [
@@ -157,15 +165,15 @@
       4
     ],
     [
-      "Greedy",
-      4
-    ],
-    [
       "Minimax",
       4
     ],
     [
-      "Sorting",
+      "String",
+      4
+    ],
+    [
+      "Two Pointers",
       4
     ],
     [
@@ -178,14 +186,6 @@
     ],
     [
       "Nim Game",
-      3
-    ],
-    [
-      "String",
-      3
-    ],
-    [
-      "Two Pointers",
       3
     ],
     [
@@ -293,9 +293,28 @@
       "Bit Manipulation",
       "Recursion"
     ],
+    "missing-number": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Binary Search",
+      "Bit Manipulation",
+      "Sorting"
+    ],
     "first-bad-version": [
       "Binary Search",
       "Interactive"
+    ],
+    "intersection-of-two-arrays": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "third-maximum-number": [
+      "Array",
+      "Sorting"
     ],
     "binary-search": [
       "Array",
@@ -337,6 +356,12 @@
       "Array",
       "Math",
       "Dynamic Programming",
+      "Game Theory"
+    ],
+    "sum-game": [
+      "Math",
+      "String",
+      "Greedy",
       "Game Theory"
     ],
     "stone-game-ix": [
@@ -400,5 +425,5 @@
       "Bit Manipulation"
     ]
   },
-  "updated": "2026-08-22 18:33 UTC"
+  "updated": "2026-08-23 18:33 UTC"
 }
