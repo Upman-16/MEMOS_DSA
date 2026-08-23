@@ -185,14 +185,6 @@ Active Days    : 32
 
 </p>
 
----
-
-🔥 **Current Streak:** 11 Days  
-🏆 **Best Streak:** 11 Days  
-📅 **Active Days:** 26
-
----
-
 ## 💻 Tech Stack
 
 ```text
