@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 96,
-  "easy": 56,
+  "total": 101,
+  "easy": 60,
   "medium": 29,
-  "hard": 11,
-  "current_streak": 20,
-  "best_streak": 20,
-  "active_days": 33,
+  "hard": 12,
+  "current_streak": 21,
+  "best_streak": 21,
+  "active_days": 34,
   "recent_activity": [
+    {
+      "date": "2026-08-24",
+      "count": 5
+    },
     {
       "date": "2026-08-23",
       "count": 5
@@ -59,13 +63,39 @@
     {
       "date": "2026-08-11",
       "count": 12
-    },
-    {
-      "date": "2026-08-10",
-      "count": 2
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2118659685",
+      "title": "Height Checker",
+      "titleSlug": "height-checker",
+      "timestamp": "1787587967"
+    },
+    {
+      "id": "2118634075",
+      "title": "Single Number",
+      "titleSlug": "single-number",
+      "timestamp": "1787586753"
+    },
+    {
+      "id": "2118617745",
+      "title": "Plus One",
+      "titleSlug": "plus-one",
+      "timestamp": "1787585939"
+    },
+    {
+      "id": "2118235488",
+      "title": "Sum of Unique Elements",
+      "titleSlug": "sum-of-unique-elements",
+      "timestamp": "1787562703"
+    },
+    {
+      "id": "2118113290",
+      "title": "Stone Game VIII",
+      "titleSlug": "stone-game-viii",
+      "timestamp": "1787553700"
+    },
     {
       "id": "2117087526",
       "title": "Sum Game",
@@ -95,77 +125,55 @@
       "title": "Contains Duplicate",
       "titleSlug": "contains-duplicate",
       "timestamp": "1787387609"
-    },
-    {
-      "id": "2115901786",
-      "title": "Majority Element",
-      "titleSlug": "majority-element",
-      "timestamp": "1787387066"
-    },
-    {
-      "id": "2115876487",
-      "title": "Check Divisibility by Digit Sum and Product",
-      "titleSlug": "check-divisibility-by-digit-sum-and-product",
-      "timestamp": "1787385193"
-    },
-    {
-      "id": "2115123118",
-      "title": "Kth Smallest Amount With Single Denomination Combination",
-      "titleSlug": "kth-smallest-amount-with-single-denomination-combination",
-      "timestamp": "1787321317"
-    },
-    {
-      "id": "2114026568",
-      "title": "Distribute Elements Into Two Arrays I",
-      "titleSlug": "distribute-elements-into-two-arrays-i",
-      "timestamp": "1787235716"
-    },
-    {
-      "id": "2112855012",
-      "title": "Cinema Seat Allocation",
-      "titleSlug": "cinema-seat-allocation",
-      "timestamp": "1787152632"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      29
+      34
+    ],
+    [
+      "Math",
+      13
     ],
     [
       "Binary Search",
       11
     ],
     [
-      "Math",
+      "Hash Table",
       11
     ],
     [
-      "Hash Table",
-      10
-    ],
-    [
       "Bit Manipulation",
-      7
+      8
     ],
     [
       "Sorting",
-      7
+      8
     ],
     [
       "Game Theory",
-      6
+      7
+    ],
+    [
+      "Dynamic Programming",
+      5
     ],
     [
       "Greedy",
       5
     ],
     [
-      "Dynamic Programming",
-      4
+      "Minimax",
+      5
     ],
     [
-      "Minimax",
+      "Zero-Sum Game",
+      5
+    ],
+    [
+      "Counting",
       4
     ],
     [
@@ -177,16 +185,12 @@
       4
     ],
     [
-      "Zero-Sum Game",
-      4
-    ],
-    [
-      "Counting",
-      3
-    ],
-    [
       "Nim Game",
       3
+    ],
+    [
+      "Prefix Sum",
+      2
     ],
     [
       "Recursion",
@@ -201,7 +205,15 @@
       1
     ],
     [
+      "Bubble Sort",
+      1
+    ],
+    [
       "Combinatorics",
+      1
+    ],
+    [
+      "Counting Sort",
       1
     ],
     [
@@ -218,10 +230,6 @@
     ],
     [
       "Ordered Set",
-      1
-    ],
-    [
-      "Prefix Sum",
       1
     ],
     [
@@ -266,6 +274,14 @@
     "first-missing-positive": [
       "Array",
       "Hash Table"
+    ],
+    "plus-one": [
+      "Array",
+      "Math"
+    ],
+    "single-number": [
+      "Array",
+      "Bit Manipulation"
     ],
     "find-minimum-in-rotated-sorted-array": [
       "Array",
@@ -328,6 +344,12 @@
     "valid-mountain-array": [
       "Array"
     ],
+    "height-checker": [
+      "Array",
+      "Sorting",
+      "Counting Sort",
+      "Bubble Sort"
+    ],
     "stone-game-ii": [
       "Array",
       "Math",
@@ -357,6 +379,20 @@
       "Math",
       "Dynamic Programming",
       "Game Theory"
+    ],
+    "sum-of-unique-elements": [
+      "Array",
+      "Hash Table",
+      "Counting"
+    ],
+    "stone-game-viii": [
+      "Array",
+      "Math",
+      "Dynamic Programming",
+      "Minimax",
+      "Prefix Sum",
+      "Game Theory",
+      "Zero-Sum Game"
     ],
     "sum-game": [
       "Math",
@@ -425,5 +461,5 @@
       "Bit Manipulation"
     ]
   },
-  "updated": "2026-08-23 18:33 UTC"
+  "updated": "2026-08-24 18:42 UTC"
 }
