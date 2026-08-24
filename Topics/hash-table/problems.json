@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-23T05:31:32.948Z",
+  "updatedAt": "2026-08-24T09:11:55.002Z",
   "problems": [
     {
       "frontendId": "41",
@@ -123,6 +123,26 @@
           "path": "1386-cinema-seat-allocation/1386-cinema-seat-allocation.java",
           "sha": "4e8c3e216520f4aa9e8a59793618b4357c3a95d3",
           "lastSyncedAt": "2026-08-19T15:17:25.903Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1748",
+      "title": "Sum of Unique Elements",
+      "slug": "sum-of-unique-elements",
+      "problemName": "1748-sum-of-unique-elements",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/sum-of-unique-elements/",
+      "folderPath": "1748-sum-of-unique-elements/",
+      "readmePath": "1748-sum-of-unique-elements/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1748-sum-of-unique-elements.java",
+          "path": "1748-sum-of-unique-elements/1748-sum-of-unique-elements.java",
+          "sha": "62e3f57e9cac9dac5679572a33e19aef458247bf",
+          "lastSyncedAt": "2026-08-24T09:11:55.002Z"
         }
       ]
     },
