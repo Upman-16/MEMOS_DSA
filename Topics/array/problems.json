@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-24T09:11:55.002Z",
+  "updatedAt": "2026-08-24T15:39:14.182Z",
   "problems": [
     {
       "frontendId": "16",
@@ -123,6 +123,26 @@
           "path": "0041-first-missing-positive/0041-first-missing-positive.java",
           "sha": "df33b91971b1392fa34f9c863e1db9e83cd13fca",
           "lastSyncedAt": "2026-08-15T06:23:18.843Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "66",
+      "title": "Plus One",
+      "slug": "plus-one",
+      "problemName": "0066-plus-one",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/plus-one/",
+      "folderPath": "0066-plus-one/",
+      "readmePath": "0066-plus-one/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0066-plus-one.java",
+          "path": "0066-plus-one/0066-plus-one.java",
+          "sha": "87de4bdae9c27a0954f42c0eae6c62845ae06bcf",
+          "lastSyncedAt": "2026-08-24T15:39:14.182Z"
         }
       ]
     },
