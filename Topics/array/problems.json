@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-24T06:41:49.943Z",
+  "updatedAt": "2026-08-24T09:11:55.002Z",
   "problems": [
     {
       "frontendId": "16",
@@ -383,6 +383,26 @@
           "path": "1563-stone-game-v/1563-stone-game-v.java",
           "sha": "dbe13677d8f56f3bee7bb7ea6b9cb411833a4904",
           "lastSyncedAt": "2026-08-17T15:22:32.294Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1748",
+      "title": "Sum of Unique Elements",
+      "slug": "sum-of-unique-elements",
+      "problemName": "1748-sum-of-unique-elements",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/sum-of-unique-elements/",
+      "folderPath": "1748-sum-of-unique-elements/",
+      "readmePath": "1748-sum-of-unique-elements/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1748-sum-of-unique-elements.java",
+          "path": "1748-sum-of-unique-elements/1748-sum-of-unique-elements.java",
+          "sha": "62e3f57e9cac9dac5679572a33e19aef458247bf",
+          "lastSyncedAt": "2026-08-24T09:11:55.002Z"
         }
       ]
     },
