@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-25T09:25:35.046Z",
+  "updatedAt": "2026-08-25T09:36:43.304Z",
   "problems": [
     {
       "frontendId": "1",
@@ -683,6 +683,26 @@
           "path": "3702-longest-subsequence-with-non-zero-bitwise-xor/3702-longest-subsequence-with-non-zero-bitwise-xor.java",
           "sha": "035f88025882270f54b11504b433fe18f07bdc51",
           "lastSyncedAt": "2026-08-15T06:22:10.571Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3718",
+      "title": "Smallest Missing Multiple of K",
+      "slug": "smallest-missing-multiple-of-k",
+      "problemName": "3718-smallest-missing-multiple-of-k",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
+      "folderPath": "3718-smallest-missing-multiple-of-k/",
+      "readmePath": "3718-smallest-missing-multiple-of-k/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3718-smallest-missing-multiple-of-k.java",
+          "path": "3718-smallest-missing-multiple-of-k/3718-smallest-missing-multiple-of-k.java",
+          "sha": "9267f61b390a747a366b150cec8d92d3b70e3aaf",
+          "lastSyncedAt": "2026-08-25T09:36:43.304Z"
         }
       ]
     }
