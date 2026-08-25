@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-25T09:36:43.304Z",
+  "updatedAt": "2026-08-25T17:11:08.258Z",
   "problems": [
     {
       "frontendId": "1",
@@ -283,6 +283,26 @@
           "path": "3718-smallest-missing-multiple-of-k/3718-smallest-missing-multiple-of-k.java",
           "sha": "9267f61b390a747a366b150cec8d92d3b70e3aaf",
           "lastSyncedAt": "2026-08-25T09:36:43.304Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3945",
+      "title": "Digit Frequency Score",
+      "slug": "digit-frequency-score",
+      "problemName": "3945-digit-frequency-score",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/digit-frequency-score/",
+      "folderPath": "3945-digit-frequency-score/",
+      "readmePath": "3945-digit-frequency-score/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3945-digit-frequency-score.java",
+          "path": "3945-digit-frequency-score/3945-digit-frequency-score.java",
+          "sha": "e55314abef02cb0ddc22387c453e320a21a5ae26",
+          "lastSyncedAt": "2026-08-25T17:11:08.258Z"
         }
       ]
     }
