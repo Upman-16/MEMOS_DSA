@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 101,
-  "easy": 60,
+  "total": 107,
+  "easy": 66,
   "medium": 29,
   "hard": 12,
-  "current_streak": 21,
-  "best_streak": 21,
-  "active_days": 34,
+  "current_streak": 22,
+  "best_streak": 22,
+  "active_days": 35,
   "recent_activity": [
+    {
+      "date": "2026-08-25",
+      "count": 8
+    },
     {
       "date": "2026-08-24",
       "count": 5
@@ -59,13 +63,51 @@
     {
       "date": "2026-08-12",
       "count": 1
-    },
-    {
-      "date": "2026-08-11",
-      "count": 12
     }
   ],
   "recent_submissions": [
+    {
+      "id": "2119975136",
+      "title": "Convert the Temperature",
+      "titleSlug": "convert-the-temperature",
+      "timestamp": "1787679082"
+    },
+    {
+      "id": "2119951950",
+      "title": "Find the Maximum Achievable Number",
+      "titleSlug": "find-the-maximum-achievable-number",
+      "timestamp": "1787678077"
+    },
+    {
+      "id": "2119946811",
+      "title": "Digit Frequency Score",
+      "titleSlug": "digit-frequency-score",
+      "timestamp": "1787677857"
+    },
+    {
+      "id": "2119938989",
+      "title": "Minimum Operations to Make Array Sum Divisible by K",
+      "titleSlug": "minimum-operations-to-make-array-sum-divisible-by-k",
+      "timestamp": "1787677523"
+    },
+    {
+      "id": "2119473592",
+      "title": "Smallest Missing Multiple of K",
+      "titleSlug": "smallest-missing-multiple-of-k",
+      "timestamp": "1787650567"
+    },
+    {
+      "id": "2119462524",
+      "title": "Contains Duplicate II",
+      "titleSlug": "contains-duplicate-ii",
+      "timestamp": "1787649918"
+    },
+    {
+      "id": "2119339329",
+      "title": "Two Sum",
+      "titleSlug": "two-sum",
+      "timestamp": "1787641644"
+    },
     {
       "id": "2118659685",
       "title": "Height Checker",
@@ -83,65 +125,23 @@
       "title": "Plus One",
       "titleSlug": "plus-one",
       "timestamp": "1787585939"
-    },
-    {
-      "id": "2118235488",
-      "title": "Sum of Unique Elements",
-      "titleSlug": "sum-of-unique-elements",
-      "timestamp": "1787562703"
-    },
-    {
-      "id": "2118113290",
-      "title": "Stone Game VIII",
-      "titleSlug": "stone-game-viii",
-      "timestamp": "1787553700"
-    },
-    {
-      "id": "2117087526",
-      "title": "Sum Game",
-      "titleSlug": "sum-game",
-      "timestamp": "1787471538"
-    },
-    {
-      "id": "2116957735",
-      "title": "Third Maximum Number",
-      "titleSlug": "third-maximum-number",
-      "timestamp": "1787463333"
-    },
-    {
-      "id": "2116953972",
-      "title": "Intersection of Two Arrays",
-      "titleSlug": "intersection-of-two-arrays",
-      "timestamp": "1787463084"
-    },
-    {
-      "id": "2116943441",
-      "title": "Missing Number",
-      "titleSlug": "missing-number",
-      "timestamp": "1787462361"
-    },
-    {
-      "id": "2115909219",
-      "title": "Contains Duplicate",
-      "titleSlug": "contains-duplicate",
-      "timestamp": "1787387609"
     }
   ],
   "topic_statistics": [
     [
       "Array",
-      34
+      38
     ],
     [
       "Math",
-      13
-    ],
-    [
-      "Binary Search",
-      11
+      17
     ],
     [
       "Hash Table",
+      15
+    ],
+    [
+      "Binary Search",
       11
     ],
     [
@@ -189,15 +189,15 @@
       3
     ],
     [
+      "Sliding Window",
+      3
+    ],
+    [
       "Prefix Sum",
       2
     ],
     [
       "Recursion",
-      2
-    ],
-    [
-      "Sliding Window",
       2
     ],
     [
@@ -250,6 +250,10 @@
     ]
   ],
   "problem_topics": {
+    "two-sum": [
+      "Array",
+      "Hash Table"
+    ],
     "3sum-closest": [
       "Array",
       "Two Pointers",
@@ -303,6 +307,11 @@
       "Array",
       "Hash Table",
       "Sorting"
+    ],
+    "contains-duplicate-ii": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
     ],
     "power-of-two": [
       "Math",
@@ -416,6 +425,12 @@
       "Segment Tree",
       "Ordered Set"
     ],
+    "convert-the-temperature": [
+      "Math"
+    ],
+    "find-the-maximum-achievable-number": [
+      "Math"
+    ],
     "length-of-longest-subarray-with-at-most-k-frequency": [
       "Array",
       "Hash Table",
@@ -453,13 +468,25 @@
       "Array",
       "Hash Table"
     ],
+    "minimum-operations-to-make-array-sum-divisible-by-k": [
+      "Array",
+      "Math"
+    ],
     "check-divisibility-by-digit-sum-and-product": [
       "Math"
     ],
     "longest-subsequence-with-non-zero-bitwise-xor": [
       "Array",
       "Bit Manipulation"
+    ],
+    "smallest-missing-multiple-of-k": [
+      "Array",
+      "Hash Table"
+    ],
+    "digit-frequency-score": [
+      "Hash Table",
+      "Math"
     ]
   },
-  "updated": "2026-08-24 18:42 UTC"
+  "updated": "2026-08-25 18:42 UTC"
 }

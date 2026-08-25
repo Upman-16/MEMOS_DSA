@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **101** |
-| 🟢 Easy | **60** |
+| **Total Solved** | **107** |
+| 🟢 Easy | **66** |
 | 🟡 Medium | **29** |
 | 🔴 Hard | **12** |
-| 🔥 Current Streak | **21 days** |
-| 🏆 Best Streak | **21 days** |
-| 📅 Active Days | **34** |
+| 🔥 Current Streak | **22 days** |
+| 🏆 Best Streak | **22 days** |
+| 📅 Active Days | **35** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ████████████░░░░░░░░  60
-🟡 Medium    ██████░░░░░░░░░░░░░░  29
+🟢 Easy      ████████████░░░░░░░░  66
+🟡 Medium    █████░░░░░░░░░░░░░░░  29
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  12
 
-             TOTAL → 101
+             TOTAL → 107
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,10 +77,10 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **34** |
-| `Math` | **13** |
+| `Array` | **38** |
+| `Math` | **17** |
+| `Hash Table` | **15** |
 | `Binary Search` | **11** |
-| `Hash Table` | **11** |
 | `Bit Manipulation` | **8** |
 | `Sorting` | **8** |
 | `Game Theory` | **7** |
@@ -92,9 +92,9 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `String` | **4** |
 | `Two Pointers` | **4** |
 | `Nim Game` | **3** |
+| `Sliding Window` | **3** |
 | `Prefix Sum` | **2** |
 | `Recursion` | **2** |
-| `Sliding Window` | **2** |
 | `Boyer–Moore Majority Vote Algorithm` | **1** |
 | `Bubble Sort` | **1** |
 | `Combinatorics` | **1** |
@@ -111,12 +111,12 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 34
-Math                     ████████░░░░░░░░░░░░ 13
+Array                    ████████████████████ 38
+Math                     █████████░░░░░░░░░░░ 17
+Hash Table               ████████░░░░░░░░░░░░ 15
 Binary Search            ██████░░░░░░░░░░░░░░ 11
-Hash Table               ██████░░░░░░░░░░░░░░ 11
-Bit Manipulation         █████░░░░░░░░░░░░░░░ 8
-Sorting                  █████░░░░░░░░░░░░░░░ 8
+Bit Manipulation         ████░░░░░░░░░░░░░░░░ 8
+Sorting                  ████░░░░░░░░░░░░░░░░ 8
 Game Theory              ████░░░░░░░░░░░░░░░░ 7
 Dynamic Programming      ███░░░░░░░░░░░░░░░░░ 5
 Greedy                   ███░░░░░░░░░░░░░░░░░ 5
@@ -132,6 +132,7 @@ Nim Game                 ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-08-25 | 8 | ████████ |
 | 2026-08-24 | 5 | █████ |
 | 2026-08-23 | 5 | █████ |
 | 2026-08-22 | 5 | █████ |
@@ -145,30 +146,29 @@ Nim Game                 ██░░░░░░░░░░░░░░░░�
 | 2026-08-14 | 1 | █ |
 | 2026-08-13 | 4 | ████ |
 | 2026-08-12 | 1 | █ |
-| 2026-08-11 | 12 | ██████████ |
 
 ### 🧩 Latest Accepted Problems
 
+- 🧩 [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/)
+- 🧩 [Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/)
+- 🧩 [Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/)
+- 🧩 [Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/)
+- 🧩 [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/)
+- 🧩 [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+- 🧩 [Two Sum](https://leetcode.com/problems/two-sum/)
 - 🧩 [Height Checker](https://leetcode.com/problems/height-checker/)
 - 🧩 [Single Number](https://leetcode.com/problems/single-number/)
 - 🧩 [Plus One](https://leetcode.com/problems/plus-one/)
-- 🧩 [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)
-- 🧩 [Stone Game VIII](https://leetcode.com/problems/stone-game-viii/)
-- 🧩 [Sum Game](https://leetcode.com/problems/sum-game/)
-- 🧩 [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
-- 🧩 [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
-- 🧩 [Missing Number](https://leetcode.com/problems/missing-number/)
-- 🧩 [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 ### 🔥 Consistency
 
 ```text
-Current Streak : 21 days
-Best Streak    : 21 days
-Active Days    : 34
+Current Streak : 22 days
+Best Streak    : 22 days
+Active Days    : 35
 ```
 
-> 🕐 Last synchronized: **2026-08-24 18:42 UTC**
+> 🕐 Last synchronized: **2026-08-25 18:42 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
