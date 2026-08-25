@@ -4,8 +4,28 @@
     "slug": "sliding-window",
     "name": "Sliding Window"
   },
-  "updatedAt": "2026-08-15T06:22:31.851Z",
+  "updatedAt": "2026-08-25T09:25:35.046Z",
   "problems": [
+    {
+      "frontendId": "219",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "problemName": "0219-contains-duplicate-ii",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/",
+      "folderPath": "0219-contains-duplicate-ii/",
+      "readmePath": "0219-contains-duplicate-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0219-contains-duplicate-ii.java",
+          "path": "0219-contains-duplicate-ii/0219-contains-duplicate-ii.java",
+          "sha": "1b09f23e4ed927a448dce478f7c21030221a9a65",
+          "lastSyncedAt": "2026-08-25T09:25:35.046Z"
+        }
+      ]
+    },
     {
       "frontendId": "2958",
       "title": "Length of Longest Subarray With at Most K Frequency",
