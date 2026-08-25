@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-25T17:05:34.695Z",
+  "updatedAt": "2026-08-25T17:11:08.258Z",
   "problems": [
     {
       "frontendId": "66",
@@ -223,6 +223,26 @@
           "path": "3622-check-divisibility-by-digit-sum-and-product/3622-check-divisibility-by-digit-sum-and-product.java",
           "sha": "f84a063e29503b97ee4bae3bb63bb336fdd7b1eb",
           "lastSyncedAt": "2026-08-22T07:53:23.135Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3945",
+      "title": "Digit Frequency Score",
+      "slug": "digit-frequency-score",
+      "problemName": "3945-digit-frequency-score",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/digit-frequency-score/",
+      "folderPath": "3945-digit-frequency-score/",
+      "readmePath": "3945-digit-frequency-score/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3945-digit-frequency-score.java",
+          "path": "3945-digit-frequency-score/3945-digit-frequency-score.java",
+          "sha": "e55314abef02cb0ddc22387c453e320a21a5ae26",
+          "lastSyncedAt": "2026-08-25T17:11:08.258Z"
         }
       ]
     }
