@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-25T17:14:48.853Z",
+  "updatedAt": "2026-08-25T17:31:33.478Z",
   "problems": [
     {
       "frontendId": "66",
@@ -183,6 +183,26 @@
           "path": "2029-stone-game-ix/2029-stone-game-ix.java",
           "sha": "268dad3337c7c029864c4c6b0b7c01014983e91e",
           "lastSyncedAt": "2026-08-16T06:02:24.959Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2469",
+      "title": "Convert the Temperature",
+      "slug": "convert-the-temperature",
+      "problemName": "2469-convert-the-temperature",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/convert-the-temperature/",
+      "folderPath": "2469-convert-the-temperature/",
+      "readmePath": "2469-convert-the-temperature/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2469-convert-the-temperature.java",
+          "path": "2469-convert-the-temperature/2469-convert-the-temperature.java",
+          "sha": "8729a9d5ea88436f5f90d59e4ad145742f686b43",
+          "lastSyncedAt": "2026-08-25T17:31:33.478Z"
         }
       ]
     },
