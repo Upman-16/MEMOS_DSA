@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-25T09:36:43.304Z",
+  "updatedAt": "2026-08-25T17:05:34.695Z",
   "problems": [
     {
       "frontendId": "1",
@@ -663,6 +663,26 @@
           "path": "3471-find-the-largest-almost-missing-integer/3471-find-the-largest-almost-missing-integer.java",
           "sha": "93ed3fc4245c3a4fe74cba8e5b593f43ec662b1b",
           "lastSyncedAt": "2026-08-18T14:07:14.179Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3512",
+      "title": "Minimum Operations to Make Array Sum Divisible by K",
+      "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
+      "problemName": "3512-minimum-operations-to-make-array-sum-divisible-by-k",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/",
+      "folderPath": "3512-minimum-operations-to-make-array-sum-divisible-by-k/",
+      "readmePath": "3512-minimum-operations-to-make-array-sum-divisible-by-k/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3512-minimum-operations-to-make-array-sum-divisible-by-k.java",
+          "path": "3512-minimum-operations-to-make-array-sum-divisible-by-k/3512-minimum-operations-to-make-array-sum-divisible-by-k.java",
+          "sha": "b5260adf81af246da143773f99fc48822a895f9c",
+          "lastSyncedAt": "2026-08-25T17:05:34.695Z"
         }
       ]
     },
