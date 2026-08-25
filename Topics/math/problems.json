@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-25T17:11:08.258Z",
+  "updatedAt": "2026-08-25T17:14:48.853Z",
   "problems": [
     {
       "frontendId": "66",
@@ -183,6 +183,26 @@
           "path": "2029-stone-game-ix/2029-stone-game-ix.java",
           "sha": "268dad3337c7c029864c4c6b0b7c01014983e91e",
           "lastSyncedAt": "2026-08-16T06:02:24.959Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2769",
+      "title": "Find the Maximum Achievable Number",
+      "slug": "find-the-maximum-achievable-number",
+      "problemName": "2769-find-the-maximum-achievable-number",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-maximum-achievable-number/",
+      "folderPath": "2769-find-the-maximum-achievable-number/",
+      "readmePath": "2769-find-the-maximum-achievable-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2769-find-the-maximum-achievable-number.java",
+          "path": "2769-find-the-maximum-achievable-number/2769-find-the-maximum-achievable-number.java",
+          "sha": "89ac83f379d734a90f2b6c49ce4c119e039f7c56",
+          "lastSyncedAt": "2026-08-25T17:14:48.853Z"
         }
       ]
     },
