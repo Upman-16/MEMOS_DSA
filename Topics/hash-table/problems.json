@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-25T07:07:32.197Z",
+  "updatedAt": "2026-08-25T09:25:35.046Z",
   "problems": [
     {
       "frontendId": "1",
@@ -83,6 +83,26 @@
           "path": "0217-contains-duplicate/0217-contains-duplicate.java",
           "sha": "b8be2ad8cd14a368476c7c5a30d865c4e66298f2",
           "lastSyncedAt": "2026-08-22T08:33:38.418Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "219",
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "problemName": "0219-contains-duplicate-ii",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/",
+      "folderPath": "0219-contains-duplicate-ii/",
+      "readmePath": "0219-contains-duplicate-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0219-contains-duplicate-ii.java",
+          "path": "0219-contains-duplicate-ii/0219-contains-duplicate-ii.java",
+          "sha": "1b09f23e4ed927a448dce478f7c21030221a9a65",
+          "lastSyncedAt": "2026-08-25T09:25:35.046Z"
         }
       ]
     },
