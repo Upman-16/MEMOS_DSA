@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-25T17:31:33.478Z",
+  "updatedAt": "2026-08-26T15:39:12.729Z",
   "problems": [
     {
       "frontendId": "66",
@@ -223,6 +223,26 @@
           "path": "2769-find-the-maximum-achievable-number/2769-find-the-maximum-achievable-number.java",
           "sha": "89ac83f379d734a90f2b6c49ce4c119e039f7c56",
           "lastSyncedAt": "2026-08-25T17:14:48.853Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2894",
+      "title": "Divisible and Non-divisible Sums Difference",
+      "slug": "divisible-and-non-divisible-sums-difference",
+      "problemName": "2894-divisible-and-non-divisible-sums-difference",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/",
+      "folderPath": "2894-divisible-and-non-divisible-sums-difference/",
+      "readmePath": "2894-divisible-and-non-divisible-sums-difference/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2894-divisible-and-non-divisible-sums-difference.java",
+          "path": "2894-divisible-and-non-divisible-sums-difference/2894-divisible-and-non-divisible-sums-difference.java",
+          "sha": "0544d31232d4096d7c412f94062ad34b4de97d75",
+          "lastSyncedAt": "2026-08-26T15:39:12.729Z"
         }
       ]
     },
