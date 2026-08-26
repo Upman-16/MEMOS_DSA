@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-25T17:05:34.695Z",
+  "updatedAt": "2026-08-26T14:16:19.519Z",
   "problems": [
     {
       "frontendId": "1",
@@ -723,6 +723,26 @@
           "path": "3718-smallest-missing-multiple-of-k/3718-smallest-missing-multiple-of-k.java",
           "sha": "9267f61b390a747a366b150cec8d92d3b70e3aaf",
           "lastSyncedAt": "2026-08-25T09:36:43.304Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3925",
+      "title": "Concatenate Array With Reverse",
+      "slug": "concatenate-array-with-reverse",
+      "problemName": "3925-concatenate-array-with-reverse",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/concatenate-array-with-reverse/",
+      "folderPath": "3925-concatenate-array-with-reverse/",
+      "readmePath": "3925-concatenate-array-with-reverse/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3925-concatenate-array-with-reverse.java",
+          "path": "3925-concatenate-array-with-reverse/3925-concatenate-array-with-reverse.java",
+          "sha": "2226f84fb2a9f1c16ae580c39f0b4a2a06eb9d9e",
+          "lastSyncedAt": "2026-08-26T14:16:19.519Z"
         }
       ]
     }
