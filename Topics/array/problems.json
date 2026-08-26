@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-26T14:16:19.519Z",
+  "updatedAt": "2026-08-26T14:17:58.626Z",
   "problems": [
     {
       "frontendId": "1",
@@ -742,7 +742,7 @@
           "filename": "3925-concatenate-array-with-reverse.java",
           "path": "3925-concatenate-array-with-reverse/3925-concatenate-array-with-reverse.java",
           "sha": "2226f84fb2a9f1c16ae580c39f0b4a2a06eb9d9e",
-          "lastSyncedAt": "2026-08-26T14:16:19.519Z"
+          "lastSyncedAt": "2026-08-26T14:17:58.626Z"
         }
       ]
     }
