@@ -4,7 +4,7 @@
     "slug": "simulation",
     "name": "Simulation"
   },
-  "updatedAt": "2026-08-26T15:23:23.745Z",
+  "updatedAt": "2026-08-26T16:00:38.760Z",
   "problems": [
     {
       "frontendId": "1920",
@@ -43,6 +43,26 @@
           "path": "3069-distribute-elements-into-two-arrays-i/3069-distribute-elements-into-two-arrays-i.java",
           "sha": "9765b4fa15641e8aadb75760fe706d87ec53aa91",
           "lastSyncedAt": "2026-08-20T14:22:07.108Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3701",
+      "title": "Compute Alternating Sum",
+      "slug": "compute-alternating-sum",
+      "problemName": "3701-compute-alternating-sum",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/compute-alternating-sum/",
+      "folderPath": "3701-compute-alternating-sum/",
+      "readmePath": "3701-compute-alternating-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3701-compute-alternating-sum.java",
+          "path": "3701-compute-alternating-sum/3701-compute-alternating-sum.java",
+          "sha": "262b9552818daf5b221b90387020f6a12353c91c",
+          "lastSyncedAt": "2026-08-26T16:00:38.760Z"
         }
       ]
     },
