@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-26T15:39:12.729Z",
+  "updatedAt": "2026-08-26T15:42:45.503Z",
   "problems": [
     {
       "frontendId": "66",
@@ -243,6 +243,26 @@
           "path": "2894-divisible-and-non-divisible-sums-difference/2894-divisible-and-non-divisible-sums-difference.java",
           "sha": "0544d31232d4096d7c412f94062ad34b4de97d75",
           "lastSyncedAt": "2026-08-26T15:39:12.729Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3190",
+      "title": "Find Minimum Operations to Make All Elements Divisible by Three",
+      "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "problemName": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/",
+      "folderPath": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three/",
+      "readmePath": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three.java",
+          "path": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three/3190-find-minimum-operations-to-make-all-elements-divisible-by-three.java",
+          "sha": "ef9de607396a550b33aa9a296df4c14db9b74dd7",
+          "lastSyncedAt": "2026-08-26T15:42:45.503Z"
         }
       ]
     },
