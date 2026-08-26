@@ -4,8 +4,28 @@
     "slug": "simulation",
     "name": "Simulation"
   },
-  "updatedAt": "2026-08-26T14:17:58.626Z",
+  "updatedAt": "2026-08-26T15:23:23.745Z",
   "problems": [
+    {
+      "frontendId": "1920",
+      "title": "Build Array from Permutation",
+      "slug": "build-array-from-permutation",
+      "problemName": "1920-build-array-from-permutation",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/build-array-from-permutation/",
+      "folderPath": "1920-build-array-from-permutation/",
+      "readmePath": "1920-build-array-from-permutation/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1920-build-array-from-permutation.java",
+          "path": "1920-build-array-from-permutation/1920-build-array-from-permutation.java",
+          "sha": "5bcb2705399b8db513419de04a5248f2c0422845",
+          "lastSyncedAt": "2026-08-26T15:23:23.745Z"
+        }
+      ]
+    },
     {
       "frontendId": "3069",
       "title": "Distribute Elements Into Two Arrays I",
