@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-26T15:44:23.624Z",
+  "updatedAt": "2026-08-26T16:00:38.760Z",
   "problems": [
     {
       "frontendId": "1",
@@ -723,6 +723,26 @@
           "path": "3512-minimum-operations-to-make-array-sum-divisible-by-k/3512-minimum-operations-to-make-array-sum-divisible-by-k.java",
           "sha": "b5260adf81af246da143773f99fc48822a895f9c",
           "lastSyncedAt": "2026-08-25T17:05:34.695Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3701",
+      "title": "Compute Alternating Sum",
+      "slug": "compute-alternating-sum",
+      "problemName": "3701-compute-alternating-sum",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/compute-alternating-sum/",
+      "folderPath": "3701-compute-alternating-sum/",
+      "readmePath": "3701-compute-alternating-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3701-compute-alternating-sum.java",
+          "path": "3701-compute-alternating-sum/3701-compute-alternating-sum.java",
+          "sha": "262b9552818daf5b221b90387020f6a12353c91c",
+          "lastSyncedAt": "2026-08-26T16:00:38.760Z"
         }
       ]
     },
