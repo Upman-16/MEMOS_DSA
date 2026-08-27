@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-26T15:44:23.624Z",
+  "updatedAt": "2026-08-27T17:59:26.263Z",
   "problems": [
     {
       "frontendId": "66",
@@ -103,6 +103,26 @@
           "path": "1510-stone-game-iv/1510-stone-game-iv.java",
           "sha": "d14bc6f03db90577530425c8f7ca8166c1c22413",
           "lastSyncedAt": "2026-08-15T06:23:07.595Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1512",
+      "title": "Number of Good Pairs",
+      "slug": "number-of-good-pairs",
+      "problemName": "1512-number-of-good-pairs",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-good-pairs/",
+      "folderPath": "1512-number-of-good-pairs/",
+      "readmePath": "1512-number-of-good-pairs/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1512-number-of-good-pairs.java",
+          "path": "1512-number-of-good-pairs/1512-number-of-good-pairs.java",
+          "sha": "3ddd1db37542dfa932277e2ffc4346afe475f4c4",
+          "lastSyncedAt": "2026-08-27T17:59:26.263Z"
         }
       ]
     },
