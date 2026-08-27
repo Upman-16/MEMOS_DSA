@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "enumeration",
+    "name": "Enumeration"
+  },
+  "updatedAt": "2026-08-27T15:05:52.548Z",
+  "problems": [
+    {
+      "frontendId": "3720",
+      "title": "Lexicographically Smallest Permutation Greater Than Target",
+      "slug": "lexicographically-smallest-permutation-greater-than-target",
+      "problemName": "3720-lexicographically-smallest-permutation-greater-than-target",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+      "folderPath": "3720-lexicographically-smallest-permutation-greater-than-target/",
+      "readmePath": "3720-lexicographically-smallest-permutation-greater-than-target/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3720-lexicographically-smallest-permutation-greater-than-target.java",
+          "path": "3720-lexicographically-smallest-permutation-greater-than-target/3720-lexicographically-smallest-permutation-greater-than-target.java",
+          "sha": "1d1f9cb2597d601cadbdfdca3e652920f34b5f1a",
+          "lastSyncedAt": "2026-08-27T15:05:52.548Z"
+        }
+      ]
+    }
+  ]
+}
