@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-27T15:05:52.548Z",
+  "updatedAt": "2026-08-27T17:59:26.263Z",
   "problems": [
     {
       "frontendId": "1",
@@ -163,6 +163,26 @@
           "path": "1386-cinema-seat-allocation/1386-cinema-seat-allocation.java",
           "sha": "4e8c3e216520f4aa9e8a59793618b4357c3a95d3",
           "lastSyncedAt": "2026-08-19T15:17:25.903Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1512",
+      "title": "Number of Good Pairs",
+      "slug": "number-of-good-pairs",
+      "problemName": "1512-number-of-good-pairs",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-good-pairs/",
+      "folderPath": "1512-number-of-good-pairs/",
+      "readmePath": "1512-number-of-good-pairs/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1512-number-of-good-pairs.java",
+          "path": "1512-number-of-good-pairs/1512-number-of-good-pairs.java",
+          "sha": "3ddd1db37542dfa932277e2ffc4346afe475f4c4",
+          "lastSyncedAt": "2026-08-27T17:59:26.263Z"
         }
       ]
     },
