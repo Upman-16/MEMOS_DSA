@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-27T18:09:46.266Z",
+  "updatedAt": "2026-08-28T14:57:49.802Z",
   "problems": [
     {
       "frontendId": "66",
@@ -283,6 +283,26 @@
           "path": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three/3190-find-minimum-operations-to-make-all-elements-divisible-by-three.java",
           "sha": "ef9de607396a550b33aa9a296df4c14db9b74dd7",
           "lastSyncedAt": "2026-08-26T15:44:23.624Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3289",
+      "title": "The Two Sneaky Numbers of Digitville",
+      "slug": "the-two-sneaky-numbers-of-digitville",
+      "problemName": "3289-the-two-sneaky-numbers-of-digitville",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/",
+      "folderPath": "3289-the-two-sneaky-numbers-of-digitville/",
+      "readmePath": "3289-the-two-sneaky-numbers-of-digitville/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3289-the-two-sneaky-numbers-of-digitville.java",
+          "path": "3289-the-two-sneaky-numbers-of-digitville/3289-the-two-sneaky-numbers-of-digitville.java",
+          "sha": "aac6b65ac0ea388b9cffe51f63c720e811efc76f",
+          "lastSyncedAt": "2026-08-28T14:57:49.802Z"
         }
       ]
     },
