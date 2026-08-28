@@ -4,7 +4,7 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-08-24T16:13:01.414Z",
+  "updatedAt": "2026-08-28T16:12:06.536Z",
   "problems": [
     {
       "frontendId": "16",
@@ -143,6 +143,26 @@
           "path": "2996-smallest-missing-integer-greater-than-sequential-prefix-sum/2996-smallest-missing-integer-greater-than-sequential-prefix-sum.java",
           "sha": "39e55d98bf2a79388d424b21d81ae190fe530126",
           "lastSyncedAt": "2026-08-15T06:22:55.845Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3467",
+      "title": "Transform Array by Parity",
+      "slug": "transform-array-by-parity",
+      "problemName": "3467-transform-array-by-parity",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/transform-array-by-parity/",
+      "folderPath": "3467-transform-array-by-parity/",
+      "readmePath": "3467-transform-array-by-parity/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3467-transform-array-by-parity.java",
+          "path": "3467-transform-array-by-parity/3467-transform-array-by-parity.java",
+          "sha": "ed2771a885d7c57b424b9a2bb8c4b3e3a97a9d86",
+          "lastSyncedAt": "2026-08-28T16:12:06.536Z"
         }
       ]
     }
