@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-08-28T14:57:49.802Z",
+  "updatedAt": "2026-08-28T14:58:37.174Z",
   "problems": [
     {
       "frontendId": "1",
@@ -282,7 +282,7 @@
           "filename": "3289-the-two-sneaky-numbers-of-digitville.java",
           "path": "3289-the-two-sneaky-numbers-of-digitville/3289-the-two-sneaky-numbers-of-digitville.java",
           "sha": "aac6b65ac0ea388b9cffe51f63c720e811efc76f",
-          "lastSyncedAt": "2026-08-28T14:57:49.802Z"
+          "lastSyncedAt": "2026-08-28T14:58:37.174Z"
         }
       ]
     },
