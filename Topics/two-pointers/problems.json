@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-08-28T14:47:27.074Z",
+  "updatedAt": "2026-08-28T15:08:43.038Z",
   "problems": [
     {
       "frontendId": "16",
@@ -103,6 +103,26 @@
           "path": "3734-lexicographically-smallest-palindromic-permutation-greater-than-target/3734-lexicographically-smallest-palindromic-permutation-greater-than-target.java",
           "sha": "c6a5cc0f74f0dd5099d7d24740414f161a75b37b",
           "lastSyncedAt": "2026-08-28T14:47:27.074Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3794",
+      "title": "Reverse String Prefix",
+      "slug": "reverse-string-prefix",
+      "problemName": "3794-reverse-string-prefix",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-string-prefix/",
+      "folderPath": "3794-reverse-string-prefix/",
+      "readmePath": "3794-reverse-string-prefix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3794-reverse-string-prefix.java",
+          "path": "3794-reverse-string-prefix/3794-reverse-string-prefix.java",
+          "sha": "6aa5c0ef8f9ea21bbcf7d981934fc9d449a08ff5",
+          "lastSyncedAt": "2026-08-28T15:08:43.038Z"
         }
       ]
     }
