@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-28T14:58:37.174Z",
+  "updatedAt": "2026-08-28T15:35:29.208Z",
   "problems": [
     {
       "frontendId": "1",
@@ -583,6 +583,26 @@
           "path": "2029-stone-game-ix/2029-stone-game-ix.java",
           "sha": "268dad3337c7c029864c4c6b0b7c01014983e91e",
           "lastSyncedAt": "2026-08-16T06:02:24.959Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2161",
+      "title": "Partition Array According to Given Pivot",
+      "slug": "partition-array-according-to-given-pivot",
+      "problemName": "2161-partition-array-according-to-given-pivot",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
+      "folderPath": "2161-partition-array-according-to-given-pivot/",
+      "readmePath": "2161-partition-array-according-to-given-pivot/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2161-partition-array-according-to-given-pivot.java",
+          "path": "2161-partition-array-according-to-given-pivot/2161-partition-array-according-to-given-pivot.java",
+          "sha": "df8d063b1dc90fb7f3630d5e33e101f248c0f54f",
+          "lastSyncedAt": "2026-08-28T15:35:29.208Z"
         }
       ]
     },
