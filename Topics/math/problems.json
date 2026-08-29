@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-29T13:47:28.452Z",
+  "updatedAt": "2026-08-29T13:48:44.805Z",
   "problems": [
     {
       "frontendId": "66",
@@ -342,7 +342,7 @@
           "filename": "3516-find-closest-person.java",
           "path": "3516-find-closest-person/3516-find-closest-person.java",
           "sha": "5aa38cbd13282ec028f7a5e065c53cae321d759a",
-          "lastSyncedAt": "2026-08-29T13:47:28.452Z"
+          "lastSyncedAt": "2026-08-29T13:48:44.805Z"
         }
       ]
     },
