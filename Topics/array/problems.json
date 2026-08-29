@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-08-28T16:12:06.536Z",
+  "updatedAt": "2026-08-29T11:30:50.586Z",
   "problems": [
     {
       "frontendId": "1",
@@ -643,6 +643,26 @@
           "path": "2574-left-and-right-sum-differences/2574-left-and-right-sum-differences.java",
           "sha": "9048345fb6cb7c5c6487e88db9e44365f0fe91e6",
           "lastSyncedAt": "2026-08-27T18:23:27.589Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2948",
+      "title": "Make Lexicographically Smallest Array by Swapping Elements",
+      "slug": "make-lexicographically-smallest-array-by-swapping-elements",
+      "problemName": "2948-make-lexicographically-smallest-array-by-swapping-elements",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/",
+      "folderPath": "2948-make-lexicographically-smallest-array-by-swapping-elements/",
+      "readmePath": "2948-make-lexicographically-smallest-array-by-swapping-elements/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2948-make-lexicographically-smallest-array-by-swapping-elements.java",
+          "path": "2948-make-lexicographically-smallest-array-by-swapping-elements/2948-make-lexicographically-smallest-array-by-swapping-elements.java",
+          "sha": "d3959b79380f980e0a4a4a1aae82cefc9a9cfba6",
+          "lastSyncedAt": "2026-08-29T11:30:50.586Z"
         }
       ]
     },
