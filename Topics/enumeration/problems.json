@@ -4,8 +4,28 @@
     "slug": "enumeration",
     "name": "Enumeration"
   },
-  "updatedAt": "2026-08-28T14:47:27.074Z",
+  "updatedAt": "2026-08-29T13:56:32.840Z",
   "problems": [
+    {
+      "frontendId": "2427",
+      "title": "Number of Common Factors",
+      "slug": "number-of-common-factors",
+      "problemName": "2427-number-of-common-factors",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-common-factors/",
+      "folderPath": "2427-number-of-common-factors/",
+      "readmePath": "2427-number-of-common-factors/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2427-number-of-common-factors.java",
+          "path": "2427-number-of-common-factors/2427-number-of-common-factors.java",
+          "sha": "993d8a58c03568b8ee16a2106ddddc3caf31dee4",
+          "lastSyncedAt": "2026-08-29T13:56:32.840Z"
+        }
+      ]
+    },
     {
       "frontendId": "3720",
       "title": "Lexicographically Smallest Permutation Greater Than Target",
