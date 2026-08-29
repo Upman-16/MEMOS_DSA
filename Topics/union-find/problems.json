@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "union-find",
+    "name": "Union-Find"
+  },
+  "updatedAt": "2026-08-29T11:30:50.586Z",
+  "problems": [
+    {
+      "frontendId": "2948",
+      "title": "Make Lexicographically Smallest Array by Swapping Elements",
+      "slug": "make-lexicographically-smallest-array-by-swapping-elements",
+      "problemName": "2948-make-lexicographically-smallest-array-by-swapping-elements",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/",
+      "folderPath": "2948-make-lexicographically-smallest-array-by-swapping-elements/",
+      "readmePath": "2948-make-lexicographically-smallest-array-by-swapping-elements/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2948-make-lexicographically-smallest-array-by-swapping-elements.java",
+          "path": "2948-make-lexicographically-smallest-array-by-swapping-elements/2948-make-lexicographically-smallest-array-by-swapping-elements.java",
+          "sha": "d3959b79380f980e0a4a4a1aae82cefc9a9cfba6",
+          "lastSyncedAt": "2026-08-29T11:30:50.586Z"
+        }
+      ]
+    }
+  ]
+}
