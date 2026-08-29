@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-08-28T14:58:37.174Z",
+  "updatedAt": "2026-08-29T13:47:28.452Z",
   "problems": [
     {
       "frontendId": "66",
@@ -323,6 +323,26 @@
           "path": "3512-minimum-operations-to-make-array-sum-divisible-by-k/3512-minimum-operations-to-make-array-sum-divisible-by-k.java",
           "sha": "b5260adf81af246da143773f99fc48822a895f9c",
           "lastSyncedAt": "2026-08-25T17:05:34.695Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3516",
+      "title": "Find Closest Person",
+      "slug": "find-closest-person",
+      "problemName": "3516-find-closest-person",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-closest-person/",
+      "folderPath": "3516-find-closest-person/",
+      "readmePath": "3516-find-closest-person/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3516-find-closest-person.java",
+          "path": "3516-find-closest-person/3516-find-closest-person.java",
+          "sha": "5aa38cbd13282ec028f7a5e065c53cae321d759a",
+          "lastSyncedAt": "2026-08-29T13:47:28.452Z"
         }
       ]
     },
