@@ -4,7 +4,7 @@
     "slug": "sliding-window",
     "name": "Sliding Window"
   },
-  "updatedAt": "2026-08-31T10:45:20.492Z",
+  "updatedAt": "2026-08-31T10:47:59.455Z",
   "problems": [
     {
       "frontendId": "219",
@@ -62,7 +62,7 @@
           "filename": "1456-maximum-number-of-vowels-in-a-substring-of-given-length.java",
           "path": "1456-maximum-number-of-vowels-in-a-substring-of-given-length/1456-maximum-number-of-vowels-in-a-substring-of-given-length.java",
           "sha": "10e27b6ddd69ea6a4baa67fa4807fa370ca5a208",
-          "lastSyncedAt": "2026-08-31T10:45:20.492Z"
+          "lastSyncedAt": "2026-08-31T10:47:59.455Z"
         }
       ]
     },
