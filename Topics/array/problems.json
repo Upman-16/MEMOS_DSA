@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-01T04:56:27.257Z",
+  "updatedAt": "2026-09-01T05:25:12.691Z",
   "problems": [
     {
       "frontendId": "1",
@@ -523,6 +523,26 @@
           "path": "1563-stone-game-v/1563-stone-game-v.java",
           "sha": "dbe13677d8f56f3bee7bb7ea6b9cb411833a4904",
           "lastSyncedAt": "2026-08-17T15:22:32.294Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1652",
+      "title": "Defuse the Bomb",
+      "slug": "defuse-the-bomb",
+      "problemName": "1652-defuse-the-bomb",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/defuse-the-bomb/",
+      "folderPath": "1652-defuse-the-bomb/",
+      "readmePath": "1652-defuse-the-bomb/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1652-defuse-the-bomb.java",
+          "path": "1652-defuse-the-bomb/1652-defuse-the-bomb.java",
+          "sha": "1261db503e112964db5e0ef8b8259f501d1b3e69",
+          "lastSyncedAt": "2026-09-01T05:25:12.691Z"
         }
       ]
     },
