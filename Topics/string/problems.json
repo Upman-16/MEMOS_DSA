@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-08-31T10:47:59.455Z",
+  "updatedAt": "2026-09-02T17:03:25.071Z",
   "problems": [
     {
       "frontendId": "1456",
@@ -103,6 +103,26 @@
           "path": "3090-maximum-length-substring-with-two-occurrences/3090-maximum-length-substring-with-two-occurrences.java",
           "sha": "85d720772a16b7525f6cf8b1aee8f3af70261cab",
           "lastSyncedAt": "2026-08-15T06:22:13.769Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3110",
+      "title": "Score of a String",
+      "slug": "score-of-a-string",
+      "problemName": "3110-score-of-a-string",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/score-of-a-string/",
+      "folderPath": "3110-score-of-a-string/",
+      "readmePath": "3110-score-of-a-string/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3110-score-of-a-string.java",
+          "path": "3110-score-of-a-string/3110-score-of-a-string.java",
+          "sha": "2006800bdea40a280dfa824b34b2992eb1b67268",
+          "lastSyncedAt": "2026-09-02T17:03:25.071Z"
         }
       ]
     },
