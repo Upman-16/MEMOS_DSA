@@ -4,7 +4,7 @@
     "slug": "matrix",
     "name": "Matrix"
   },
-  "updatedAt": "2026-09-01T04:56:27.257Z",
+  "updatedAt": "2026-09-02T17:10:42.929Z",
   "problems": [
     {
       "frontendId": "3568",
@@ -23,6 +23,26 @@
           "path": "3568-minimum-moves-to-clean-the-classroom/3568-minimum-moves-to-clean-the-classroom.java",
           "sha": "5c4a1523cd81f0b88b4fded2cb531bbe1022a86b",
           "lastSyncedAt": "2026-09-01T04:56:27.257Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3898",
+      "title": "Find the Degree of Each Vertex",
+      "slug": "find-the-degree-of-each-vertex",
+      "problemName": "3898-find-the-degree-of-each-vertex",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-degree-of-each-vertex/",
+      "folderPath": "3898-find-the-degree-of-each-vertex/",
+      "readmePath": "3898-find-the-degree-of-each-vertex/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3898-find-the-degree-of-each-vertex.java",
+          "path": "3898-find-the-degree-of-each-vertex/3898-find-the-degree-of-each-vertex.java",
+          "sha": "52d2d59b37d90650f3e84e98d1761efc1a108930",
+          "lastSyncedAt": "2026-09-02T17:10:42.929Z"
         }
       ]
     }
