@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-03T13:50:04.723Z",
+  "updatedAt": "2026-09-03T13:56:33.338Z",
   "problems": [
     {
       "frontendId": "1",
@@ -923,6 +923,26 @@
           "path": "3568-minimum-moves-to-clean-the-classroom/3568-minimum-moves-to-clean-the-classroom.java",
           "sha": "5c4a1523cd81f0b88b4fded2cb531bbe1022a86b",
           "lastSyncedAt": "2026-09-01T04:56:27.257Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3668",
+      "title": "Restore Finishing Order",
+      "slug": "restore-finishing-order",
+      "problemName": "3668-restore-finishing-order",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/restore-finishing-order/",
+      "folderPath": "3668-restore-finishing-order/",
+      "readmePath": "3668-restore-finishing-order/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3668-restore-finishing-order.java",
+          "path": "3668-restore-finishing-order/3668-restore-finishing-order.java",
+          "sha": "ebb0283072cbc8f2f59c8dadbd1a2869dc248ab2",
+          "lastSyncedAt": "2026-09-03T13:56:33.338Z"
         }
       ]
     },
