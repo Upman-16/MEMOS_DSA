@@ -4,7 +4,7 @@
     "slug": "prefix-sum",
     "name": "Prefix Sum"
   },
-  "updatedAt": "2026-08-27T18:23:27.589Z",
+  "updatedAt": "2026-09-04T15:46:10.585Z",
   "problems": [
     {
       "frontendId": "1140",
@@ -63,6 +63,26 @@
           "path": "2574-left-and-right-sum-differences/2574-left-and-right-sum-differences.java",
           "sha": "9048345fb6cb7c5c6487e88db9e44365f0fe91e6",
           "lastSyncedAt": "2026-08-27T18:23:27.589Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3903",
+      "title": "Smallest Stable Index I",
+      "slug": "smallest-stable-index-i",
+      "problemName": "3903-smallest-stable-index-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
+      "folderPath": "3903-smallest-stable-index-i/",
+      "readmePath": "3903-smallest-stable-index-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3903-smallest-stable-index-i.java",
+          "path": "3903-smallest-stable-index-i/3903-smallest-stable-index-i.java",
+          "sha": "d46fdcc011e117b7fd224ac468d6d3580e78e165",
+          "lastSyncedAt": "2026-09-04T15:46:10.585Z"
         }
       ]
     }
