@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-03T13:56:33.338Z",
+  "updatedAt": "2026-09-04T15:46:10.585Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1063,6 +1063,26 @@
           "path": "3898-find-the-degree-of-each-vertex/3898-find-the-degree-of-each-vertex.java",
           "sha": "52d2d59b37d90650f3e84e98d1761efc1a108930",
           "lastSyncedAt": "2026-09-02T17:10:42.929Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3903",
+      "title": "Smallest Stable Index I",
+      "slug": "smallest-stable-index-i",
+      "problemName": "3903-smallest-stable-index-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-i/",
+      "folderPath": "3903-smallest-stable-index-i/",
+      "readmePath": "3903-smallest-stable-index-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3903-smallest-stable-index-i.java",
+          "path": "3903-smallest-stable-index-i/3903-smallest-stable-index-i.java",
+          "sha": "d46fdcc011e117b7fd224ac468d6d3580e78e165",
+          "lastSyncedAt": "2026-09-04T15:46:10.585Z"
         }
       ]
     },
