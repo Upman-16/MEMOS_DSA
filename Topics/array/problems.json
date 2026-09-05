@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-04T15:46:10.585Z",
+  "updatedAt": "2026-09-05T05:16:06.117Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1083,6 +1083,26 @@
           "path": "3903-smallest-stable-index-i/3903-smallest-stable-index-i.java",
           "sha": "d46fdcc011e117b7fd224ac468d6d3580e78e165",
           "lastSyncedAt": "2026-09-04T15:46:10.585Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3904",
+      "title": "Smallest Stable Index II",
+      "slug": "smallest-stable-index-ii",
+      "problemName": "3904-smallest-stable-index-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-stable-index-ii/",
+      "folderPath": "3904-smallest-stable-index-ii/",
+      "readmePath": "3904-smallest-stable-index-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3904-smallest-stable-index-ii.java",
+          "path": "3904-smallest-stable-index-ii/3904-smallest-stable-index-ii.java",
+          "sha": "9f79dcecb0759d6f47aa0a948b7a3544dc0be39c",
+          "lastSyncedAt": "2026-09-05T05:16:06.117Z"
         }
       ]
     },
