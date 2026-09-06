@@ -4,8 +4,28 @@
     "slug": "number-theory",
     "name": "Number Theory"
   },
-  "updatedAt": "2026-08-29T13:56:32.840Z",
+  "updatedAt": "2026-09-06T04:23:00.382Z",
   "problems": [
+    {
+      "frontendId": "2413",
+      "title": "Smallest Even Multiple",
+      "slug": "smallest-even-multiple",
+      "problemName": "2413-smallest-even-multiple",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-even-multiple/",
+      "folderPath": "2413-smallest-even-multiple/",
+      "readmePath": "2413-smallest-even-multiple/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2413-smallest-even-multiple.java",
+          "path": "2413-smallest-even-multiple/2413-smallest-even-multiple.java",
+          "sha": "efe894b61f3989096c4d26fd8da6eaf29da8f453",
+          "lastSyncedAt": "2026-09-06T04:23:00.382Z"
+        }
+      ]
+    },
     {
       "frontendId": "2427",
       "title": "Number of Common Factors",
