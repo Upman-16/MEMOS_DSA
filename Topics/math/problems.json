@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-03T13:50:04.723Z",
+  "updatedAt": "2026-09-06T04:23:00.382Z",
   "problems": [
     {
       "frontendId": "66",
@@ -203,6 +203,26 @@
           "path": "2029-stone-game-ix/2029-stone-game-ix.java",
           "sha": "268dad3337c7c029864c4c6b0b7c01014983e91e",
           "lastSyncedAt": "2026-08-16T06:02:24.959Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2413",
+      "title": "Smallest Even Multiple",
+      "slug": "smallest-even-multiple",
+      "problemName": "2413-smallest-even-multiple",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/smallest-even-multiple/",
+      "folderPath": "2413-smallest-even-multiple/",
+      "readmePath": "2413-smallest-even-multiple/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2413-smallest-even-multiple.java",
+          "path": "2413-smallest-even-multiple/2413-smallest-even-multiple.java",
+          "sha": "efe894b61f3989096c4d26fd8da6eaf29da8f453",
+          "lastSyncedAt": "2026-09-06T04:23:00.382Z"
         }
       ]
     },
