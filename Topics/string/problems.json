@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-06T04:07:37.295Z",
+  "updatedAt": "2026-09-06T04:18:52.655Z",
   "problems": [
     {
       "frontendId": "115",
@@ -23,6 +23,26 @@
           "path": "0115-distinct-subsequences/0115-distinct-subsequences.java",
           "sha": "e904a61f224cb165b68ec41b53dcd6dfcaa10b5a",
           "lastSyncedAt": "2026-09-06T03:46:43.667Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "771",
+      "title": "Jewels and Stones",
+      "slug": "jewels-and-stones",
+      "problemName": "0771-jewels-and-stones",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/jewels-and-stones/",
+      "folderPath": "0771-jewels-and-stones/",
+      "readmePath": "0771-jewels-and-stones/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0771-jewels-and-stones.java",
+          "path": "0771-jewels-and-stones/0771-jewels-and-stones.java",
+          "sha": "1de1aad1f2c6bbc6e4531bdb036ae30b0074a2ab",
+          "lastSyncedAt": "2026-09-06T04:18:52.655Z"
         }
       ]
     },
