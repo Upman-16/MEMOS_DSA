@@ -4,8 +4,28 @@
     "slug": "dynamic-programming",
     "name": "Dynamic Programming"
   },
-  "updatedAt": "2026-08-24T06:41:49.943Z",
+  "updatedAt": "2026-09-06T03:46:43.667Z",
   "problems": [
+    {
+      "frontendId": "115",
+      "title": "Distinct Subsequences",
+      "slug": "distinct-subsequences",
+      "problemName": "0115-distinct-subsequences",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences/",
+      "folderPath": "0115-distinct-subsequences/",
+      "readmePath": "0115-distinct-subsequences/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0115-distinct-subsequences.java",
+          "path": "0115-distinct-subsequences/0115-distinct-subsequences.java",
+          "sha": "e904a61f224cb165b68ec41b53dcd6dfcaa10b5a",
+          "lastSyncedAt": "2026-09-06T03:46:43.667Z"
+        }
+      ]
+    },
     {
       "frontendId": "1140",
       "title": "Stone Game II",
