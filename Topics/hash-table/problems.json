@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-03T13:56:33.338Z",
+  "updatedAt": "2026-09-06T04:18:52.655Z",
   "problems": [
     {
       "frontendId": "1",
@@ -143,6 +143,26 @@
           "path": "0349-intersection-of-two-arrays/0349-intersection-of-two-arrays.java",
           "sha": "72e36d4c4dd3d7373f67c561ab14ff86dbde4112",
           "lastSyncedAt": "2026-08-23T05:31:32.948Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "771",
+      "title": "Jewels and Stones",
+      "slug": "jewels-and-stones",
+      "problemName": "0771-jewels-and-stones",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/jewels-and-stones/",
+      "folderPath": "0771-jewels-and-stones/",
+      "readmePath": "0771-jewels-and-stones/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0771-jewels-and-stones.java",
+          "path": "0771-jewels-and-stones/0771-jewels-and-stones.java",
+          "sha": "1de1aad1f2c6bbc6e4531bdb036ae30b0074a2ab",
+          "lastSyncedAt": "2026-09-06T04:18:52.655Z"
         }
       ]
     },
