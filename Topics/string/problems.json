@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-06T04:20:42.298Z",
+  "updatedAt": "2026-09-07T07:05:32.628Z",
   "problems": [
     {
       "frontendId": "115",
@@ -43,6 +43,26 @@
           "path": "0771-jewels-and-stones/0771-jewels-and-stones.java",
           "sha": "1de1aad1f2c6bbc6e4531bdb036ae30b0074a2ab",
           "lastSyncedAt": "2026-09-06T04:20:42.298Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "940",
+      "title": "Distinct Subsequences II",
+      "slug": "distinct-subsequences-ii",
+      "problemName": "0940-distinct-subsequences-ii",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/distinct-subsequences-ii/",
+      "folderPath": "0940-distinct-subsequences-ii/",
+      "readmePath": "0940-distinct-subsequences-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0940-distinct-subsequences-ii.java",
+          "path": "0940-distinct-subsequences-ii/0940-distinct-subsequences-ii.java",
+          "sha": "3b10d3e268eb0a403eed81e770cc9348997d64f1",
+          "lastSyncedAt": "2026-09-07T07:05:32.628Z"
         }
       ]
     },
