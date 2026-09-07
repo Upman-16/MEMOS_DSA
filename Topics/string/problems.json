@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-07T09:20:36.252Z",
+  "updatedAt": "2026-09-07T09:31:54.284Z",
   "problems": [
     {
       "frontendId": "115",
@@ -43,6 +43,26 @@
           "path": "0438-find-all-anagrams-in-a-string/0438-find-all-anagrams-in-a-string.java",
           "sha": "5689a4239a30f46a21c986b6f7fa5ef53cfe8af4",
           "lastSyncedAt": "2026-09-07T09:20:36.252Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "567",
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "problemName": "0567-permutation-in-string",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/permutation-in-string/",
+      "folderPath": "0567-permutation-in-string/",
+      "readmePath": "0567-permutation-in-string/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0567-permutation-in-string.java",
+          "path": "0567-permutation-in-string/0567-permutation-in-string.java",
+          "sha": "440a3e63f64324a27a1e483f8d5507c7aa62c448",
+          "lastSyncedAt": "2026-09-07T09:31:54.284Z"
         }
       ]
     },
