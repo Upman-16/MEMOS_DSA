@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-06T04:24:27.337Z",
+  "updatedAt": "2026-09-08T04:50:58.509Z",
   "problems": [
     {
       "frontendId": "66",
@@ -443,6 +443,26 @@
           "path": "3658-gcd-of-odd-and-even-sums/3658-gcd-of-odd-and-even-sums.java",
           "sha": "6fefee779fc9b1488f598f99bf4a74b518fb2856",
           "lastSyncedAt": "2026-08-27T18:09:46.266Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3870",
+      "title": "Count Commas in Range",
+      "slug": "count-commas-in-range",
+      "problemName": "3870-count-commas-in-range",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/count-commas-in-range/",
+      "folderPath": "3870-count-commas-in-range/",
+      "readmePath": "3870-count-commas-in-range/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3870-count-commas-in-range.java",
+          "path": "3870-count-commas-in-range/3870-count-commas-in-range.java",
+          "sha": "c5114f11efd18b1ca1d992375733b81d1cc4765e",
+          "lastSyncedAt": "2026-09-08T04:50:58.509Z"
         }
       ]
     },
