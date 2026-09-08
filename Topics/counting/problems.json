@@ -4,7 +4,7 @@
     "slug": "counting",
     "name": "Counting"
   },
-  "updatedAt": "2026-08-29T13:39:58.996Z",
+  "updatedAt": "2026-09-08T05:09:44.923Z",
   "problems": [
     {
       "frontendId": "169",
@@ -23,6 +23,26 @@
           "path": "0169-majority-element/0169-majority-element.java",
           "sha": "78b14e7477cc482520e0bef12245586ad324b737",
           "lastSyncedAt": "2026-08-22T08:24:35.385Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1347",
+      "title": "Minimum Number of Steps to Make Two Strings Anagram",
+      "slug": "minimum-number-of-steps-to-make-two-strings-anagram",
+      "problemName": "1347-minimum-number-of-steps-to-make-two-strings-anagram",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/",
+      "folderPath": "1347-minimum-number-of-steps-to-make-two-strings-anagram/",
+      "readmePath": "1347-minimum-number-of-steps-to-make-two-strings-anagram/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1347-minimum-number-of-steps-to-make-two-strings-anagram.java",
+          "path": "1347-minimum-number-of-steps-to-make-two-strings-anagram/1347-minimum-number-of-steps-to-make-two-strings-anagram.java",
+          "sha": "94b412f34da58ea3c6c6070f7610ff388680d062",
+          "lastSyncedAt": "2026-09-08T05:09:44.923Z"
         }
       ]
     },
