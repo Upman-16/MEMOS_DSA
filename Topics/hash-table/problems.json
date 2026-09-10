@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-10T15:13:20.441Z",
+  "updatedAt": "2026-09-10T16:09:13.381Z",
   "problems": [
     {
       "frontendId": "1",
@@ -323,6 +323,26 @@
           "path": "1512-number-of-good-pairs/1512-number-of-good-pairs.java",
           "sha": "3ddd1db37542dfa932277e2ffc4346afe475f4c4",
           "lastSyncedAt": "2026-08-27T17:59:26.263Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1695",
+      "title": "Maximum Erasure Value",
+      "slug": "maximum-erasure-value",
+      "problemName": "1695-maximum-erasure-value",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-erasure-value/",
+      "folderPath": "1695-maximum-erasure-value/",
+      "readmePath": "1695-maximum-erasure-value/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1695-maximum-erasure-value.java",
+          "path": "1695-maximum-erasure-value/1695-maximum-erasure-value.java",
+          "sha": "07bfb629f14bceaf3bbeacb4c969f824b75e0602",
+          "lastSyncedAt": "2026-09-10T16:09:13.381Z"
         }
       ]
     },
