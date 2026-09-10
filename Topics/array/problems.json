@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-10T15:05:52.099Z",
+  "updatedAt": "2026-09-10T16:09:13.381Z",
   "problems": [
     {
       "frontendId": "1",
@@ -603,6 +603,26 @@
           "path": "1652-defuse-the-bomb/1652-defuse-the-bomb.java",
           "sha": "1261db503e112964db5e0ef8b8259f501d1b3e69",
           "lastSyncedAt": "2026-09-01T05:25:12.691Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1695",
+      "title": "Maximum Erasure Value",
+      "slug": "maximum-erasure-value",
+      "problemName": "1695-maximum-erasure-value",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-erasure-value/",
+      "folderPath": "1695-maximum-erasure-value/",
+      "readmePath": "1695-maximum-erasure-value/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1695-maximum-erasure-value.java",
+          "path": "1695-maximum-erasure-value/1695-maximum-erasure-value.java",
+          "sha": "07bfb629f14bceaf3bbeacb4c969f824b75e0602",
+          "lastSyncedAt": "2026-09-10T16:09:13.381Z"
         }
       ]
     },
