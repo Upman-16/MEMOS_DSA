@@ -4,7 +4,7 @@
     "slug": "counting",
     "name": "Counting"
   },
-  "updatedAt": "2026-09-08T05:09:44.923Z",
+  "updatedAt": "2026-09-10T16:45:48.954Z",
   "problems": [
     {
       "frontendId": "169",
@@ -83,6 +83,26 @@
           "path": "1748-sum-of-unique-elements/1748-sum-of-unique-elements.java",
           "sha": "62e3f57e9cac9dac5679572a33e19aef458247bf",
           "lastSyncedAt": "2026-08-24T09:11:55.002Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1876",
+      "title": "Substrings of Size Three with Distinct Characters",
+      "slug": "substrings-of-size-three-with-distinct-characters",
+      "problemName": "1876-substrings-of-size-three-with-distinct-characters",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+      "folderPath": "1876-substrings-of-size-three-with-distinct-characters/",
+      "readmePath": "1876-substrings-of-size-three-with-distinct-characters/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1876-substrings-of-size-three-with-distinct-characters.java",
+          "path": "1876-substrings-of-size-three-with-distinct-characters/1876-substrings-of-size-three-with-distinct-characters.java",
+          "sha": "a95f5e5fc979c64a8a5bc306be78381ebfbeced3",
+          "lastSyncedAt": "2026-09-10T16:45:48.954Z"
         }
       ]
     },
