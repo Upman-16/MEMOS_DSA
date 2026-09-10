@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-10T15:13:20.441Z",
+  "updatedAt": "2026-09-10T16:45:48.954Z",
   "problems": [
     {
       "frontendId": "3",
@@ -203,6 +203,26 @@
           "path": "1456-maximum-number-of-vowels-in-a-substring-of-given-length/1456-maximum-number-of-vowels-in-a-substring-of-given-length.java",
           "sha": "10e27b6ddd69ea6a4baa67fa4807fa370ca5a208",
           "lastSyncedAt": "2026-08-31T10:47:59.455Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1876",
+      "title": "Substrings of Size Three with Distinct Characters",
+      "slug": "substrings-of-size-three-with-distinct-characters",
+      "problemName": "1876-substrings-of-size-three-with-distinct-characters",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+      "folderPath": "1876-substrings-of-size-three-with-distinct-characters/",
+      "readmePath": "1876-substrings-of-size-three-with-distinct-characters/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1876-substrings-of-size-three-with-distinct-characters.java",
+          "path": "1876-substrings-of-size-three-with-distinct-characters/1876-substrings-of-size-three-with-distinct-characters.java",
+          "sha": "a95f5e5fc979c64a8a5bc306be78381ebfbeced3",
+          "lastSyncedAt": "2026-09-10T16:45:48.954Z"
         }
       ]
     },
