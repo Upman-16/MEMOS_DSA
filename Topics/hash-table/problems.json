@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-12T04:05:53.213Z",
+  "updatedAt": "2026-09-12T05:26:58.674Z",
   "problems": [
     {
       "frontendId": "1",
@@ -603,6 +603,26 @@
           "path": "3720-lexicographically-smallest-permutation-greater-than-target/3720-lexicographically-smallest-permutation-greater-than-target.java",
           "sha": "1d1f9cb2597d601cadbdfdca3e652920f34b5f1a",
           "lastSyncedAt": "2026-08-27T15:05:52.548Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3731",
+      "title": "Find Missing Elements",
+      "slug": "find-missing-elements",
+      "problemName": "3731-find-missing-elements",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-missing-elements/",
+      "folderPath": "3731-find-missing-elements/",
+      "readmePath": "3731-find-missing-elements/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3731-find-missing-elements.java",
+          "path": "3731-find-missing-elements/3731-find-missing-elements.java",
+          "sha": "b4cd0ee2e3e5bc12cd6085f492357490d078efd5",
+          "lastSyncedAt": "2026-09-12T05:26:58.674Z"
         }
       ]
     },
