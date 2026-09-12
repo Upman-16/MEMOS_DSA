@@ -4,8 +4,28 @@
     "slug": "matrix",
     "name": "Matrix"
   },
-  "updatedAt": "2026-09-02T17:10:42.929Z",
+  "updatedAt": "2026-09-12T06:17:17.012Z",
   "problems": [
+    {
+      "frontendId": "1351",
+      "title": "Count Negative Numbers in a Sorted Matrix",
+      "slug": "count-negative-numbers-in-a-sorted-matrix",
+      "problemName": "1351-count-negative-numbers-in-a-sorted-matrix",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/",
+      "folderPath": "1351-count-negative-numbers-in-a-sorted-matrix/",
+      "readmePath": "1351-count-negative-numbers-in-a-sorted-matrix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1351-count-negative-numbers-in-a-sorted-matrix.java",
+          "path": "1351-count-negative-numbers-in-a-sorted-matrix/1351-count-negative-numbers-in-a-sorted-matrix.java",
+          "sha": "cea627698e9f590ad96fc92a2f69b1f9649e905e",
+          "lastSyncedAt": "2026-09-12T06:17:17.012Z"
+        }
+      ]
+    },
     {
       "frontendId": "3568",
       "title": "Minimum Moves to Clean the Classroom",
