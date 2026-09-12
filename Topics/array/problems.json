@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-10T16:10:08.821Z",
+  "updatedAt": "2026-09-12T03:51:36.835Z",
   "problems": [
     {
       "frontendId": "1",
@@ -243,6 +243,26 @@
           "path": "0169-majority-element/0169-majority-element.java",
           "sha": "78b14e7477cc482520e0bef12245586ad324b737",
           "lastSyncedAt": "2026-08-22T08:24:35.385Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "204",
+      "title": "Count Primes",
+      "slug": "count-primes",
+      "problemName": "0204-count-primes",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-primes/",
+      "folderPath": "0204-count-primes/",
+      "readmePath": "0204-count-primes/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0204-count-primes.java",
+          "path": "0204-count-primes/0204-count-primes.java",
+          "sha": "90ebbe39c9767fd29b3ae50c2f296089f920772e",
+          "lastSyncedAt": "2026-09-12T03:51:36.835Z"
         }
       ]
     },
