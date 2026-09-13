@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-13T09:00:48.142Z",
+  "updatedAt": "2026-09-13T09:05:04.687Z",
   "problems": [
     {
       "frontendId": "66",
@@ -163,6 +163,26 @@
           "path": "1563-stone-game-v/1563-stone-game-v.java",
           "sha": "dbe13677d8f56f3bee7bb7ea6b9cb411833a4904",
           "lastSyncedAt": "2026-08-17T15:22:32.294Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1688",
+      "title": "Count of Matches in Tournament",
+      "slug": "count-of-matches-in-tournament",
+      "problemName": "1688-count-of-matches-in-tournament",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/count-of-matches-in-tournament/",
+      "folderPath": "1688-count-of-matches-in-tournament/",
+      "readmePath": "1688-count-of-matches-in-tournament/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1688-count-of-matches-in-tournament.java",
+          "path": "1688-count-of-matches-in-tournament/1688-count-of-matches-in-tournament.java",
+          "sha": "ddab6c4429e8799dd7bb1ff724759695753ae0d5",
+          "lastSyncedAt": "2026-09-13T09:05:04.687Z"
         }
       ]
     },
