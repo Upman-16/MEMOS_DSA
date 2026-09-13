@@ -4,7 +4,7 @@
     "slug": "simulation",
     "name": "Simulation"
   },
-  "updatedAt": "2026-08-28T15:35:29.208Z",
+  "updatedAt": "2026-09-13T09:00:48.142Z",
   "problems": [
     {
       "frontendId": "1920",
@@ -63,6 +63,26 @@
           "path": "3069-distribute-elements-into-two-arrays-i/3069-distribute-elements-into-two-arrays-i.java",
           "sha": "9765b4fa15641e8aadb75760fe706d87ec53aa91",
           "lastSyncedAt": "2026-08-20T14:22:07.108Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3264",
+      "title": "Final Array State After K Multiplication Operations I",
+      "slug": "final-array-state-after-k-multiplication-operations-i",
+      "problemName": "3264-final-array-state-after-k-multiplication-operations-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/",
+      "folderPath": "3264-final-array-state-after-k-multiplication-operations-i/",
+      "readmePath": "3264-final-array-state-after-k-multiplication-operations-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3264-final-array-state-after-k-multiplication-operations-i.java",
+          "path": "3264-final-array-state-after-k-multiplication-operations-i/3264-final-array-state-after-k-multiplication-operations-i.java",
+          "sha": "9bef7bee73e7d5206d774b6a72be08c7324461e1",
+          "lastSyncedAt": "2026-09-13T09:00:48.142Z"
         }
       ]
     },
