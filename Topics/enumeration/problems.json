@@ -4,7 +4,7 @@
     "slug": "enumeration",
     "name": "Enumeration"
   },
-  "updatedAt": "2026-09-12T04:05:53.213Z",
+  "updatedAt": "2026-09-13T08:49:15.142Z",
   "problems": [
     {
       "frontendId": "204",
@@ -103,6 +103,26 @@
           "path": "3734-lexicographically-smallest-palindromic-permutation-greater-than-target/3734-lexicographically-smallest-palindromic-permutation-greater-than-target.java",
           "sha": "c6a5cc0f74f0dd5099d7d24740414f161a75b37b",
           "lastSyncedAt": "2026-08-28T14:47:27.074Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3751",
+      "title": "Total Waviness of Numbers in Range I",
+      "slug": "total-waviness-of-numbers-in-range-i",
+      "problemName": "3751-total-waviness-of-numbers-in-range-i",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/",
+      "folderPath": "3751-total-waviness-of-numbers-in-range-i/",
+      "readmePath": "3751-total-waviness-of-numbers-in-range-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3751-total-waviness-of-numbers-in-range-i.java",
+          "path": "3751-total-waviness-of-numbers-in-range-i/3751-total-waviness-of-numbers-in-range-i.java",
+          "sha": "93d821ccf20641c75c80b648e2b8a409f00d75d0",
+          "lastSyncedAt": "2026-09-13T08:49:15.142Z"
         }
       ]
     }
