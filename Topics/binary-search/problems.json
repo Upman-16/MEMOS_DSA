@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-09-12T06:17:17.012Z",
+  "updatedAt": "2026-09-13T02:54:43.691Z",
   "problems": [
     {
       "frontendId": "33",
@@ -263,6 +263,26 @@
           "path": "1351-count-negative-numbers-in-a-sorted-matrix/1351-count-negative-numbers-in-a-sorted-matrix.java",
           "sha": "cea627698e9f590ad96fc92a2f69b1f9649e905e",
           "lastSyncedAt": "2026-09-12T06:17:17.012Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3414",
+      "title": "Maximum Score of Non-overlapping Intervals",
+      "slug": "maximum-score-of-non-overlapping-intervals",
+      "problemName": "3414-maximum-score-of-non-overlapping-intervals",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/",
+      "folderPath": "3414-maximum-score-of-non-overlapping-intervals/",
+      "readmePath": "3414-maximum-score-of-non-overlapping-intervals/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3414-maximum-score-of-non-overlapping-intervals.java",
+          "path": "3414-maximum-score-of-non-overlapping-intervals/3414-maximum-score-of-non-overlapping-intervals.java",
+          "sha": "30d61be73a349008c1242af111965d5a9f481c7a",
+          "lastSyncedAt": "2026-09-13T02:54:43.691Z"
         }
       ]
     }
