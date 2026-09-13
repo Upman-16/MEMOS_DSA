@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "heap-priority-queue",
+    "name": "Heap (Priority Queue)"
+  },
+  "updatedAt": "2026-09-13T09:00:48.142Z",
+  "problems": [
+    {
+      "frontendId": "3264",
+      "title": "Final Array State After K Multiplication Operations I",
+      "slug": "final-array-state-after-k-multiplication-operations-i",
+      "problemName": "3264-final-array-state-after-k-multiplication-operations-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/",
+      "folderPath": "3264-final-array-state-after-k-multiplication-operations-i/",
+      "readmePath": "3264-final-array-state-after-k-multiplication-operations-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3264-final-array-state-after-k-multiplication-operations-i.java",
+          "path": "3264-final-array-state-after-k-multiplication-operations-i/3264-final-array-state-after-k-multiplication-operations-i.java",
+          "sha": "9bef7bee73e7d5206d774b6a72be08c7324461e1",
+          "lastSyncedAt": "2026-09-13T09:00:48.142Z"
+        }
+      ]
+    }
+  ]
+}
