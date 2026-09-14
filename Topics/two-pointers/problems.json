@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-09-07T09:31:54.284Z",
+  "updatedAt": "2026-09-14T06:57:31.116Z",
   "problems": [
     {
       "frontendId": "16",
@@ -63,6 +63,26 @@
           "path": "0349-intersection-of-two-arrays/0349-intersection-of-two-arrays.java",
           "sha": "72e36d4c4dd3d7373f67c561ab14ff86dbde4112",
           "lastSyncedAt": "2026-08-23T05:31:32.948Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "443",
+      "title": "String Compression",
+      "slug": "string-compression",
+      "problemName": "0443-string-compression",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/string-compression/",
+      "folderPath": "0443-string-compression/",
+      "readmePath": "0443-string-compression/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0443-string-compression.java",
+          "path": "0443-string-compression/0443-string-compression.java",
+          "sha": "503aba848399667f3a07ae8bfdd2e304bedfa2b3",
+          "lastSyncedAt": "2026-09-14T06:57:31.116Z"
         }
       ]
     },
