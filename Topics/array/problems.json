@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-15T05:19:41.646Z",
+  "updatedAt": "2026-09-15T06:12:57.296Z",
   "problems": [
     {
       "frontendId": "1",
@@ -923,6 +923,26 @@
           "path": "2574-left-and-right-sum-differences/2574-left-and-right-sum-differences.java",
           "sha": "9048345fb6cb7c5c6487e88db9e44365f0fe91e6",
           "lastSyncedAt": "2026-08-27T18:23:27.589Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2784",
+      "title": "Check if Array is Good",
+      "slug": "check-if-array-is-good",
+      "problemName": "2784-check-if-array-is-good",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/check-if-array-is-good/",
+      "folderPath": "2784-check-if-array-is-good/",
+      "readmePath": "2784-check-if-array-is-good/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2784-check-if-array-is-good.java",
+          "path": "2784-check-if-array-is-good/2784-check-if-array-is-good.java",
+          "sha": "2d519146a704a49d2f7846fffae965c38f18fd67",
+          "lastSyncedAt": "2026-09-15T06:12:57.296Z"
         }
       ]
     },
