@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-09-15T05:19:41.646Z",
+  "updatedAt": "2026-09-15T14:47:02.661Z",
   "problems": [
     {
       "frontendId": "16",
@@ -163,6 +163,26 @@
           "path": "2472-maximum-number-of-non-overlapping-palindrome-substrings/2472-maximum-number-of-non-overlapping-palindrome-substrings.java",
           "sha": "9371e2716e72c441fde47a14641caf6f9f7a229e",
           "lastSyncedAt": "2026-09-15T02:51:26.815Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2824",
+      "title": "Count Pairs Whose Sum is Less than Target",
+      "slug": "count-pairs-whose-sum-is-less-than-target",
+      "problemName": "2824-count-pairs-whose-sum-is-less-than-target",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/",
+      "folderPath": "2824-count-pairs-whose-sum-is-less-than-target/",
+      "readmePath": "2824-count-pairs-whose-sum-is-less-than-target/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2824-count-pairs-whose-sum-is-less-than-target.java",
+          "path": "2824-count-pairs-whose-sum-is-less-than-target/2824-count-pairs-whose-sum-is-less-than-target.java",
+          "sha": "f1d0ea89439b48cf62a17951ac5a3b256fd2e7e1",
+          "lastSyncedAt": "2026-09-15T14:47:02.661Z"
         }
       ]
     },
