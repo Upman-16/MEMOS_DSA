@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-15T15:01:47.177Z",
+  "updatedAt": "2026-09-16T14:33:12.279Z",
   "problems": [
     {
       "frontendId": "1",
@@ -783,6 +783,26 @@
           "path": "1752-check-if-array-is-sorted-and-rotated/1752-check-if-array-is-sorted-and-rotated.java",
           "sha": "7c39a94496f97dad6c1112dcf935832cc007758e",
           "lastSyncedAt": "2026-09-15T05:07:51.959Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1769",
+      "title": "Minimum Number of Operations to Move All Balls to Each Box",
+      "slug": "minimum-number-of-operations-to-move-all-balls-to-each-box",
+      "problemName": "1769-minimum-number-of-operations-to-move-all-balls-to-each-box",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/",
+      "folderPath": "1769-minimum-number-of-operations-to-move-all-balls-to-each-box/",
+      "readmePath": "1769-minimum-number-of-operations-to-move-all-balls-to-each-box/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1769-minimum-number-of-operations-to-move-all-balls-to-each-box.java",
+          "path": "1769-minimum-number-of-operations-to-move-all-balls-to-each-box/1769-minimum-number-of-operations-to-move-all-balls-to-each-box.java",
+          "sha": "865da4000d588394ded6c7aed1357453fadcd443",
+          "lastSyncedAt": "2026-09-16T14:33:12.279Z"
         }
       ]
     },
