@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-15T06:12:57.296Z",
+  "updatedAt": "2026-09-17T08:55:27.075Z",
   "problems": [
     {
       "frontendId": "1",
@@ -323,6 +323,26 @@
           "path": "1386-cinema-seat-allocation/1386-cinema-seat-allocation.java",
           "sha": "4e8c3e216520f4aa9e8a59793618b4357c3a95d3",
           "lastSyncedAt": "2026-08-19T15:17:25.903Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1477",
+      "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+      "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "problemName": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+      "folderPath": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+      "readmePath": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+          "path": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+          "sha": "c5813dae76b7976a40b35f5d08cbc76bd7cc8bd7",
+          "lastSyncedAt": "2026-09-17T08:55:27.075Z"
         }
       ]
     },
