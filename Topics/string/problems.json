@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-16T14:33:12.279Z",
+  "updatedAt": "2026-09-17T16:13:57.782Z",
   "problems": [
     {
       "frontendId": "3",
@@ -463,6 +463,26 @@
           "path": "3734-lexicographically-smallest-palindromic-permutation-greater-than-target/3734-lexicographically-smallest-palindromic-permutation-greater-than-target.java",
           "sha": "c6a5cc0f74f0dd5099d7d24740414f161a75b37b",
           "lastSyncedAt": "2026-08-28T14:47:27.074Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3760",
+      "title": "Maximum Substrings With Distinct Start",
+      "slug": "maximum-substrings-with-distinct-start",
+      "problemName": "3760-maximum-substrings-with-distinct-start",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
+      "folderPath": "3760-maximum-substrings-with-distinct-start/",
+      "readmePath": "3760-maximum-substrings-with-distinct-start/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3760-maximum-substrings-with-distinct-start.java",
+          "path": "3760-maximum-substrings-with-distinct-start/3760-maximum-substrings-with-distinct-start.java",
+          "sha": "8d63f225405abbfe32deaeea6d46c74ab247e2ce",
+          "lastSyncedAt": "2026-09-17T16:13:57.782Z"
         }
       ]
     },
