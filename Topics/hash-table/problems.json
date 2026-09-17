@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-17T08:55:27.075Z",
+  "updatedAt": "2026-09-17T16:13:57.782Z",
   "problems": [
     {
       "frontendId": "1",
@@ -683,6 +683,26 @@
           "path": "3731-find-missing-elements/3731-find-missing-elements.java",
           "sha": "b4cd0ee2e3e5bc12cd6085f492357490d078efd5",
           "lastSyncedAt": "2026-09-12T05:26:58.674Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3760",
+      "title": "Maximum Substrings With Distinct Start",
+      "slug": "maximum-substrings-with-distinct-start",
+      "problemName": "3760-maximum-substrings-with-distinct-start",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
+      "folderPath": "3760-maximum-substrings-with-distinct-start/",
+      "readmePath": "3760-maximum-substrings-with-distinct-start/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3760-maximum-substrings-with-distinct-start.java",
+          "path": "3760-maximum-substrings-with-distinct-start/3760-maximum-substrings-with-distinct-start.java",
+          "sha": "8d63f225405abbfe32deaeea6d46c74ab247e2ce",
+          "lastSyncedAt": "2026-09-17T16:13:57.782Z"
         }
       ]
     },
