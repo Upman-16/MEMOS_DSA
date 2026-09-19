@@ -4,7 +4,7 @@
     "slug": "geometry",
     "name": "Geometry"
   },
-  "updatedAt": "2026-09-14T04:58:13.139Z",
+  "updatedAt": "2026-09-19T06:04:57.094Z",
   "problems": [
     {
       "frontendId": "836",
@@ -23,6 +23,26 @@
           "path": "0836-rectangle-overlap/0836-rectangle-overlap.java",
           "sha": "eb5b6710584094be3aa372df06d982e9ff9fa3c3",
           "lastSyncedAt": "2026-09-14T04:58:13.139Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1401",
+      "title": "Circle and Rectangle Overlapping",
+      "slug": "circle-and-rectangle-overlapping",
+      "problemName": "1401-circle-and-rectangle-overlapping",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/circle-and-rectangle-overlapping/",
+      "folderPath": "1401-circle-and-rectangle-overlapping/",
+      "readmePath": "1401-circle-and-rectangle-overlapping/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1401-circle-and-rectangle-overlapping.java",
+          "path": "1401-circle-and-rectangle-overlapping/1401-circle-and-rectangle-overlapping.java",
+          "sha": "e5b1700977f2755d4c6d71fcc9fe40948b613324",
+          "lastSyncedAt": "2026-09-19T06:04:57.094Z"
         }
       ]
     }
