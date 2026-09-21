@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-21T17:01:43.690Z",
+  "updatedAt": "2026-09-21T17:51:48.285Z",
   "problems": [
     {
       "frontendId": "66",
@@ -143,6 +143,26 @@
           "path": "1140-stone-game-ii/1140-stone-game-ii.java",
           "sha": "03aacca4144819cf02137c69169fce9818032122",
           "lastSyncedAt": "2026-08-15T06:23:26.970Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1227",
+      "title": "Airplane Seat Assignment Probability",
+      "slug": "airplane-seat-assignment-probability",
+      "problemName": "1227-airplane-seat-assignment-probability",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/airplane-seat-assignment-probability/",
+      "folderPath": "1227-airplane-seat-assignment-probability/",
+      "readmePath": "1227-airplane-seat-assignment-probability/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1227-airplane-seat-assignment-probability.java",
+          "path": "1227-airplane-seat-assignment-probability/1227-airplane-seat-assignment-probability.java",
+          "sha": "8251a768e80294e204b0a3f35e7824b1a8544662",
+          "lastSyncedAt": "2026-09-21T17:51:48.285Z"
         }
       ]
     },
