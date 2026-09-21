@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-17T08:55:27.075Z",
+  "updatedAt": "2026-09-21T13:31:22.854Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1283,6 +1283,26 @@
           "path": "3512-minimum-operations-to-make-array-sum-divisible-by-k/3512-minimum-operations-to-make-array-sum-divisible-by-k.java",
           "sha": "b5260adf81af246da143773f99fc48822a895f9c",
           "lastSyncedAt": "2026-08-25T17:05:34.695Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3524",
+      "title": "Find X Value of Array I",
+      "slug": "find-x-value-of-array-i",
+      "problemName": "3524-find-x-value-of-array-i",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-x-value-of-array-i/",
+      "folderPath": "3524-find-x-value-of-array-i/",
+      "readmePath": "3524-find-x-value-of-array-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3524-find-x-value-of-array-i.java",
+          "path": "3524-find-x-value-of-array-i/3524-find-x-value-of-array-i.java",
+          "sha": "4f89a03b01c06c711a56bc197719392bbb2fbdb7",
+          "lastSyncedAt": "2026-09-21T13:31:22.854Z"
         }
       ]
     },
