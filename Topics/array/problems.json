@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-21T17:27:53.365Z",
+  "updatedAt": "2026-09-22T13:32:02.709Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1343,6 +1343,26 @@
           "path": "3524-find-x-value-of-array-i/3524-find-x-value-of-array-i.java",
           "sha": "4f89a03b01c06c711a56bc197719392bbb2fbdb7",
           "lastSyncedAt": "2026-09-21T13:31:22.854Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3525",
+      "title": "Find X Value of Array II",
+      "slug": "find-x-value-of-array-ii",
+      "problemName": "3525-find-x-value-of-array-ii",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/find-x-value-of-array-ii/",
+      "folderPath": "3525-find-x-value-of-array-ii/",
+      "readmePath": "3525-find-x-value-of-array-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3525-find-x-value-of-array-ii.java",
+          "path": "3525-find-x-value-of-array-ii/3525-find-x-value-of-array-ii.java",
+          "sha": "afa410123af1c5f8cbbea16af49a59dc42fbd73c",
+          "lastSyncedAt": "2026-09-22T13:32:02.709Z"
         }
       ]
     },
