@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-23T10:57:19.173Z",
+  "updatedAt": "2026-09-23T15:19:02.145Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1543,6 +1543,26 @@
           "path": "3876-construct-uniform-parity-array-ii/3876-construct-uniform-parity-array-ii.java",
           "sha": "877b9a99df0574a1ac62c309913c00bf1e4ae10b",
           "lastSyncedAt": "2026-09-03T13:50:04.723Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3895",
+      "title": "Count Digit Appearances",
+      "slug": "count-digit-appearances",
+      "problemName": "3895-count-digit-appearances",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-digit-appearances/",
+      "folderPath": "3895-count-digit-appearances/",
+      "readmePath": "3895-count-digit-appearances/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3895-count-digit-appearances.java",
+          "path": "3895-count-digit-appearances/3895-count-digit-appearances.java",
+          "sha": "3ae2742aa95f92b3c5f8b466af0cc9079ee216a6",
+          "lastSyncedAt": "2026-09-23T15:19:02.145Z"
         }
       ]
     },
