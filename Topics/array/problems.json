@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-24T05:22:19.291Z",
+  "updatedAt": "2026-09-25T05:47:36.575Z",
   "problems": [
     {
       "frontendId": "1",
@@ -522,7 +522,7 @@
           "filename": "0875-koko-eating-bananas.java",
           "path": "0875-koko-eating-bananas/0875-koko-eating-bananas.java",
           "sha": "7eb774e9bedf2d33415bbaa112d00fe269331cca",
-          "lastSyncedAt": "2026-09-08T09:59:30.071Z"
+          "lastSyncedAt": "2026-09-25T05:47:36.575Z"
         }
       ]
     },
