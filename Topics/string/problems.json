@@ -4,7 +4,7 @@
     "slug": "string",
     "name": "String"
   },
-  "updatedAt": "2026-09-28T07:57:37.293Z",
+  "updatedAt": "2026-09-30T07:45:13.056Z",
   "problems": [
     {
       "frontendId": "3",
@@ -203,6 +203,26 @@
           "path": "1108-defanging-an-ip-address/1108-defanging-an-ip-address.java",
           "sha": "643b2063b863a761f6fe5ca4764d3c41ba95b4b5",
           "lastSyncedAt": "2026-09-06T04:07:37.295Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1111",
+      "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+      "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+      "problemName": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/",
+      "folderPath": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings/",
+      "readmePath": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings.java",
+          "path": "1111-maximum-nesting-depth-of-two-valid-parentheses-strings/1111-maximum-nesting-depth-of-two-valid-parentheses-strings.java",
+          "sha": "b835c6117fd881cbe5ff99a50b3987957ae01b59",
+          "lastSyncedAt": "2026-09-30T07:45:13.056Z"
         }
       ]
     },
