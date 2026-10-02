@@ -1,155 +1,126 @@
 {
   "username": "Danger_exe_fr",
-  "total": 107,
-  "easy": 66,
-  "medium": 29,
-  "hard": 12,
-  "current_streak": 22,
-  "best_streak": 22,
-  "active_days": 35,
+  "total": 205,
+  "easy": 115,
+  "medium": 69,
+  "hard": 21,
+  "current_streak": 38,
+  "best_streak": 38,
+  "active_days": 72,
   "recent_activity": [
     {
-      "date": "2026-08-25",
-      "count": 8
+      "date": "2026-10-02",
+      "count": 2
     },
     {
-      "date": "2026-08-24",
-      "count": 5
-    },
-    {
-      "date": "2026-08-23",
-      "count": 5
-    },
-    {
-      "date": "2026-08-22",
-      "count": 5
-    },
-    {
-      "date": "2026-08-21",
+      "date": "2026-10-01",
       "count": 1
     },
     {
-      "date": "2026-08-20",
+      "date": "2026-09-30",
       "count": 1
     },
     {
-      "date": "2026-08-19",
+      "date": "2026-09-29",
       "count": 1
     },
     {
-      "date": "2026-08-18",
+      "date": "2026-09-28",
       "count": 1
     },
     {
-      "date": "2026-08-17",
+      "date": "2026-09-27",
       "count": 1
     },
     {
-      "date": "2026-08-16",
+      "date": "2026-09-26",
       "count": 1
     },
     {
-      "date": "2026-08-15",
+      "date": "2026-09-25",
+      "count": 2
+    },
+    {
+      "date": "2026-09-24",
+      "count": 1
+    },
+    {
+      "date": "2026-09-23",
       "count": 3
     },
     {
-      "date": "2026-08-14",
+      "date": "2026-09-22",
       "count": 1
     },
     {
-      "date": "2026-08-13",
-      "count": 4
+      "date": "2026-09-21",
+      "count": 5
     },
     {
-      "date": "2026-08-12",
+      "date": "2026-09-20",
+      "count": 1
+    },
+    {
+      "date": "2026-09-19",
       "count": 1
     }
   ],
-  "recent_submissions": [
-    {
-      "id": "2119975136",
-      "title": "Convert the Temperature",
-      "titleSlug": "convert-the-temperature",
-      "timestamp": "1787679082"
-    },
-    {
-      "id": "2119951950",
-      "title": "Find the Maximum Achievable Number",
-      "titleSlug": "find-the-maximum-achievable-number",
-      "timestamp": "1787678077"
-    },
-    {
-      "id": "2119946811",
-      "title": "Digit Frequency Score",
-      "titleSlug": "digit-frequency-score",
-      "timestamp": "1787677857"
-    },
-    {
-      "id": "2119938989",
-      "title": "Minimum Operations to Make Array Sum Divisible by K",
-      "titleSlug": "minimum-operations-to-make-array-sum-divisible-by-k",
-      "timestamp": "1787677523"
-    },
-    {
-      "id": "2119473592",
-      "title": "Smallest Missing Multiple of K",
-      "titleSlug": "smallest-missing-multiple-of-k",
-      "timestamp": "1787650567"
-    },
-    {
-      "id": "2119462524",
-      "title": "Contains Duplicate II",
-      "titleSlug": "contains-duplicate-ii",
-      "timestamp": "1787649918"
-    },
-    {
-      "id": "2119339329",
-      "title": "Two Sum",
-      "titleSlug": "two-sum",
-      "timestamp": "1787641644"
-    },
-    {
-      "id": "2118659685",
-      "title": "Height Checker",
-      "titleSlug": "height-checker",
-      "timestamp": "1787587967"
-    },
-    {
-      "id": "2118634075",
-      "title": "Single Number",
-      "titleSlug": "single-number",
-      "timestamp": "1787586753"
-    },
-    {
-      "id": "2118617745",
-      "title": "Plus One",
-      "titleSlug": "plus-one",
-      "timestamp": "1787585939"
-    }
-  ],
+  "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      38
+      87
     ],
     [
       "Math",
-      17
+      44
     ],
     [
       "Hash Table",
-      15
+      40
+    ],
+    [
+      "String",
+      33
     ],
     [
       "Binary Search",
-      11
+      18
     ],
     [
-      "Bit Manipulation",
-      8
+      "Sliding Window",
+      17
     ],
     [
       "Sorting",
+      17
+    ],
+    [
+      "Dynamic Programming",
+      15
+    ],
+    [
+      "Two Pointers",
+      15
+    ],
+    [
+      "Counting",
+      10
+    ],
+    [
+      "Bit Manipulation",
+      9
+    ],
+    [
+      "Greedy",
+      9
+    ],
+    [
+      "Prefix Sum",
+      9
+    ],
+    [
+      "Simulation",
       8
     ],
     [
@@ -157,15 +128,15 @@
       7
     ],
     [
-      "Dynamic Programming",
-      5
-    ],
-    [
-      "Greedy",
-      5
+      "Enumeration",
+      6
     ],
     [
       "Minimax",
+      5
+    ],
+    [
+      "Number Theory",
       5
     ],
     [
@@ -173,15 +144,15 @@
       5
     ],
     [
-      "Counting",
+      "Bracket Sequences",
       4
     ],
     [
-      "String",
+      "Matrix",
       4
     ],
     [
-      "Two Pointers",
+      "Stack",
       4
     ],
     [
@@ -189,19 +160,43 @@
       3
     ],
     [
-      "Sliding Window",
+      "Recursion",
       3
     ],
     [
-      "Prefix Sum",
+      "Backtracking",
       2
     ],
     [
-      "Recursion",
+      "Breadth-First Search",
       2
+    ],
+    [
+      "Combinatorics",
+      2
+    ],
+    [
+      "Counting Sort",
+      2
+    ],
+    [
+      "Geometry",
+      2
+    ],
+    [
+      "Segment Tree",
+      2
+    ],
+    [
+      "Binary Tree",
+      1
     ],
     [
       "Boyer\u2013Moore Majority Vote Algorithm",
+      1
+    ],
+    [
+      "Brainteaser",
       1
     ],
     [
@@ -209,11 +204,7 @@
       1
     ],
     [
-      "Combinatorics",
-      1
-    ],
-    [
-      "Counting Sort",
+      "Depth-First Search",
       1
     ],
     [
@@ -221,11 +212,27 @@
       1
     ],
     [
+      "Euclidean Algorithm",
+      1
+    ],
+    [
+      "Graph Theory",
+      1
+    ],
+    [
+      "Greatest Common Divisor",
+      1
+    ],
+    [
+      "Heap (Priority Queue)",
+      1
+    ],
+    [
       "Interactive",
       1
     ],
     [
-      "Number Theory",
+      "Linked List",
       1
     ],
     [
@@ -233,11 +240,19 @@
       1
     ],
     [
-      "Segment Tree",
+      "Primality Test",
       1
     ],
     [
-      "Simulation",
+      "Prime Number Sieve",
+      1
+    ],
+    [
+      "Probability and Statistics",
+      1
+    ],
+    [
+      "Sieve Theory",
       1
     ],
     [
@@ -247,6 +262,14 @@
     [
       "Ternary Search",
       1
+    ],
+    [
+      "Tree",
+      1
+    ],
+    [
+      "Union-Find",
+      1
     ]
   ],
   "problem_topics": {
@@ -254,10 +277,25 @@
       "Array",
       "Hash Table"
     ],
+    "longest-substring-without-repeating-characters": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
     "3sum-closest": [
       "Array",
       "Two Pointers",
       "Sorting"
+    ],
+    "generate-parentheses": [
+      "String",
+      "Dynamic Programming",
+      "Backtracking",
+      "Bracket Sequences"
+    ],
+    "remove-duplicates-from-sorted-array": [
+      "Array",
+      "Two Pointers"
     ],
     "next-permutation": [
       "Array",
@@ -283,6 +321,10 @@
       "Array",
       "Math"
     ],
+    "distinct-subsequences": [
+      "String",
+      "Dynamic Programming"
+    ],
     "single-number": [
       "Array",
       "Bit Manipulation"
@@ -302,6 +344,20 @@
       "Sorting",
       "Counting",
       "Boyer\u2013Moore Majority Vote Algorithm"
+    ],
+    "rotate-array": [
+      "Array",
+      "Math",
+      "Two Pointers"
+    ],
+    "count-primes": [
+      "Array",
+      "Math",
+      "Enumeration",
+      "Number Theory",
+      "Primality Test",
+      "Sieve Theory",
+      "Prime Number Sieve"
     ],
     "contains-duplicate": [
       "Array",
@@ -330,6 +386,10 @@
       "Binary Search",
       "Interactive"
     ],
+    "move-zeroes": [
+      "Array",
+      "Two Pointers"
+    ],
     "intersection-of-two-arrays": [
       "Array",
       "Hash Table",
@@ -341,23 +401,94 @@
       "Array",
       "Sorting"
     ],
+    "longest-repeating-character-replacement": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "find-all-anagrams-in-a-string": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "string-compression": [
+      "Two Pointers",
+      "String"
+    ],
+    "permutation-in-string": [
+      "Hash Table",
+      "Two Pointers",
+      "String",
+      "Sliding Window"
+    ],
+    "maximum-average-subarray-i": [
+      "Array",
+      "Sliding Window"
+    ],
     "binary-search": [
       "Array",
       "Binary Search"
+    ],
+    "jewels-and-stones": [
+      "Hash Table",
+      "String"
+    ],
+    "image-overlap": [
+      "Array",
+      "Matrix"
+    ],
+    "rectangle-overlap": [
+      "Math",
+      "Geometry"
     ],
     "peak-index-in-a-mountain-array": [
       "Array",
       "Binary Search",
       "Ternary Search"
     ],
+    "koko-eating-bananas": [
+      "Array",
+      "Binary Search"
+    ],
+    "fruit-into-baskets": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "distinct-subsequences-ii": [
+      "String",
+      "Dynamic Programming"
+    ],
     "valid-mountain-array": [
       "Array"
+    ],
+    "max-consecutive-ones-iii": [
+      "Array",
+      "Binary Search",
+      "Sliding Window",
+      "Prefix Sum"
     ],
     "height-checker": [
       "Array",
       "Sorting",
       "Counting Sort",
       "Bubble Sort"
+    ],
+    "brace-expansion-ii": [
+      "Hash Table",
+      "String",
+      "Backtracking",
+      "Stack",
+      "Breadth-First Search",
+      "Sorting"
+    ],
+    "defanging-an-ip-address": [
+      "String"
+    ],
+    "maximum-nesting-depth-of-two-valid-parentheses-strings": [
+      "String",
+      "Stack",
+      "Bracket Sequences"
     ],
     "stone-game-ii": [
       "Array",
@@ -368,11 +499,56 @@
       "Game Theory",
       "Zero-Sum Game"
     ],
+    "reverse-substrings-between-each-pair-of-parentheses": [
+      "String",
+      "Stack",
+      "Bracket Sequences"
+    ],
+    "airplane-seat-assignment-probability": [
+      "Math",
+      "Dynamic Programming",
+      "Brainteaser",
+      "Probability and Statistics"
+    ],
+    "minimum-number-of-steps-to-make-two-strings-anagram": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "count-negative-numbers-in-a-sorted-matrix": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "how-many-numbers-are-smaller-than-the-current-number": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "Counting Sort"
+    ],
     "cinema-seat-allocation": [
       "Array",
       "Hash Table",
       "Greedy",
       "Bit Manipulation"
+    ],
+    "circle-and-rectangle-overlapping": [
+      "Math",
+      "Geometry"
+    ],
+    "kids-with-the-greatest-number-of-candies": [
+      "Array"
+    ],
+    "maximum-number-of-vowels-in-a-substring-of-given-length": [
+      "String",
+      "Sliding Window"
+    ],
+    "find-two-non-overlapping-sub-arrays-each-with-target-sum": [
+      "Array",
+      "Hash Table",
+      "Binary Search",
+      "Dynamic Programming",
+      "Sliding Window"
     ],
     "stone-game-iv": [
       "Math",
@@ -383,16 +559,72 @@
       "Sprague\u2013Grundy Theorem",
       "Zero-Sum Game"
     ],
+    "number-of-good-pairs": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Counting"
+    ],
+    "maximum-number-of-non-overlapping-substrings": [
+      "Hash Table",
+      "String",
+      "Greedy",
+      "Sorting"
+    ],
     "stone-game-v": [
       "Array",
       "Math",
       "Dynamic Programming",
       "Game Theory"
     ],
+    "maximum-nesting-depth-of-the-parentheses": [
+      "String",
+      "Stack",
+      "Bracket Sequences"
+    ],
+    "number-of-sets-of-k-non-overlapping-line-segments": [
+      "Math",
+      "Dynamic Programming",
+      "Combinatorics",
+      "Prefix Sum"
+    ],
+    "defuse-the-bomb": [
+      "Array",
+      "Sliding Window"
+    ],
+    "minimum-operations-to-reduce-x-to-zero": [
+      "Array",
+      "Hash Table",
+      "Binary Search",
+      "Sliding Window",
+      "Prefix Sum"
+    ],
+    "count-of-matches-in-tournament": [
+      "Math",
+      "Simulation"
+    ],
+    "maximum-erasure-value": [
+      "Array",
+      "Hash Table",
+      "Sliding Window"
+    ],
     "sum-of-unique-elements": [
       "Array",
       "Hash Table",
       "Counting"
+    ],
+    "check-if-array-is-sorted-and-rotated": [
+      "Array"
+    ],
+    "minimum-number-of-operations-to-move-all-balls-to-each-box": [
+      "Array",
+      "String",
+      "Prefix Sum"
+    ],
+    "evaluate-the-bracket-pairs-of-a-string": [
+      "Array",
+      "Hash Table",
+      "String"
     ],
     "stone-game-viii": [
       "Array",
@@ -402,6 +634,16 @@
       "Prefix Sum",
       "Game Theory",
       "Zero-Sum Game"
+    ],
+    "substrings-of-size-three-with-distinct-characters": [
+      "Hash Table",
+      "String",
+      "Sliding Window",
+      "Counting"
+    ],
+    "build-array-from-permutation": [
+      "Array",
+      "Simulation"
     ],
     "sum-game": [
       "Math",
@@ -419,17 +661,84 @@
       "Nim Game",
       "Zero-Sum Game"
     ],
+    "find-the-minimum-and-maximum-number-of-nodes-between-critical-points": [
+      "Linked List"
+    ],
+    "removing-minimum-and-maximum-from-array": [
+      "Array",
+      "Greedy"
+    ],
+    "partition-array-according-to-given-pivot": [
+      "Array",
+      "Two Pointers",
+      "Simulation"
+    ],
     "longest-substring-of-one-repeating-character": [
       "Array",
       "String",
       "Segment Tree",
       "Ordered Set"
     ],
+    "add-two-integers": [
+      "Math"
+    ],
+    "count-nodes-equal-to-average-of-subtree": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "smallest-even-multiple": [
+      "Math",
+      "Number Theory"
+    ],
+    "number-of-common-factors": [
+      "Math",
+      "Enumeration",
+      "Number Theory",
+      "Euclidean Algorithm",
+      "Greatest Common Divisor"
+    ],
     "convert-the-temperature": [
       "Math"
     ],
+    "maximum-number-of-non-overlapping-palindrome-substrings": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "left-and-right-sum-differences": [
+      "Array",
+      "Prefix Sum"
+    ],
     "find-the-maximum-achievable-number": [
       "Math"
+    ],
+    "check-if-array-is-good": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "number-of-employees-who-met-the-target": [
+      "Array"
+    ],
+    "count-pairs-whose-sum-is-less-than-target": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "divisible-and-non-divisible-sums-difference": [
+      "Math"
+    ],
+    "shortest-and-lexicographically-smallest-beautiful-string": [
+      "String",
+      "Sliding Window"
+    ],
+    "make-lexicographically-smallest-array-by-swapping-elements": [
+      "Array",
+      "Union-Find",
+      "Sorting"
     ],
     "length-of-longest-subarray-with-at-most-k-frequency": [
       "Array",
@@ -443,12 +752,16 @@
     ],
     "distribute-elements-into-two-arrays-i": [
       "Array",
+      "Two Pointers",
       "Simulation"
     ],
     "maximum-length-substring-with-two-occurrences": [
       "Hash Table",
       "String",
       "Sliding Window"
+    ],
+    "score-of-a-string": [
+      "String"
     ],
     "kth-smallest-amount-with-single-denomination-combination": [
       "Array",
@@ -458,22 +771,103 @@
       "Combinatorics",
       "Number Theory"
     ],
+    "find-minimum-operations-to-make-all-elements-divisible-by-three": [
+      "Array",
+      "Math"
+    ],
+    "final-array-state-after-k-multiplication-operations-i": [
+      "Array",
+      "Math",
+      "Heap (Priority Queue)",
+      "Simulation"
+    ],
+    "the-two-sneaky-numbers-of-digitville": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ],
+    "minimum-element-after-replacement-with-digit-sum": [
+      "Array",
+      "Math"
+    ],
     "find-the-lexicographically-smallest-valid-sequence": [
       "Two Pointers",
       "String",
       "Dynamic Programming",
       "Greedy"
     ],
+    "maximum-score-of-non-overlapping-intervals": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Sorting"
+    ],
+    "transform-array-by-parity": [
+      "Array",
+      "Sorting",
+      "Counting"
+    ],
     "find-the-largest-almost-missing-integer": [
       "Array",
       "Hash Table"
+    ],
+    "unique-3-digit-even-numbers": [
+      "Array",
+      "Hash Table",
+      "Recursion",
+      "Enumeration"
+    ],
+    "reverse-degree-of-a-string": [
+      "String",
+      "Simulation"
     ],
     "minimum-operations-to-make-array-sum-divisible-by-k": [
       "Array",
       "Math"
     ],
+    "find-closest-person": [
+      "Math"
+    ],
+    "find-x-value-of-array-i": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "find-x-value-of-array-ii": [
+      "Array",
+      "Math",
+      "Segment Tree"
+    ],
+    "find-most-frequent-vowel-and-consonant": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "smallest-index-with-digit-sum-equal-to-index": [
+      "Array",
+      "Math"
+    ],
+    "minimum-moves-to-clean-the-classroom": [
+      "Array",
+      "Hash Table",
+      "Bit Manipulation",
+      "Breadth-First Search",
+      "Matrix"
+    ],
     "check-divisibility-by-digit-sum-and-product": [
       "Math"
+    ],
+    "gcd-of-odd-and-even-sums": [
+      "Math",
+      "Number Theory"
+    ],
+    "restore-finishing-order": [
+      "Array",
+      "Hash Table"
+    ],
+    "compute-alternating-sum": [
+      "Array",
+      "Simulation"
     ],
     "longest-subsequence-with-non-zero-bitwise-xor": [
       "Array",
@@ -483,10 +877,75 @@
       "Array",
       "Hash Table"
     ],
+    "lexicographically-smallest-permutation-greater-than-target": [
+      "Hash Table",
+      "String",
+      "Greedy",
+      "Counting",
+      "Enumeration"
+    ],
+    "find-missing-elements": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "lexicographically-smallest-palindromic-permutation-greater-than-target": [
+      "Two Pointers",
+      "String",
+      "Enumeration"
+    ],
+    "total-waviness-of-numbers-in-range-i": [
+      "Math",
+      "Dynamic Programming",
+      "Enumeration"
+    ],
+    "maximum-substrings-with-distinct-start": [
+      "Hash Table",
+      "String"
+    ],
+    "reverse-string-prefix": [
+      "Two Pointers",
+      "String"
+    ],
+    "count-commas-in-range": [
+      "Math"
+    ],
+    "count-commas-in-range-ii": [
+      "Math"
+    ],
+    "construct-uniform-parity-array-i": [
+      "Array",
+      "Math"
+    ],
+    "construct-uniform-parity-array-ii": [
+      "Array",
+      "Math"
+    ],
+    "count-digit-appearances": [
+      "Array",
+      "Math"
+    ],
+    "find-the-degree-of-each-vertex": [
+      "Array",
+      "Graph Theory",
+      "Matrix"
+    ],
+    "smallest-stable-index-i": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "smallest-stable-index-ii": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "concatenate-array-with-reverse": [
+      "Array",
+      "Simulation"
+    ],
     "digit-frequency-score": [
       "Hash Table",
       "Math"
     ]
   },
-  "updated": "2026-08-25 18:42 UTC"
+  "updated": "2026-10-02 21:57 UTC"
 }
