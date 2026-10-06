@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 206,
+  "total": 208,
   "easy": 115,
-  "medium": 69,
+  "medium": 71,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 73,
+  "active_days": 74,
   "recent_activity": [
+    {
+      "date": "2026-10-06",
+      "count": 6
+    },
     {
       "date": "2026-10-03",
       "count": 1
@@ -59,17 +63,13 @@
     {
       "date": "2026-09-21",
       "count": 5
-    },
-    {
-      "date": "2026-09-20",
-      "count": 1
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      87
+      89
     ],
     [
       "Math",
@@ -81,11 +81,15 @@
     ],
     [
       "String",
-      34
+      36
     ],
     [
       "Binary Search",
       18
+    ],
+    [
+      "Dynamic Programming",
+      17
     ],
     [
       "Sliding Window",
@@ -96,27 +100,23 @@
       17
     ],
     [
-      "Dynamic Programming",
-      16
-    ],
-    [
       "Two Pointers",
-      15
+      16
     ],
     [
       "Counting",
       10
     ],
     [
-      "Bit Manipulation",
-      9
-    ],
-    [
       "Greedy",
-      9
+      10
     ],
     [
       "Prefix Sum",
+      10
+    ],
+    [
+      "Bit Manipulation",
       9
     ],
     [
@@ -128,12 +128,16 @@
       7
     ],
     [
-      "Enumeration",
-      6
+      "Stack",
+      7
     ],
     [
       "Bracket Sequences",
-      5
+      6
+    ],
+    [
+      "Enumeration",
+      6
     ],
     [
       "Minimax",
@@ -141,10 +145,6 @@
     ],
     [
       "Number Theory",
-      5
-    ],
-    [
-      "Stack",
       5
     ],
     [
@@ -236,6 +236,10 @@
       1
     ],
     [
+      "Monotonic Stack",
+      1
+    ],
+    [
       "Ordered Set",
       1
     ],
@@ -322,6 +326,13 @@
     "first-missing-positive": [
       "Array",
       "Hash Table"
+    ],
+    "trapping-rain-water": [
+      "Array",
+      "Two Pointers",
+      "Dynamic Programming",
+      "Stack",
+      "Monotonic Stack"
     ],
     "plus-one": [
       "Array",
@@ -447,6 +458,11 @@
       "Math",
       "Geometry"
     ],
+    "shifting-letters": [
+      "Array",
+      "String",
+      "Prefix Sum"
+    ],
     "peak-index-in-a-mountain-array": [
       "Array",
       "Binary Search",
@@ -460,6 +476,12 @@
       "Array",
       "Hash Table",
       "Sliding Window"
+    ],
+    "minimum-add-to-make-parentheses-valid": [
+      "String",
+      "Stack",
+      "Greedy",
+      "Bracket Sequences"
     ],
     "distinct-subsequences-ii": [
       "String",
@@ -953,5 +975,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-05 23:52 UTC"
+  "updated": "2026-10-06 22:29 UTC"
 }
