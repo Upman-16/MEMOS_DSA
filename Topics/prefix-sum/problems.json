@@ -4,8 +4,28 @@
     "slug": "prefix-sum",
     "name": "Prefix Sum"
   },
-  "updatedAt": "2026-09-23T10:57:19.173Z",
+  "updatedAt": "2026-10-06T17:39:43.567Z",
   "problems": [
+    {
+      "frontendId": "848",
+      "title": "Shifting Letters",
+      "slug": "shifting-letters",
+      "problemName": "0848-shifting-letters",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/shifting-letters/",
+      "folderPath": "0848-shifting-letters/",
+      "readmePath": "0848-shifting-letters/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0848-shifting-letters.java",
+          "path": "0848-shifting-letters/0848-shifting-letters.java",
+          "sha": "319aa833f951156dfb96db5cafe967f778ba4c14",
+          "lastSyncedAt": "2026-10-06T17:39:43.567Z"
+        }
+      ]
+    },
     {
       "frontendId": "1004",
       "title": "Max Consecutive Ones III",
