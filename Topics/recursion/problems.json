@@ -2,10 +2,31 @@
   "version": 1,
   "topic": {
     "slug": "recursion",
-    "name": "Recursion"
+    "name": "Recursion",
+    "tagId": "31"
   },
-  "updatedAt": "2026-09-12T04:05:53.213Z",
+  "updatedAt": "2026-10-13T08:55:02.206Z",
   "problems": [
+    {
+      "frontendId": "206",
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "problemName": "0206-reverse-linked-list",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+      "folderPath": "0206-reverse-linked-list/",
+      "readmePath": "0206-reverse-linked-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0206-reverse-linked-list.java",
+          "path": "0206-reverse-linked-list/0206-reverse-linked-list.java",
+          "sha": "a0374e94a70155a646e313ae67814f1901709ac4",
+          "lastSyncedAt": "2026-10-13T08:55:02.206Z"
+        }
+      ]
+    },
     {
       "frontendId": "231",
       "title": "Power of Two",
