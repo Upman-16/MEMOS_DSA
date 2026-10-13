@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **211** |
-| 🟢 Easy | **116** |
-| 🟡 Medium | **73** |
+| **Total Solved** | **217** |
+| 🟢 Easy | **119** |
+| 🟡 Medium | **76** |
 | 🔴 Hard | **22** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **78** |
+| 📅 Active Days | **79** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████░░░░░░░░░  116
-🟡 Medium    ███████░░░░░░░░░░░░░  73
+🟢 Easy      ███████████░░░░░░░░░  119
+🟡 Medium    ███████░░░░░░░░░░░░░  76
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  22
 
-             TOTAL → 211
+             TOTAL → 217
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -79,19 +79,20 @@ Every accepted solution here represents one more problem understood, optimized, 
 | :--- | ---: |
 | `Array` | **89** |
 | `Math` | **45** |
-| `Hash Table` | **40** |
+| `Hash Table` | **42** |
 | `String` | **36** |
+| `Two Pointers` | **20** |
 | `Binary Search` | **18** |
 | `Dynamic Programming` | **17** |
 | `Sliding Window` | **17** |
 | `Sorting` | **17** |
-| `Two Pointers` | **16** |
 | `Counting` | **10** |
 | `Greedy` | **10** |
 | `Prefix Sum` | **10** |
 | `Bit Manipulation` | **9** |
 | `Simulation` | **8** |
 | `Game Theory` | **7** |
+| `Linked List` | **7** |
 | `Stack` | **7** |
 | `Bracket Sequences` | **6** |
 | `Enumeration` | **6** |
@@ -99,12 +100,13 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Number Theory` | **5** |
 | `Zero-Sum Game` | **5** |
 | `Matrix` | **4** |
+| `Recursion` | **4** |
 | `Nim Game` | **3** |
-| `Recursion` | **3** |
 | `Backtracking` | **2** |
 | `Breadth-First Search` | **2** |
 | `Combinatorics` | **2** |
 | `Counting Sort` | **2** |
+| `Floyd's Cycle Finding Algorithm` | **2** |
 | `Geometry` | **2** |
 | `Segment Tree` | **2** |
 | `Binary Tree` | **1** |
@@ -118,7 +120,6 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Greatest Common Divisor` | **1** |
 | `Heap (Priority Queue)` | **1** |
 | `Interactive` | **1** |
-| `Linked List` | **1** |
 | `Monotonic Stack` | **1** |
 | `Ordered Set` | **1** |
 | `Primality Test` | **1** |
@@ -135,13 +136,13 @@ Every accepted solution here represents one more problem understood, optimized, 
 ```text
 Array                    ████████████████████ 89
 Math                     ██████████░░░░░░░░░░ 45
-Hash Table               █████████░░░░░░░░░░░ 40
+Hash Table               █████████░░░░░░░░░░░ 42
 String                   ████████░░░░░░░░░░░░ 36
+Two Pointers             ████░░░░░░░░░░░░░░░░ 20
 Binary Search            ████░░░░░░░░░░░░░░░░ 18
 Dynamic Programming      ████░░░░░░░░░░░░░░░░ 17
 Sliding Window           ████░░░░░░░░░░░░░░░░ 17
 Sorting                  ████░░░░░░░░░░░░░░░░ 17
-Two Pointers             ████░░░░░░░░░░░░░░░░ 16
 Counting                 ██░░░░░░░░░░░░░░░░░░ 10
 Greedy                   ██░░░░░░░░░░░░░░░░░░ 10
 Prefix Sum               ██░░░░░░░░░░░░░░░░░░ 10
@@ -154,6 +155,7 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-10-13 | 7 | ███████ |
 | 2026-10-12 | 2 | ██ |
 | 2026-10-10 | 2 | ██ |
 | 2026-10-09 | 1 | █ |
@@ -167,7 +169,6 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 | 2026-09-28 | 1 | █ |
 | 2026-09-27 | 1 | █ |
 | 2026-09-26 | 1 | █ |
-| 2026-09-25 | 2 | ██ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -178,10 +179,10 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 78
+Active Days    : 79
 ```
 
-> 🕐 Last synchronized: **2026-10-13 00:18 UTC**
+> 🕐 Last synchronized: **2026-10-13 22:25 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 

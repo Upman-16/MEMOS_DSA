@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 211,
-  "easy": 116,
-  "medium": 73,
+  "total": 217,
+  "easy": 119,
+  "medium": 76,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 78,
+  "active_days": 79,
   "recent_activity": [
+    {
+      "date": "2026-10-13",
+      "count": 7
+    },
     {
       "date": "2026-10-12",
       "count": 2
@@ -59,10 +63,6 @@
     {
       "date": "2026-09-26",
       "count": 1
-    },
-    {
-      "date": "2026-09-25",
-      "count": 2
     }
   ],
   "recent_submissions": [],
@@ -77,11 +77,15 @@
     ],
     [
       "Hash Table",
-      40
+      42
     ],
     [
       "String",
       36
+    ],
+    [
+      "Two Pointers",
+      20
     ],
     [
       "Binary Search",
@@ -98,10 +102,6 @@
     [
       "Sorting",
       17
-    ],
-    [
-      "Two Pointers",
-      16
     ],
     [
       "Counting",
@@ -125,6 +125,10 @@
     ],
     [
       "Game Theory",
+      7
+    ],
+    [
+      "Linked List",
       7
     ],
     [
@@ -156,11 +160,11 @@
       4
     ],
     [
-      "Nim Game",
-      3
+      "Recursion",
+      4
     ],
     [
-      "Recursion",
+      "Nim Game",
       3
     ],
     [
@@ -177,6 +181,10 @@
     ],
     [
       "Counting Sort",
+      2
+    ],
+    [
+      "Floyd's Cycle Finding Algorithm",
       2
     ],
     [
@@ -229,10 +237,6 @@
     ],
     [
       "Interactive",
-      1
-    ],
-    [
-      "Linked List",
       1
     ],
     [
@@ -349,6 +353,18 @@
       "Array",
       "Bit Manipulation"
     ],
+    "linked-list-cycle": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers",
+      "Floyd's Cycle Finding Algorithm"
+    ],
+    "linked-list-cycle-ii": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers",
+      "Floyd's Cycle Finding Algorithm"
+    ],
     "find-minimum-in-rotated-sorted-array": [
       "Array",
       "Binary Search"
@@ -379,6 +395,10 @@
       "Sieve Theory",
       "Prime Number Sieve"
     ],
+    "reverse-linked-list": [
+      "Linked List",
+      "Recursion"
+    ],
     "contains-duplicate": [
       "Array",
       "Hash Table",
@@ -393,6 +413,9 @@
       "Math",
       "Bit Manipulation",
       "Recursion"
+    ],
+    "delete-node-in-a-linked-list": [
+      "Linked List"
     ],
     "missing-number": [
       "Array",
@@ -474,6 +497,10 @@
     "koko-eating-bananas": [
       "Array",
       "Binary Search"
+    ],
+    "middle-of-the-linked-list": [
+      "Linked List",
+      "Two Pointers"
     ],
     "fruit-into-baskets": [
       "Array",
@@ -698,6 +725,10 @@
     "removing-minimum-and-maximum-from-array": [
       "Array",
       "Greedy"
+    ],
+    "delete-the-middle-node-of-a-linked-list": [
+      "Linked List",
+      "Two Pointers"
     ],
     "partition-array-according-to-given-pivot": [
       "Array",
@@ -978,5 +1009,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-13 00:18 UTC"
+  "updated": "2026-10-13 22:25 UTC"
 }
