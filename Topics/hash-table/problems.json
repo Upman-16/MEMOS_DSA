@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "hash-table",
-    "name": "Hash Table"
+    "name": "Hash Table",
+    "tagId": "6"
   },
-  "updatedAt": "2026-09-26T04:18:43.858Z",
+  "updatedAt": "2026-10-13T10:10:11.883Z",
   "problems": [
     {
       "frontendId": "1",
@@ -63,6 +64,26 @@
           "path": "0041-first-missing-positive/0041-first-missing-positive.java",
           "sha": "df33b91971b1392fa34f9c863e1db9e83cd13fca",
           "lastSyncedAt": "2026-08-15T06:23:18.843Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "141",
+      "title": "Linked List Cycle",
+      "slug": "linked-list-cycle",
+      "problemName": "0141-linked-list-cycle",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
+      "folderPath": "0141-linked-list-cycle/",
+      "readmePath": "0141-linked-list-cycle/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0141-linked-list-cycle.java",
+          "path": "0141-linked-list-cycle/0141-linked-list-cycle.java",
+          "sha": "1b4d618b4a33a4a06eb9089867b95c4e9c94c6e3",
+          "lastSyncedAt": "2026-10-13T10:10:11.883Z"
         }
       ]
     },
