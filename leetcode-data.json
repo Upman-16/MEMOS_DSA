@@ -6,8 +6,12 @@
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 77,
+  "active_days": 78,
   "recent_activity": [
+    {
+      "date": "2026-10-12",
+      "count": 2
+    },
     {
       "date": "2026-10-10",
       "count": 2
@@ -59,10 +63,6 @@
     {
       "date": "2026-09-25",
       "count": 2
-    },
-    {
-      "date": "2026-09-24",
-      "count": 1
     }
   ],
   "recent_submissions": [],
@@ -73,7 +73,7 @@
     ],
     [
       "Math",
-      44
+      45
     ],
     [
       "Hash Table",
@@ -285,6 +285,9 @@
       "Hash Table",
       "String",
       "Sliding Window"
+    ],
+    "palindrome-number": [
+      "Math"
     ],
     "3sum-closest": [
       "Array",
@@ -975,5 +978,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-11 21:38 UTC"
+  "updated": "2026-10-13 00:18 UTC"
 }
