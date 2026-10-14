@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "greedy",
-    "name": "Greedy"
+    "name": "Greedy",
+    "tagId": "17"
   },
-  "updatedAt": "2026-10-06T05:13:35.371Z",
+  "updatedAt": "2026-10-14T04:58:22.278Z",
   "problems": [
     {
       "frontendId": "921",
@@ -183,6 +184,26 @@
           "path": "3720-lexicographically-smallest-permutation-greater-than-target/3720-lexicographically-smallest-permutation-greater-than-target.java",
           "sha": "1d1f9cb2597d601cadbdfdca3e652920f34b5f1a",
           "lastSyncedAt": "2026-08-27T15:05:52.548Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3723",
+      "title": "Maximize Sum of Squares of Digits",
+      "slug": "maximize-sum-of-squares-of-digits",
+      "problemName": "3723-maximize-sum-of-squares-of-digits",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
+      "folderPath": "3723-maximize-sum-of-squares-of-digits/",
+      "readmePath": "3723-maximize-sum-of-squares-of-digits/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3723-maximize-sum-of-squares-of-digits.java",
+          "path": "3723-maximize-sum-of-squares-of-digits/3723-maximize-sum-of-squares-of-digits.java",
+          "sha": "34a97a916b7e13deaec52f9b5560d272da44269b",
+          "lastSyncedAt": "2026-10-14T04:58:22.278Z"
         }
       ]
     }
