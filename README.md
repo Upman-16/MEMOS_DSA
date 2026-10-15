@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **218** |
-| 🟢 Easy | **119** |
+| **Total Solved** | **219** |
+| 🟢 Easy | **120** |
 | 🟡 Medium | **77** |
 | 🔴 Hard | **22** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **80** |
+| 📅 Active Days | **81** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████░░░░░░░░░  119
+🟢 Easy      ███████████░░░░░░░░░  120
 🟡 Medium    ███████░░░░░░░░░░░░░  77
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  22
 
-             TOTAL → 218
+             TOTAL → 219
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,9 +77,9 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **89** |
+| `Array` | **90** |
 | `Math` | **46** |
-| `Hash Table` | **42** |
+| `Hash Table` | **43** |
 | `String` | **36** |
 | `Two Pointers` | **20** |
 | `Binary Search` | **18** |
@@ -102,13 +102,14 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Matrix` | **4** |
 | `Recursion` | **4** |
 | `Nim Game` | **3** |
+| `Segment Tree` | **3** |
 | `Backtracking` | **2** |
 | `Breadth-First Search` | **2** |
 | `Combinatorics` | **2** |
 | `Counting Sort` | **2** |
 | `Floyd's Cycle Finding Algorithm` | **2** |
 | `Geometry` | **2** |
-| `Segment Tree` | **2** |
+| `Binary Indexed Tree` | **1** |
 | `Binary Tree` | **1** |
 | `Boyer–Moore Majority Vote Algorithm` | **1** |
 | `Brainteaser` | **1** |
@@ -134,9 +135,9 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 89
+Array                    ████████████████████ 90
 Math                     ██████████░░░░░░░░░░ 46
-Hash Table               █████████░░░░░░░░░░░ 42
+Hash Table               ██████████░░░░░░░░░░ 43
 String                   ████████░░░░░░░░░░░░ 36
 Two Pointers             ████░░░░░░░░░░░░░░░░ 20
 Binary Search            ████░░░░░░░░░░░░░░░░ 18
@@ -155,6 +156,7 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-10-15 | 1 | █ |
 | 2026-10-14 | 1 | █ |
 | 2026-10-13 | 7 | ███████ |
 | 2026-10-12 | 2 | ██ |
@@ -168,7 +170,6 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 | 2026-09-30 | 1 | █ |
 | 2026-09-29 | 1 | █ |
 | 2026-09-28 | 1 | █ |
-| 2026-09-27 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -179,10 +180,10 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 80
+Active Days    : 81
 ```
 
-> 🕐 Last synchronized: **2026-10-14 21:23 UTC**
+> 🕐 Last synchronized: **2026-10-15 21:04 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 

@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 218,
-  "easy": 119,
+  "total": 219,
+  "easy": 120,
   "medium": 77,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 80,
+  "active_days": 81,
   "recent_activity": [
+    {
+      "date": "2026-10-15",
+      "count": 1
+    },
     {
       "date": "2026-10-14",
       "count": 1
@@ -59,17 +63,13 @@
     {
       "date": "2026-09-28",
       "count": 1
-    },
-    {
-      "date": "2026-09-27",
-      "count": 1
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      89
+      90
     ],
     [
       "Math",
@@ -77,7 +77,7 @@
     ],
     [
       "Hash Table",
-      42
+      43
     ],
     [
       "String",
@@ -168,6 +168,10 @@
       3
     ],
     [
+      "Segment Tree",
+      3
+    ],
+    [
       "Backtracking",
       2
     ],
@@ -192,8 +196,8 @@
       2
     ],
     [
-      "Segment Tree",
-      2
+      "Binary Indexed Tree",
+      1
     ],
     [
       "Binary Tree",
@@ -797,6 +801,12 @@
       "String",
       "Sliding Window"
     ],
+    "subarrays-distinct-element-sum-of-squares-i": [
+      "Array",
+      "Hash Table",
+      "Binary Indexed Tree",
+      "Segment Tree"
+    ],
     "make-lexicographically-smallest-array-by-swapping-elements": [
       "Array",
       "Union-Find",
@@ -1013,5 +1023,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-14 21:23 UTC"
+  "updated": "2026-10-15 21:04 UTC"
 }
