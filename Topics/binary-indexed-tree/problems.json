@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "binary-indexed-tree",
+    "name": "Binary Indexed Tree",
+    "tagId": "28"
+  },
+  "updatedAt": "2026-10-15T13:38:23.884Z",
+  "problems": [
+    {
+      "frontendId": "2913",
+      "title": "Subarrays Distinct Element Sum of Squares I",
+      "slug": "subarrays-distinct-element-sum-of-squares-i",
+      "problemName": "2913-subarrays-distinct-element-sum-of-squares-i",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/",
+      "folderPath": "2913-subarrays-distinct-element-sum-of-squares-i/",
+      "readmePath": "2913-subarrays-distinct-element-sum-of-squares-i/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2913-subarrays-distinct-element-sum-of-squares-i.java",
+          "path": "2913-subarrays-distinct-element-sum-of-squares-i/2913-subarrays-distinct-element-sum-of-squares-i.java",
+          "sha": "78d505263f1b51029f07b1c14d0e8a853dbcebb5",
+          "lastSyncedAt": "2026-10-15T13:38:23.884Z"
+        }
+      ]
+    }
+  ]
+}
