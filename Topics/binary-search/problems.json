@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "binary-search",
-    "name": "Binary Search"
+    "name": "Binary Search",
+    "tagId": "11"
   },
-  "updatedAt": "2026-09-25T05:47:36.575Z",
+  "updatedAt": "2026-10-19T06:21:09.900Z",
   "problems": [
     {
       "frontendId": "33",
@@ -303,6 +304,26 @@
           "path": "1658-minimum-operations-to-reduce-x-to-zero/1658-minimum-operations-to-reduce-x-to-zero.java",
           "sha": "ec42619be818d2393fab560936eca44b69714b71",
           "lastSyncedAt": "2026-09-23T10:57:19.173Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2089",
+      "title": "Find Target Indices After Sorting Array",
+      "slug": "find-target-indices-after-sorting-array",
+      "problemName": "2089-find-target-indices-after-sorting-array",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+      "folderPath": "2089-find-target-indices-after-sorting-array/",
+      "readmePath": "2089-find-target-indices-after-sorting-array/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2089-find-target-indices-after-sorting-array.java",
+          "path": "2089-find-target-indices-after-sorting-array/2089-find-target-indices-after-sorting-array.java",
+          "sha": "37025c9355f5761a01e7c90ac066ff1938d36131",
+          "lastSyncedAt": "2026-10-19T06:21:09.900Z"
         }
       ]
     },
