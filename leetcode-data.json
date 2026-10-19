@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 219,
-  "easy": 120,
+  "total": 220,
+  "easy": 121,
   "medium": 77,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 84,
+  "active_days": 85,
   "recent_activity": [
+    {
+      "date": "2026-10-19",
+      "count": 1
+    },
     {
       "date": "2026-10-18",
       "count": 1
@@ -59,17 +63,13 @@
     {
       "date": "2026-10-02",
       "count": 2
-    },
-    {
-      "date": "2026-10-01",
-      "count": 1
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      90
+      91
     ],
     [
       "Math",
@@ -89,6 +89,10 @@
     ],
     [
       "Binary Search",
+      19
+    ],
+    [
+      "Sorting",
       18
     ],
     [
@@ -97,10 +101,6 @@
     ],
     [
       "Sliding Window",
-      17
-    ],
-    [
-      "Sorting",
       17
     ],
     [
@@ -726,6 +726,11 @@
     "find-the-minimum-and-maximum-number-of-nodes-between-critical-points": [
       "Linked List"
     ],
+    "find-target-indices-after-sorting-array": [
+      "Array",
+      "Binary Search",
+      "Sorting"
+    ],
     "removing-minimum-and-maximum-from-array": [
       "Array",
       "Greedy"
@@ -1023,5 +1028,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-18 20:17 UTC"
+  "updated": "2026-10-19 22:07 UTC"
 }
