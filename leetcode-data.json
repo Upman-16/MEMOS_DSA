@@ -6,8 +6,12 @@
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 85,
+  "active_days": 86,
   "recent_activity": [
+    {
+      "date": "2026-10-20",
+      "count": 1
+    },
     {
       "date": "2026-10-19",
       "count": 1
@@ -59,10 +63,6 @@
     {
       "date": "2026-10-03",
       "count": 1
-    },
-    {
-      "date": "2026-10-02",
-      "count": 2
     }
   ],
   "recent_submissions": [],
@@ -1028,5 +1028,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-19 22:07 UTC"
+  "updated": "2026-10-20 21:22 UTC"
 }
