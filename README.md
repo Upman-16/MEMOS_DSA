@@ -58,7 +58,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | 🔴 Hard | **22** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **86** |
+| 📅 Active Days | **87** |
 
 ### 📈 Difficulty Distribution
 
@@ -156,6 +156,7 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-10-21 | 1 | █ |
 | 2026-10-20 | 1 | █ |
 | 2026-10-19 | 1 | █ |
 | 2026-10-18 | 1 | █ |
@@ -169,7 +170,6 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 | 2026-10-09 | 1 | █ |
 | 2026-10-08 | 1 | █ |
 | 2026-10-06 | 6 | ██████ |
-| 2026-10-03 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -180,10 +180,10 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 86
+Active Days    : 87
 ```
 
-> 🕐 Last synchronized: **2026-10-20 21:22 UTC**
+> 🕐 Last synchronized: **2026-10-21 21:24 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
