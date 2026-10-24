@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 221,
-  "easy": 121,
-  "medium": 78,
+  "total": 224,
+  "easy": 123,
+  "medium": 79,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 88,
+  "active_days": 89,
   "recent_activity": [
+    {
+      "date": "2026-10-24",
+      "count": 5
+    },
     {
       "date": "2026-10-23",
       "count": 1
@@ -59,10 +63,6 @@
     {
       "date": "2026-10-09",
       "count": 1
-    },
-    {
-      "date": "2026-10-08",
-      "count": 1
     }
   ],
   "recent_submissions": [],
@@ -73,7 +73,7 @@
     ],
     [
       "Math",
-      46
+      47
     ],
     [
       "Hash Table",
@@ -81,7 +81,7 @@
     ],
     [
       "String",
-      36
+      37
     ],
     [
       "Two Pointers",
@@ -758,6 +758,10 @@
       "Depth-First Search",
       "Binary Tree"
     ],
+    "count-days-spent-together": [
+      "Math",
+      "String"
+    ],
     "smallest-even-multiple": [
       "Math",
       "Number Theory"
@@ -1032,5 +1036,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-23 21:09 UTC"
+  "updated": "2026-10-24 20:26 UTC"
 }
