@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 224,
-  "easy": 123,
-  "medium": 79,
+  "total": 226,
+  "easy": 124,
+  "medium": 80,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 89,
+  "active_days": 90,
   "recent_activity": [
+    {
+      "date": "2026-10-25",
+      "count": 3
+    },
     {
       "date": "2026-10-24",
       "count": 5
@@ -59,10 +63,6 @@
     {
       "date": "2026-10-10",
       "count": 2
-    },
-    {
-      "date": "2026-10-09",
-      "count": 1
     }
   ],
   "recent_submissions": [],
@@ -1036,5 +1036,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-24 20:26 UTC"
+  "updated": "2026-10-25 20:32 UTC"
 }
