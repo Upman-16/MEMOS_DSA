@@ -5,8 +5,28 @@
     "name": "Linked List",
     "tagId": "7"
   },
-  "updatedAt": "2026-10-13T10:18:32.521Z",
+  "updatedAt": "2026-10-26T06:46:26.563Z",
   "problems": [
+    {
+      "frontendId": "19",
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "problemName": "0019-remove-nth-node-from-end-of-list",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      "folderPath": "0019-remove-nth-node-from-end-of-list/",
+      "readmePath": "0019-remove-nth-node-from-end-of-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0019-remove-nth-node-from-end-of-list.java",
+          "path": "0019-remove-nth-node-from-end-of-list/0019-remove-nth-node-from-end-of-list.java",
+          "sha": "0d561893de327ef99c97ec82df1a97072b461be5",
+          "lastSyncedAt": "2026-10-26T06:46:26.563Z"
+        }
+      ]
+    },
     {
       "frontendId": "141",
       "title": "Linked List Cycle",
