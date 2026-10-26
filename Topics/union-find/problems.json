@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "union-find",
-    "name": "Union-Find"
+    "name": "Union-Find",
+    "tagId": "23"
   },
-  "updatedAt": "2026-08-29T11:30:50.586Z",
+  "updatedAt": "2026-10-26T16:00:06.227Z",
   "problems": [
     {
       "frontendId": "2948",
@@ -23,6 +24,26 @@
           "path": "2948-make-lexicographically-smallest-array-by-swapping-elements/2948-make-lexicographically-smallest-array-by-swapping-elements.java",
           "sha": "d3959b79380f980e0a4a4a1aae82cefc9a9cfba6",
           "lastSyncedAt": "2026-08-29T11:30:50.586Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3619",
+      "title": "Count Islands With Total Value Divisible by K",
+      "slug": "count-islands-with-total-value-divisible-by-k",
+      "problemName": "3619-count-islands-with-total-value-divisible-by-k",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+      "folderPath": "3619-count-islands-with-total-value-divisible-by-k/",
+      "readmePath": "3619-count-islands-with-total-value-divisible-by-k/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3619-count-islands-with-total-value-divisible-by-k.java",
+          "path": "3619-count-islands-with-total-value-divisible-by-k/3619-count-islands-with-total-value-divisible-by-k.java",
+          "sha": "b26a0ac6a2b81a21c313a09bc82b6d3a8bc7d281",
+          "lastSyncedAt": "2026-10-26T16:00:06.227Z"
         }
       ]
     }
