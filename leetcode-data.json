@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 226,
+  "total": 228,
   "easy": 124,
-  "medium": 80,
+  "medium": 82,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 90,
+  "active_days": 91,
   "recent_activity": [
+    {
+      "date": "2026-10-26",
+      "count": 2
+    },
     {
       "date": "2026-10-25",
       "count": 3
@@ -59,17 +63,13 @@
     {
       "date": "2026-10-12",
       "count": 2
-    },
-    {
-      "date": "2026-10-10",
-      "count": 2
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      92
+      93
     ],
     [
       "Math",
@@ -85,7 +85,7 @@
     ],
     [
       "Two Pointers",
-      20
+      21
     ],
     [
       "Binary Search",
@@ -120,15 +120,15 @@
       10
     ],
     [
+      "Linked List",
+      8
+    ],
+    [
       "Simulation",
       8
     ],
     [
       "Game Theory",
-      7
-    ],
-    [
-      "Linked List",
       7
     ],
     [
@@ -144,6 +144,10 @@
       6
     ],
     [
+      "Matrix",
+      5
+    ],
+    [
       "Minimax",
       5
     ],
@@ -156,12 +160,12 @@
       5
     ],
     [
-      "Matrix",
+      "Recursion",
       4
     ],
     [
-      "Recursion",
-      4
+      "Breadth-First Search",
+      3
     ],
     [
       "Nim Game",
@@ -176,10 +180,6 @@
       2
     ],
     [
-      "Breadth-First Search",
-      2
-    ],
-    [
       "Combinatorics",
       2
     ],
@@ -188,11 +188,19 @@
       2
     ],
     [
+      "Depth-First Search",
+      2
+    ],
+    [
       "Floyd's Cycle Finding Algorithm",
       2
     ],
     [
       "Geometry",
+      2
+    ],
+    [
+      "Union-Find",
       2
     ],
     [
@@ -213,10 +221,6 @@
     ],
     [
       "Bubble Sort",
-      1
-    ],
-    [
-      "Depth-First Search",
       1
     ],
     [
@@ -278,10 +282,6 @@
     [
       "Tree",
       1
-    ],
-    [
-      "Union-Find",
-      1
     ]
   ],
   "problem_topics": {
@@ -301,6 +301,10 @@
       "Array",
       "Two Pointers",
       "Sorting"
+    ],
+    "remove-nth-node-from-end-of-list": [
+      "Linked List",
+      "Two Pointers"
     ],
     "generate-parentheses": [
       "String",
@@ -935,6 +939,13 @@
       "Breadth-First Search",
       "Matrix"
     ],
+    "count-islands-with-total-value-divisible-by-k": [
+      "Array",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Matrix"
+    ],
     "check-divisibility-by-digit-sum-and-product": [
       "Math"
     ],
@@ -1036,5 +1047,5 @@
       "Math"
     ]
   },
-  "updated": "2026-10-25 20:32 UTC"
+  "updated": "2026-10-26 22:25 UTC"
 }

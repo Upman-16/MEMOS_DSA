@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **226** |
+| **Total Solved** | **228** |
 | 🟢 Easy | **124** |
-| 🟡 Medium | **80** |
+| 🟡 Medium | **82** |
 | 🔴 Hard | **22** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **90** |
+| 📅 Active Days | **91** |
 
 ### 📈 Difficulty Distribution
 
 ```text
 🟢 Easy      ███████████░░░░░░░░░  124
-🟡 Medium    ███████░░░░░░░░░░░░░  80
+🟡 Medium    ███████░░░░░░░░░░░░░  82
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  22
 
-             TOTAL → 226
+             TOTAL → 228
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,11 +77,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **92** |
+| `Array` | **93** |
 | `Math` | **47** |
 | `Hash Table` | **43** |
 | `String` | **37** |
-| `Two Pointers` | **20** |
+| `Two Pointers` | **21** |
 | `Binary Search` | **19** |
 | `Sorting` | **18** |
 | `Dynamic Programming` | **17** |
@@ -90,31 +90,32 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Bit Manipulation` | **10** |
 | `Counting` | **10** |
 | `Prefix Sum` | **10** |
+| `Linked List` | **8** |
 | `Simulation` | **8** |
 | `Game Theory` | **7** |
-| `Linked List` | **7** |
 | `Stack` | **7** |
 | `Bracket Sequences` | **6** |
 | `Enumeration` | **6** |
+| `Matrix` | **5** |
 | `Minimax` | **5** |
 | `Number Theory` | **5** |
 | `Zero-Sum Game` | **5** |
-| `Matrix` | **4** |
 | `Recursion` | **4** |
+| `Breadth-First Search` | **3** |
 | `Nim Game` | **3** |
 | `Segment Tree` | **3** |
 | `Backtracking` | **2** |
-| `Breadth-First Search` | **2** |
 | `Combinatorics` | **2** |
 | `Counting Sort` | **2** |
+| `Depth-First Search` | **2** |
 | `Floyd's Cycle Finding Algorithm` | **2** |
 | `Geometry` | **2** |
+| `Union-Find` | **2** |
 | `Binary Indexed Tree` | **1** |
 | `Binary Tree` | **1** |
 | `Boyer–Moore Majority Vote Algorithm` | **1** |
 | `Brainteaser` | **1** |
 | `Bubble Sort` | **1** |
-| `Depth-First Search` | **1** |
 | `Divide and Conquer` | **1** |
 | `Euclidean Algorithm` | **1** |
 | `Graph Theory` | **1** |
@@ -130,16 +131,15 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Sprague–Grundy Theorem` | **1** |
 | `Ternary Search` | **1** |
 | `Tree` | **1** |
-| `Union-Find` | **1** |
 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 92
+Array                    ████████████████████ 93
 Math                     ██████████░░░░░░░░░░ 47
 Hash Table               █████████░░░░░░░░░░░ 43
 String                   ████████░░░░░░░░░░░░ 37
-Two Pointers             ████░░░░░░░░░░░░░░░░ 20
+Two Pointers             █████░░░░░░░░░░░░░░░ 21
 Binary Search            ████░░░░░░░░░░░░░░░░ 19
 Sorting                  ████░░░░░░░░░░░░░░░░ 18
 Dynamic Programming      ████░░░░░░░░░░░░░░░░ 17
@@ -148,14 +148,15 @@ Greedy                   ██░░░░░░░░░░░░░░░░�
 Bit Manipulation         ██░░░░░░░░░░░░░░░░░░ 10
 Counting                 ██░░░░░░░░░░░░░░░░░░ 10
 Prefix Sum               ██░░░░░░░░░░░░░░░░░░ 10
+Linked List              ██░░░░░░░░░░░░░░░░░░ 8
 Simulation               ██░░░░░░░░░░░░░░░░░░ 8
-Game Theory              ██░░░░░░░░░░░░░░░░░░ 7
 ```
 
 ### 📅 Recent Coding Activity
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-10-26 | 2 | ██ |
 | 2026-10-25 | 3 | ███ |
 | 2026-10-24 | 5 | █████ |
 | 2026-10-23 | 1 | █ |
@@ -169,7 +170,6 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 | 2026-10-14 | 1 | █ |
 | 2026-10-13 | 7 | ███████ |
 | 2026-10-12 | 2 | ██ |
-| 2026-10-10 | 2 | ██ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -180,10 +180,10 @@ Game Theory              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 90
+Active Days    : 91
 ```
 
-> 🕐 Last synchronized: **2026-10-25 20:32 UTC**
+> 🕐 Last synchronized: **2026-10-26 22:25 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
