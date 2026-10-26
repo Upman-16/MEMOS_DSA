@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "depth-first-search",
-    "name": "Depth-First Search"
+    "name": "Depth-First Search",
+    "tagId": "21"
   },
-  "updatedAt": "2026-09-10T13:44:21.021Z",
+  "updatedAt": "2026-10-26T16:00:06.227Z",
   "problems": [
     {
       "frontendId": "2265",
@@ -23,6 +24,26 @@
           "path": "2265-count-nodes-equal-to-average-of-subtree/2265-count-nodes-equal-to-average-of-subtree.java",
           "sha": "ee6753686a5a9abc8f79141c2235fbacff79a2f5",
           "lastSyncedAt": "2026-09-10T13:44:21.021Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3619",
+      "title": "Count Islands With Total Value Divisible by K",
+      "slug": "count-islands-with-total-value-divisible-by-k",
+      "problemName": "3619-count-islands-with-total-value-divisible-by-k",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+      "folderPath": "3619-count-islands-with-total-value-divisible-by-k/",
+      "readmePath": "3619-count-islands-with-total-value-divisible-by-k/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3619-count-islands-with-total-value-divisible-by-k.java",
+          "path": "3619-count-islands-with-total-value-divisible-by-k/3619-count-islands-with-total-value-divisible-by-k.java",
+          "sha": "b26a0ac6a2b81a21c313a09bc82b6d3a8bc7d281",
+          "lastSyncedAt": "2026-10-26T16:00:06.227Z"
         }
       ]
     }
