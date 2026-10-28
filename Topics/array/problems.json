@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-10-26T16:00:06.227Z",
+  "updatedAt": "2026-10-28T14:28:46.710Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1684,6 +1684,26 @@
           "path": "3876-construct-uniform-parity-array-ii/3876-construct-uniform-parity-array-ii.java",
           "sha": "877b9a99df0574a1ac62c309913c00bf1e4ae10b",
           "lastSyncedAt": "2026-09-03T13:50:04.723Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3882",
+      "title": "Minimum XOR Path in a Grid",
+      "slug": "minimum-xor-path-in-a-grid",
+      "problemName": "3882-minimum-xor-path-in-a-grid",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+      "folderPath": "3882-minimum-xor-path-in-a-grid/",
+      "readmePath": "3882-minimum-xor-path-in-a-grid/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3882-minimum-xor-path-in-a-grid.java",
+          "path": "3882-minimum-xor-path-in-a-grid/3882-minimum-xor-path-in-a-grid.java",
+          "sha": "5413e0d186ca235331783fb0d9ec6518fe9b6791",
+          "lastSyncedAt": "2026-10-28T14:28:46.710Z"
         }
       ]
     },
