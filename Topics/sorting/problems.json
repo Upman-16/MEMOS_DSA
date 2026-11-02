@@ -5,7 +5,7 @@
     "name": "Sorting",
     "tagId": "61049"
   },
-  "updatedAt": "2026-10-19T06:21:09.900Z",
+  "updatedAt": "2026-11-02T14:22:59.250Z",
   "problems": [
     {
       "frontendId": "16",
@@ -104,6 +104,26 @@
           "path": "0414-third-maximum-number/0414-third-maximum-number.java",
           "sha": "61556265cede224c8599844c6003eedb7c35519f",
           "lastSyncedAt": "2026-08-23T05:35:43.838Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "462",
+      "title": "Minimum Moves to Equal Array Elements II",
+      "slug": "minimum-moves-to-equal-array-elements-ii",
+      "problemName": "0462-minimum-moves-to-equal-array-elements-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+      "folderPath": "0462-minimum-moves-to-equal-array-elements-ii/",
+      "readmePath": "0462-minimum-moves-to-equal-array-elements-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0462-minimum-moves-to-equal-array-elements-ii.java",
+          "path": "0462-minimum-moves-to-equal-array-elements-ii/0462-minimum-moves-to-equal-array-elements-ii.java",
+          "sha": "e894a4a0046cc24fbf76c0218cfebe7ff293728c",
+          "lastSyncedAt": "2026-11-02T14:22:59.250Z"
         }
       ]
     },
