@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 231,
+  "total": 232,
   "easy": 125,
-  "medium": 84,
+  "medium": 85,
   "hard": 22,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 95,
+  "active_days": 96,
   "recent_activity": [
+    {
+      "date": "2026-11-02",
+      "count": 1
+    },
     {
       "date": "2026-11-01",
       "count": 1
@@ -59,21 +63,17 @@
     {
       "date": "2026-10-17",
       "count": 1
-    },
-    {
-      "date": "2026-10-16",
-      "count": 1
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      95
+      96
     ],
     [
       "Math",
-      48
+      49
     ],
     [
       "Hash Table",
@@ -92,11 +92,11 @@
       19
     ],
     [
-      "Dynamic Programming",
-      18
+      "Sorting",
+      19
     ],
     [
-      "Sorting",
+      "Dynamic Programming",
       18
     ],
     [
@@ -469,6 +469,11 @@
     "minimum-moves-to-equal-array-elements": [
       "Array",
       "Math"
+    ],
+    "minimum-moves-to-equal-array-elements-ii": [
+      "Array",
+      "Math",
+      "Sorting"
     ],
     "permutation-in-string": [
       "Hash Table",
@@ -1058,5 +1063,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-01 21:49 UTC"
+  "updated": "2026-11-03 00:43 UTC"
 }
