@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "sliding-window",
-    "name": "Sliding Window"
+    "name": "Sliding Window",
+    "tagId": "55821"
   },
-  "updatedAt": "2026-09-23T10:57:19.173Z",
+  "updatedAt": "2026-11-04T18:19:39.740Z",
   "problems": [
     {
       "frontendId": "3",
@@ -343,6 +344,26 @@
           "path": "3090-maximum-length-substring-with-two-occurrences/3090-maximum-length-substring-with-two-occurrences.java",
           "sha": "85d720772a16b7525f6cf8b1aee8f3af70261cab",
           "lastSyncedAt": "2026-08-15T06:22:13.769Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3505",
+      "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
+      "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
+      "problemName": "3505-minimum-operations-to-make-elements-within-k-subarrays-equal",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+      "folderPath": "3505-minimum-operations-to-make-elements-within-k-subarrays-equal/",
+      "readmePath": "3505-minimum-operations-to-make-elements-within-k-subarrays-equal/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3505-minimum-operations-to-make-elements-within-k-subarrays-equal.java",
+          "path": "3505-minimum-operations-to-make-elements-within-k-subarrays-equal/3505-minimum-operations-to-make-elements-within-k-subarrays-equal.java",
+          "sha": "7c8a281ec3d72fd6b5a79fcf302e1d10fc50678a",
+          "lastSyncedAt": "2026-11-04T18:19:39.740Z"
         }
       ]
     }
