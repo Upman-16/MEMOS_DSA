@@ -5,7 +5,7 @@
     "name": "Binary Search",
     "tagId": "11"
   },
-  "updatedAt": "2026-10-19T06:21:09.900Z",
+  "updatedAt": "2026-11-05T14:57:10.202Z",
   "problems": [
     {
       "frontendId": "33",
@@ -264,6 +264,26 @@
           "path": "1351-count-negative-numbers-in-a-sorted-matrix/1351-count-negative-numbers-in-a-sorted-matrix.java",
           "sha": "cea627698e9f590ad96fc92a2f69b1f9649e905e",
           "lastSyncedAt": "2026-09-12T06:17:17.012Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1385",
+      "title": "Find the Distance Value Between Two Arrays",
+      "slug": "find-the-distance-value-between-two-arrays",
+      "problemName": "1385-find-the-distance-value-between-two-arrays",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
+      "folderPath": "1385-find-the-distance-value-between-two-arrays/",
+      "readmePath": "1385-find-the-distance-value-between-two-arrays/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1385-find-the-distance-value-between-two-arrays.java",
+          "path": "1385-find-the-distance-value-between-two-arrays/1385-find-the-distance-value-between-two-arrays.java",
+          "sha": "dc41a71e0cf45d891465368fb9979d32e25c19c9",
+          "lastSyncedAt": "2026-11-05T14:57:10.202Z"
         }
       ]
     },
