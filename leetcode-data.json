@@ -1,13 +1,21 @@
 {
   "username": "Danger_exe_fr",
-  "total": 234,
-  "easy": 126,
-  "medium": 85,
+  "total": 236,
+  "easy": 127,
+  "medium": 86,
   "hard": 23,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 98,
+  "active_days": 100,
   "recent_activity": [
+    {
+      "date": "2026-11-06",
+      "count": 1
+    },
+    {
+      "date": "2026-11-05",
+      "count": 1
+    },
     {
       "date": "2026-11-04",
       "count": 1
@@ -55,21 +63,13 @@
     {
       "date": "2026-10-21",
       "count": 1
-    },
-    {
-      "date": "2026-10-20",
-      "count": 1
-    },
-    {
-      "date": "2026-10-19",
-      "count": 1
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      98
+      100
     ],
     [
       "Math",
@@ -77,7 +77,7 @@
     ],
     [
       "Hash Table",
-      44
+      45
     ],
     [
       "String",
@@ -85,23 +85,23 @@
     ],
     [
       "Two Pointers",
+      22
+    ],
+    [
+      "Sorting",
       21
     ],
     [
       "Binary Search",
-      19
+      20
     ],
     [
       "Dynamic Programming",
       19
     ],
     [
-      "Sorting",
-      19
-    ],
-    [
       "Sliding Window",
-      18
+      19
     ],
     [
       "Bit Manipulation",
@@ -601,6 +601,12 @@
       "Sorting",
       "Counting Sort"
     ],
+    "find-the-distance-value-between-two-arrays": [
+      "Array",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
     "cinema-seat-allocation": [
       "Array",
       "Hash Table",
@@ -798,6 +804,12 @@
     "left-and-right-sum-differences": [
       "Array",
       "Prefix Sum"
+    ],
+    "count-zero-request-servers": [
+      "Array",
+      "Hash Table",
+      "Sliding Window",
+      "Sorting"
     ],
     "find-the-maximum-achievable-number": [
       "Math"
@@ -1075,5 +1087,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-04 23:22 UTC"
+  "updated": "2026-11-06 22:50 UTC"
 }
