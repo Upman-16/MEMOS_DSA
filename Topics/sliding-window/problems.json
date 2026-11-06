@@ -5,7 +5,7 @@
     "name": "Sliding Window",
     "tagId": "55821"
   },
-  "updatedAt": "2026-11-04T18:19:39.740Z",
+  "updatedAt": "2026-11-06T16:55:58.142Z",
   "problems": [
     {
       "frontendId": "3",
@@ -284,6 +284,26 @@
           "path": "1876-substrings-of-size-three-with-distinct-characters/1876-substrings-of-size-three-with-distinct-characters.java",
           "sha": "a95f5e5fc979c64a8a5bc306be78381ebfbeced3",
           "lastSyncedAt": "2026-09-10T16:45:48.954Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2747",
+      "title": "Count Zero Request Servers",
+      "slug": "count-zero-request-servers",
+      "problemName": "2747-count-zero-request-servers",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-zero-request-servers/",
+      "folderPath": "2747-count-zero-request-servers/",
+      "readmePath": "2747-count-zero-request-servers/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2747-count-zero-request-servers.java",
+          "path": "2747-count-zero-request-servers/2747-count-zero-request-servers.java",
+          "sha": "c468908b427184846e43b8ba6be997999881de7c",
+          "lastSyncedAt": "2026-11-06T16:55:58.142Z"
         }
       ]
     },
