@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **236** |
+| **Total Solved** | **237** |
 | 🟢 Easy | **127** |
-| 🟡 Medium | **86** |
+| 🟡 Medium | **87** |
 | 🔴 Hard | **23** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **100** |
+| 📅 Active Days | **101** |
 
 ### 📈 Difficulty Distribution
 
 ```text
 🟢 Easy      ███████████░░░░░░░░░  127
-🟡 Medium    ███████░░░░░░░░░░░░░  86
+🟡 Medium    ███████░░░░░░░░░░░░░  87
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  23
 
-             TOTAL → 236
+             TOTAL → 237
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,7 +77,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **100** |
+| `Array` | **101** |
 | `Math` | **51** |
 | `Hash Table` | **45** |
 | `String` | **37** |
@@ -102,6 +102,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Zero-Sum Game` | **5** |
 | `Recursion` | **4** |
 | `Breadth-First Search` | **3** |
+| `Heap (Priority Queue)` | **3** |
 | `Nim Game` | **3** |
 | `Segment Tree` | **3** |
 | `Backtracking` | **2** |
@@ -110,7 +111,6 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Depth-First Search` | **2** |
 | `Floyd's Cycle Finding Algorithm` | **2** |
 | `Geometry` | **2** |
-| `Heap (Priority Queue)` | **2** |
 | `Union-Find` | **2** |
 | `Binary Indexed Tree` | **1** |
 | `Binary Tree` | **1** |
@@ -135,7 +135,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 100
+Array                    ████████████████████ 101
 Math                     ██████████░░░░░░░░░░ 51
 Hash Table               █████████░░░░░░░░░░░ 45
 String                   ███████░░░░░░░░░░░░░ 37
@@ -156,6 +156,7 @@ Simulation               ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-07 | 1 | █ |
 | 2026-11-06 | 1 | █ |
 | 2026-11-05 | 1 | █ |
 | 2026-11-04 | 1 | █ |
@@ -169,7 +170,6 @@ Simulation               ██░░░░░░░░░░░░░░░░�
 | 2026-10-25 | 3 | ███ |
 | 2026-10-24 | 5 | █████ |
 | 2026-10-23 | 1 | █ |
-| 2026-10-21 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -180,10 +180,10 @@ Simulation               ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 100
+Active Days    : 101
 ```
 
-> 🕐 Last synchronized: **2026-11-06 22:50 UTC**
+> 🕐 Last synchronized: **2026-11-07 21:35 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
