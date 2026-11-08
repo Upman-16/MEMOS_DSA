@@ -5,8 +5,28 @@
     "name": "Depth-First Search",
     "tagId": "21"
   },
-  "updatedAt": "2026-10-26T16:00:06.227Z",
+  "updatedAt": "2026-11-08T03:16:23.518Z",
   "problems": [
+    {
+      "frontendId": "1267",
+      "title": "Count Servers that Communicate",
+      "slug": "count-servers-that-communicate",
+      "problemName": "1267-count-servers-that-communicate",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-servers-that-communicate/",
+      "folderPath": "1267-count-servers-that-communicate/",
+      "readmePath": "1267-count-servers-that-communicate/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1267-count-servers-that-communicate.java",
+          "path": "1267-count-servers-that-communicate/1267-count-servers-that-communicate.java",
+          "sha": "0c1cbdb1bb8a73c38c79a56eff2e083735a2352b",
+          "lastSyncedAt": "2026-11-08T03:16:23.518Z"
+        }
+      ]
+    },
     {
       "frontendId": "2265",
       "title": "Count Nodes Equal to Average of Subtree",
