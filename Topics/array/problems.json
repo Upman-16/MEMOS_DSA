@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-11-08T03:16:23.518Z",
+  "updatedAt": "2026-11-09T05:28:33.936Z",
   "problems": [
     {
       "frontendId": "1",
@@ -884,6 +884,26 @@
           "path": "1563-stone-game-v/1563-stone-game-v.java",
           "sha": "dbe13677d8f56f3bee7bb7ea6b9cb411833a4904",
           "lastSyncedAt": "2026-08-17T15:22:32.294Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1606",
+      "title": "Find Servers That Handled Most Number of Requests",
+      "slug": "find-servers-that-handled-most-number-of-requests",
+      "problemName": "1606-find-servers-that-handled-most-number-of-requests",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
+      "folderPath": "1606-find-servers-that-handled-most-number-of-requests/",
+      "readmePath": "1606-find-servers-that-handled-most-number-of-requests/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1606-find-servers-that-handled-most-number-of-requests.java",
+          "path": "1606-find-servers-that-handled-most-number-of-requests/1606-find-servers-that-handled-most-number-of-requests.java",
+          "sha": "7237c6c0de4a7fd6f7a6d29135bf0f6c6e458446",
+          "lastSyncedAt": "2026-11-09T05:28:33.936Z"
         }
       ]
     },
