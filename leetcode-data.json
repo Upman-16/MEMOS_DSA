@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 239,
+  "total": 240,
   "easy": 127,
   "medium": 89,
-  "hard": 23,
+  "hard": 24,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 102,
+  "active_days": 103,
   "recent_activity": [
+    {
+      "date": "2026-11-09",
+      "count": 1
+    },
     {
       "date": "2026-11-08",
       "count": 3
@@ -59,17 +63,13 @@
     {
       "date": "2026-10-25",
       "count": 3
-    },
-    {
-      "date": "2026-10-24",
-      "count": 5
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      102
+      103
     ],
     [
       "Math",
@@ -120,11 +120,11 @@
       10
     ],
     [
-      "Linked List",
-      8
+      "Simulation",
+      9
     ],
     [
-      "Simulation",
+      "Linked List",
       8
     ],
     [
@@ -164,15 +164,15 @@
       4
     ],
     [
+      "Heap (Priority Queue)",
+      4
+    ],
+    [
       "Recursion",
       4
     ],
     [
       "Depth-First Search",
-      3
-    ],
-    [
-      "Heap (Priority Queue)",
       3
     ],
     [
@@ -205,6 +205,10 @@
     ],
     [
       "Geometry",
+      2
+    ],
+    [
+      "Ordered Set",
       2
     ],
     [
@@ -249,10 +253,6 @@
     ],
     [
       "Monotonic Stack",
-      1
-    ],
-    [
-      "Ordered Set",
       1
     ],
     [
@@ -665,6 +665,12 @@
       "Math",
       "Dynamic Programming",
       "Game Theory"
+    ],
+    "find-servers-that-handled-most-number-of-requests": [
+      "Array",
+      "Heap (Priority Queue)",
+      "Simulation",
+      "Ordered Set"
     ],
     "maximum-nesting-depth-of-the-parentheses": [
       "String",
@@ -1099,5 +1105,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-08 21:49 UTC"
+  "updated": "2026-11-10 01:18 UTC"
 }
