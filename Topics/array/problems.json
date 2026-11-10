@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-11-09T05:28:33.936Z",
+  "updatedAt": "2026-11-10T04:58:14.256Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1704,6 +1704,26 @@
           "path": "3668-restore-finishing-order/3668-restore-finishing-order.java",
           "sha": "ebb0283072cbc8f2f59c8dadbd1a2869dc248ab2",
           "lastSyncedAt": "2026-09-03T13:56:33.338Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3693",
+      "title": "Climbing Stairs II",
+      "slug": "climbing-stairs-ii",
+      "problemName": "3693-climbing-stairs-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/climbing-stairs-ii/",
+      "folderPath": "3693-climbing-stairs-ii/",
+      "readmePath": "3693-climbing-stairs-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3693-climbing-stairs-ii.java",
+          "path": "3693-climbing-stairs-ii/3693-climbing-stairs-ii.java",
+          "sha": "7d1eaf83848d811fbe107f7d4d63462e91974049",
+          "lastSyncedAt": "2026-11-10T04:58:14.256Z"
         }
       ]
     },
