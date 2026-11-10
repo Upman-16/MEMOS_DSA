@@ -5,7 +5,7 @@
     "name": "Dynamic Programming",
     "tagId": "13"
   },
-  "updatedAt": "2026-11-04T18:19:39.740Z",
+  "updatedAt": "2026-11-10T04:58:14.256Z",
   "problems": [
     {
       "frontendId": "22",
@@ -324,6 +324,26 @@
           "path": "3524-find-x-value-of-array-i/3524-find-x-value-of-array-i.java",
           "sha": "4f89a03b01c06c711a56bc197719392bbb2fbdb7",
           "lastSyncedAt": "2026-09-21T13:31:22.854Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3693",
+      "title": "Climbing Stairs II",
+      "slug": "climbing-stairs-ii",
+      "problemName": "3693-climbing-stairs-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/climbing-stairs-ii/",
+      "folderPath": "3693-climbing-stairs-ii/",
+      "readmePath": "3693-climbing-stairs-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3693-climbing-stairs-ii.java",
+          "path": "3693-climbing-stairs-ii/3693-climbing-stairs-ii.java",
+          "sha": "7d1eaf83848d811fbe107f7d4d63462e91974049",
+          "lastSyncedAt": "2026-11-10T04:58:14.256Z"
         }
       ]
     },
