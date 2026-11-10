@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 240,
+  "total": 241,
   "easy": 127,
-  "medium": 89,
+  "medium": 90,
   "hard": 24,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 103,
+  "active_days": 104,
   "recent_activity": [
+    {
+      "date": "2026-11-10",
+      "count": 1
+    },
     {
       "date": "2026-11-09",
       "count": 1
@@ -59,17 +63,13 @@
     {
       "date": "2026-10-26",
       "count": 2
-    },
-    {
-      "date": "2026-10-25",
-      "count": 3
     }
   ],
   "recent_submissions": [],
   "topic_statistics": [
     [
       "Array",
-      103
+      104
     ],
     [
       "Math",
@@ -97,7 +97,7 @@
     ],
     [
       "Dynamic Programming",
-      19
+      20
     ],
     [
       "Sliding Window",
@@ -1008,6 +1008,10 @@
       "Array",
       "Hash Table"
     ],
+    "climbing-stairs-ii": [
+      "Array",
+      "Dynamic Programming"
+    ],
     "compute-alternating-sum": [
       "Array",
       "Simulation"
@@ -1105,5 +1109,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-10 01:18 UTC"
+  "updated": "2026-11-10 22:58 UTC"
 }
