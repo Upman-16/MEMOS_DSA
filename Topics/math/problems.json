@@ -5,7 +5,7 @@
     "name": "Math",
     "tagId": "8"
   },
-  "updatedAt": "2026-11-04T18:19:39.740Z",
+  "updatedAt": "2026-11-11T06:31:36.881Z",
   "problems": [
     {
       "frontendId": "9",
@@ -824,6 +824,26 @@
           "path": "3751-total-waviness-of-numbers-in-range-i/3751-total-waviness-of-numbers-in-range-i.java",
           "sha": "93d821ccf20641c75c80b648e2b8a409f00d75d0",
           "lastSyncedAt": "2026-09-13T08:49:15.142Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3789",
+      "title": "Minimum Cost to Acquire Required Items",
+      "slug": "minimum-cost-to-acquire-required-items",
+      "problemName": "3789-minimum-cost-to-acquire-required-items",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+      "folderPath": "3789-minimum-cost-to-acquire-required-items/",
+      "readmePath": "3789-minimum-cost-to-acquire-required-items/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3789-minimum-cost-to-acquire-required-items.java",
+          "path": "3789-minimum-cost-to-acquire-required-items/3789-minimum-cost-to-acquire-required-items.java",
+          "sha": "0634838d891422d185b86afd5e0b9ce162b5dd65",
+          "lastSyncedAt": "2026-11-11T06:31:36.881Z"
         }
       ]
     },
