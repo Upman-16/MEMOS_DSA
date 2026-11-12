@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **241** |
+| **Total Solved** | **242** |
 | 🟢 Easy | **127** |
-| 🟡 Medium | **90** |
+| 🟡 Medium | **91** |
 | 🔴 Hard | **24** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **104** |
+| 📅 Active Days | **105** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████░░░░░░░░░  127
-🟡 Medium    ███████░░░░░░░░░░░░░  90
+🟢 Easy      ██████████░░░░░░░░░░  127
+🟡 Medium    ████████░░░░░░░░░░░░  91
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  24
 
-             TOTAL → 241
+             TOTAL → 242
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -78,7 +78,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
 | `Array` | **104** |
-| `Math` | **51** |
+| `Math` | **52** |
 | `Hash Table` | **45** |
 | `String` | **37** |
 | `Two Pointers` | **22** |
@@ -86,9 +86,9 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Binary Search` | **20** |
 | `Dynamic Programming` | **20** |
 | `Sliding Window` | **19** |
+| `Greedy` | **12** |
 | `Bit Manipulation` | **11** |
 | `Counting` | **11** |
-| `Greedy` | **11** |
 | `Prefix Sum` | **10** |
 | `Simulation` | **9** |
 | `Linked List` | **8** |
@@ -136,7 +136,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ```text
 Array                    ████████████████████ 104
-Math                     ██████████░░░░░░░░░░ 51
+Math                     ██████████░░░░░░░░░░ 52
 Hash Table               █████████░░░░░░░░░░░ 45
 String                   ███████░░░░░░░░░░░░░ 37
 Two Pointers             ████░░░░░░░░░░░░░░░░ 22
@@ -144,9 +144,9 @@ Sorting                  ████░░░░░░░░░░░░░░�
 Binary Search            ████░░░░░░░░░░░░░░░░ 20
 Dynamic Programming      ████░░░░░░░░░░░░░░░░ 20
 Sliding Window           ████░░░░░░░░░░░░░░░░ 19
+Greedy                   ██░░░░░░░░░░░░░░░░░░ 12
 Bit Manipulation         ██░░░░░░░░░░░░░░░░░░ 11
 Counting                 ██░░░░░░░░░░░░░░░░░░ 11
-Greedy                   ██░░░░░░░░░░░░░░░░░░ 11
 Prefix Sum               ██░░░░░░░░░░░░░░░░░░ 10
 Simulation               ██░░░░░░░░░░░░░░░░░░ 9
 Linked List              ██░░░░░░░░░░░░░░░░░░ 8
@@ -156,6 +156,7 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-11 | 1 | █ |
 | 2026-11-10 | 1 | █ |
 | 2026-11-09 | 1 | █ |
 | 2026-11-08 | 3 | ███ |
@@ -169,7 +170,6 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 | 2026-10-29 | 1 | █ |
 | 2026-10-28 | 1 | █ |
 | 2026-10-27 | 1 | █ |
-| 2026-10-26 | 2 | ██ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -180,10 +180,10 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 104
+Active Days    : 105
 ```
 
-> 🕐 Last synchronized: **2026-11-10 22:58 UTC**
+> 🕐 Last synchronized: **2026-11-12 00:13 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
