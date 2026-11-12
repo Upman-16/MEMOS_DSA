@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-11-10T04:58:14.256Z",
+  "updatedAt": "2026-11-12T06:30:17.538Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1384,6 +1384,26 @@
           "path": "3069-distribute-elements-into-two-arrays-i/3069-distribute-elements-into-two-arrays-i.java",
           "sha": "9765b4fa15641e8aadb75760fe706d87ec53aa91",
           "lastSyncedAt": "2026-08-20T14:22:07.108Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3105",
+      "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+      "slug": "longest-strictly-increasing-or-strictly-decreasing-subarray",
+      "problemName": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/",
+      "folderPath": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray/",
+      "readmePath": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray.java",
+          "path": "3105-longest-strictly-increasing-or-strictly-decreasing-subarray/3105-longest-strictly-increasing-or-strictly-decreasing-subarray.java",
+          "sha": "4c83412e495630566441ca6bc09f9b199b498c01",
+          "lastSyncedAt": "2026-11-12T06:30:17.538Z"
         }
       ]
     },
