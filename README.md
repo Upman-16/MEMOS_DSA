@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **243** |
+| **Total Solved** | **244** |
 | 🟢 Easy | **128** |
 | 🟡 Medium | **91** |
-| 🔴 Hard | **24** |
+| 🔴 Hard | **25** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **106** |
+| 📅 Active Days | **107** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ███████████░░░░░░░░░  128
+🟢 Easy      ██████████░░░░░░░░░░  128
 🟡 Medium    ███████░░░░░░░░░░░░░  91
-🔴 Hard      ██░░░░░░░░░░░░░░░░░░  24
+🔴 Hard      ██░░░░░░░░░░░░░░░░░░  25
 
-             TOTAL → 243
+             TOTAL → 244
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,7 +77,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **105** |
+| `Array` | **106** |
 | `Math` | **52** |
 | `Hash Table` | **45** |
 | `String` | **37** |
@@ -85,16 +85,16 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Sorting` | **21** |
 | `Binary Search` | **20** |
 | `Dynamic Programming` | **20** |
-| `Sliding Window` | **19** |
+| `Sliding Window` | **20** |
 | `Greedy` | **12** |
 | `Bit Manipulation` | **11** |
 | `Counting` | **11** |
 | `Prefix Sum` | **10** |
 | `Simulation` | **9** |
 | `Linked List` | **8** |
+| `Stack` | **8** |
 | `Game Theory` | **7** |
 | `Matrix` | **7** |
-| `Stack` | **7** |
 | `Bracket Sequences` | **6** |
 | `Enumeration` | **6** |
 | `Minimax` | **5** |
@@ -103,15 +103,16 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Breadth-First Search` | **4** |
 | `Heap (Priority Queue)` | **4** |
 | `Recursion` | **4** |
+| `Segment Tree` | **4** |
 | `Depth-First Search` | **3** |
 | `Nim Game` | **3** |
-| `Segment Tree` | **3** |
 | `Union-Find` | **3** |
 | `Backtracking` | **2** |
 | `Combinatorics` | **2** |
 | `Counting Sort` | **2** |
 | `Floyd's Cycle Finding Algorithm` | **2** |
 | `Geometry` | **2** |
+| `Monotonic Stack` | **2** |
 | `Ordered Set` | **2** |
 | `Binary Indexed Tree` | **1** |
 | `Binary Tree` | **1** |
@@ -123,10 +124,11 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Graph Theory` | **1** |
 | `Greatest Common Divisor` | **1** |
 | `Interactive` | **1** |
-| `Monotonic Stack` | **1** |
+| `Monotonic Queue` | **1** |
 | `Primality Test` | **1** |
 | `Prime Number Sieve` | **1** |
 | `Probability and Statistics` | **1** |
+| `Queue` | **1** |
 | `Sieve Theory` | **1** |
 | `Sprague–Grundy Theorem` | **1** |
 | `Ternary Search` | **1** |
@@ -135,15 +137,15 @@ Every accepted solution here represents one more problem understood, optimized, 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 105
+Array                    ████████████████████ 106
 Math                     ██████████░░░░░░░░░░ 52
-Hash Table               █████████░░░░░░░░░░░ 45
+Hash Table               ████████░░░░░░░░░░░░ 45
 String                   ███████░░░░░░░░░░░░░ 37
 Two Pointers             ████░░░░░░░░░░░░░░░░ 22
 Sorting                  ████░░░░░░░░░░░░░░░░ 21
 Binary Search            ████░░░░░░░░░░░░░░░░ 20
 Dynamic Programming      ████░░░░░░░░░░░░░░░░ 20
-Sliding Window           ████░░░░░░░░░░░░░░░░ 19
+Sliding Window           ████░░░░░░░░░░░░░░░░ 20
 Greedy                   ██░░░░░░░░░░░░░░░░░░ 12
 Bit Manipulation         ██░░░░░░░░░░░░░░░░░░ 11
 Counting                 ██░░░░░░░░░░░░░░░░░░ 11
@@ -156,6 +158,7 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-13 | 2 | ██ |
 | 2026-11-12 | 1 | █ |
 | 2026-11-11 | 1 | █ |
 | 2026-11-10 | 1 | █ |
@@ -169,7 +172,6 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 | 2026-11-02 | 1 | █ |
 | 2026-11-01 | 1 | █ |
 | 2026-10-29 | 1 | █ |
-| 2026-10-28 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -180,10 +182,10 @@ Linked List              ██░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 106
+Active Days    : 107
 ```
 
-> 🕐 Last synchronized: **2026-11-12 23:19 UTC**
+> 🕐 Last synchronized: **2026-11-13 23:22 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
