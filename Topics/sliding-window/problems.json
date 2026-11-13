@@ -5,7 +5,7 @@
     "name": "Sliding Window",
     "tagId": "55821"
   },
-  "updatedAt": "2026-11-06T16:55:58.142Z",
+  "updatedAt": "2026-11-13T08:25:51.546Z",
   "problems": [
     {
       "frontendId": "3",
@@ -364,6 +364,26 @@
           "path": "3090-maximum-length-substring-with-two-occurrences/3090-maximum-length-substring-with-two-occurrences.java",
           "sha": "85d720772a16b7525f6cf8b1aee8f3af70261cab",
           "lastSyncedAt": "2026-08-15T06:22:13.769Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3420",
+      "title": "Count Non-Decreasing Subarrays After K Operations",
+      "slug": "count-non-decreasing-subarrays-after-k-operations",
+      "problemName": "3420-count-non-decreasing-subarrays-after-k-operations",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+      "folderPath": "3420-count-non-decreasing-subarrays-after-k-operations/",
+      "readmePath": "3420-count-non-decreasing-subarrays-after-k-operations/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3420-count-non-decreasing-subarrays-after-k-operations.java",
+          "path": "3420-count-non-decreasing-subarrays-after-k-operations/3420-count-non-decreasing-subarrays-after-k-operations.java",
+          "sha": "74e56dddf46da051be026c05a3650dcffb22913f",
+          "lastSyncedAt": "2026-11-13T08:25:51.546Z"
         }
       ]
     },
