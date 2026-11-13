@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "stack",
-    "name": "Stack"
+    "name": "Stack",
+    "tagId": "15"
   },
-  "updatedAt": "2026-10-06T09:37:01.597Z",
+  "updatedAt": "2026-11-13T08:25:51.546Z",
   "problems": [
     {
       "frontendId": "42",
@@ -123,6 +124,26 @@
           "path": "1614-maximum-nesting-depth-of-the-parentheses/1614-maximum-nesting-depth-of-the-parentheses.java",
           "sha": "263a299cc22996286eb7606c435f33d8cff4fc4a",
           "lastSyncedAt": "2026-09-28T07:57:37.293Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3420",
+      "title": "Count Non-Decreasing Subarrays After K Operations",
+      "slug": "count-non-decreasing-subarrays-after-k-operations",
+      "problemName": "3420-count-non-decreasing-subarrays-after-k-operations",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+      "folderPath": "3420-count-non-decreasing-subarrays-after-k-operations/",
+      "readmePath": "3420-count-non-decreasing-subarrays-after-k-operations/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3420-count-non-decreasing-subarrays-after-k-operations.java",
+          "path": "3420-count-non-decreasing-subarrays-after-k-operations/3420-count-non-decreasing-subarrays-after-k-operations.java",
+          "sha": "74e56dddf46da051be026c05a3650dcffb22913f",
+          "lastSyncedAt": "2026-11-13T08:25:51.546Z"
         }
       ]
     }
