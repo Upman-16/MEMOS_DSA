@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-11-13T08:25:51.546Z",
+  "updatedAt": "2026-11-14T03:34:48.020Z",
   "problems": [
     {
       "frontendId": "1",
@@ -1484,6 +1484,26 @@
           "path": "3289-the-two-sneaky-numbers-of-digitville/3289-the-two-sneaky-numbers-of-digitville.java",
           "sha": "aac6b65ac0ea388b9cffe51f63c720e811efc76f",
           "lastSyncedAt": "2026-08-28T14:58:37.174Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3364",
+      "title": "Minimum Positive Sum Subarray ",
+      "slug": "minimum-positive-sum-subarray",
+      "problemName": "3364-minimum-positive-sum-subarray",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+      "folderPath": "3364-minimum-positive-sum-subarray/",
+      "readmePath": "3364-minimum-positive-sum-subarray/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3364-minimum-positive-sum-subarray.java",
+          "path": "3364-minimum-positive-sum-subarray/3364-minimum-positive-sum-subarray.java",
+          "sha": "ba781cf7b5ded7056555081ac3870145dafea734",
+          "lastSyncedAt": "2026-11-14T03:34:48.020Z"
         }
       ]
     },
