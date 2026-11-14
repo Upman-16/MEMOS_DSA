@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "prefix-sum",
-    "name": "Prefix Sum"
+    "name": "Prefix Sum",
+    "tagId": "61068"
   },
-  "updatedAt": "2026-10-06T17:39:43.567Z",
+  "updatedAt": "2026-11-14T03:34:48.020Z",
   "problems": [
     {
       "frontendId": "848",
@@ -163,6 +164,26 @@
           "path": "2574-left-and-right-sum-differences/2574-left-and-right-sum-differences.java",
           "sha": "9048345fb6cb7c5c6487e88db9e44365f0fe91e6",
           "lastSyncedAt": "2026-08-27T18:23:27.589Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "3364",
+      "title": "Minimum Positive Sum Subarray ",
+      "slug": "minimum-positive-sum-subarray",
+      "problemName": "3364-minimum-positive-sum-subarray",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+      "folderPath": "3364-minimum-positive-sum-subarray/",
+      "readmePath": "3364-minimum-positive-sum-subarray/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3364-minimum-positive-sum-subarray.java",
+          "path": "3364-minimum-positive-sum-subarray/3364-minimum-positive-sum-subarray.java",
+          "sha": "ba781cf7b5ded7056555081ac3870145dafea734",
+          "lastSyncedAt": "2026-11-14T03:34:48.020Z"
         }
       ]
     },
