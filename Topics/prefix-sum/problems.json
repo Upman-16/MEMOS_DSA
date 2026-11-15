@@ -5,7 +5,7 @@
     "name": "Prefix Sum",
     "tagId": "61068"
   },
-  "updatedAt": "2026-11-14T03:34:48.020Z",
+  "updatedAt": "2026-11-15T05:17:21.197Z",
   "problems": [
     {
       "frontendId": "848",
@@ -64,6 +64,26 @@
           "path": "1140-stone-game-ii/1140-stone-game-ii.java",
           "sha": "03aacca4144819cf02137c69169fce9818032122",
           "lastSyncedAt": "2026-08-15T06:23:26.970Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1524",
+      "title": "Number of Sub-arrays With Odd Sum",
+      "slug": "number-of-sub-arrays-with-odd-sum",
+      "problemName": "1524-number-of-sub-arrays-with-odd-sum",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
+      "folderPath": "1524-number-of-sub-arrays-with-odd-sum/",
+      "readmePath": "1524-number-of-sub-arrays-with-odd-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1524-number-of-sub-arrays-with-odd-sum.java",
+          "path": "1524-number-of-sub-arrays-with-odd-sum/1524-number-of-sub-arrays-with-odd-sum.java",
+          "sha": "dd96c862cd87d8e92b105b4a3cc5f4c4a4f5258d",
+          "lastSyncedAt": "2026-11-15T05:17:21.197Z"
         }
       ]
     },
