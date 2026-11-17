@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 246,
-  "easy": 129,
+  "total": 247,
+  "easy": 130,
   "medium": 92,
   "hard": 25,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 109,
+  "active_days": 110,
   "recent_activity": [
+    {
+      "date": "2026-11-16",
+      "count": 1
+    },
     {
       "date": "2026-11-15",
       "count": 2
@@ -58,10 +62,6 @@
     },
     {
       "date": "2026-11-03",
-      "count": 1
-    },
-    {
-      "date": "2026-11-02",
       "count": 1
     }
   ],
@@ -1144,5 +1144,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-15 22:36 UTC"
+  "updated": "2026-11-17 01:43 UTC"
 }
