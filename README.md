@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **250** |
+| **Total Solved** | **251** |
 | 🟢 Easy | **130** |
 | 🟡 Medium | **94** |
-| 🔴 Hard | **26** |
+| 🔴 Hard | **27** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **113** |
+| 📅 Active Days | **114** |
 
 ### 📈 Difficulty Distribution
 
 ```text
 🟢 Easy      ██████████░░░░░░░░░░  130
-🟡 Medium    ████████░░░░░░░░░░░░  94
-🔴 Hard      ██░░░░░░░░░░░░░░░░░░  26
+🟡 Medium    ███████░░░░░░░░░░░░░  94
+🔴 Hard      ██░░░░░░░░░░░░░░░░░░  27
 
-             TOTAL → 250
+             TOTAL → 251
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -158,6 +158,7 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-20 | 1 | █ |
 | 2026-11-19 | 1 | █ |
 | 2026-11-18 | 1 | █ |
 | 2026-11-17 | 1 | █ |
@@ -171,7 +172,6 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 | 2026-11-09 | 1 | █ |
 | 2026-11-08 | 3 | ███ |
 | 2026-11-07 | 1 | █ |
-| 2026-11-06 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -182,10 +182,10 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 113
+Active Days    : 114
 ```
 
-> 🕐 Last synchronized: **2026-11-20 00:24 UTC**
+> 🕐 Last synchronized: **2026-11-20 23:46 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
