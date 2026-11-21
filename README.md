@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **251** |
+| **Total Solved** | **252** |
 | 🟢 Easy | **130** |
-| 🟡 Medium | **94** |
+| 🟡 Medium | **95** |
 | 🔴 Hard | **27** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **114** |
+| 📅 Active Days | **115** |
 
 ### 📈 Difficulty Distribution
 
 ```text
 🟢 Easy      ██████████░░░░░░░░░░  130
-🟡 Medium    ███████░░░░░░░░░░░░░  94
+🟡 Medium    ████████░░░░░░░░░░░░  95
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  27
 
-             TOTAL → 251
+             TOTAL → 252
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -77,10 +77,10 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
-| `Array` | **108** |
+| `Array` | **109** |
 | `Math` | **53** |
-| `Hash Table` | **45** |
-| `String` | **37** |
+| `Hash Table` | **46** |
+| `String` | **38** |
 | `Two Pointers` | **22** |
 | `Dynamic Programming` | **21** |
 | `Sliding Window` | **21** |
@@ -101,10 +101,10 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Number Theory` | **5** |
 | `Zero-Sum Game` | **5** |
 | `Breadth-First Search` | **4** |
+| `Depth-First Search` | **4** |
 | `Heap (Priority Queue)` | **4** |
 | `Recursion` | **4** |
 | `Segment Tree` | **4** |
-| `Depth-First Search` | **3** |
 | `Nim Game` | **3** |
 | `Union-Find` | **3** |
 | `Backtracking` | **2** |
@@ -114,6 +114,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Geometry` | **2** |
 | `Monotonic Stack` | **2** |
 | `Ordered Set` | **2** |
+| `Tree` | **2** |
 | `Binary Indexed Tree` | **1** |
 | `Binary Tree` | **1** |
 | `Boyer–Moore Majority Vote Algorithm` | **1** |
@@ -132,15 +133,14 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Sieve Theory` | **1** |
 | `Sprague–Grundy Theorem` | **1** |
 | `Ternary Search` | **1** |
-| `Tree` | **1** |
 
 ### 📊 Topic Distribution
 
 ```text
-Array                    ████████████████████ 108
+Array                    ████████████████████ 109
 Math                     ██████████░░░░░░░░░░ 53
-Hash Table               ████████░░░░░░░░░░░░ 45
-String                   ███████░░░░░░░░░░░░░ 37
+Hash Table               ████████░░░░░░░░░░░░ 46
+String                   ███████░░░░░░░░░░░░░ 38
 Two Pointers             ████░░░░░░░░░░░░░░░░ 22
 Dynamic Programming      ████░░░░░░░░░░░░░░░░ 21
 Sliding Window           ████░░░░░░░░░░░░░░░░ 21
@@ -158,6 +158,7 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-21 | 1 | █ |
 | 2026-11-20 | 1 | █ |
 | 2026-11-19 | 1 | █ |
 | 2026-11-18 | 1 | █ |
@@ -171,7 +172,6 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 | 2026-11-10 | 1 | █ |
 | 2026-11-09 | 1 | █ |
 | 2026-11-08 | 3 | ███ |
-| 2026-11-07 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -182,10 +182,10 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 114
+Active Days    : 115
 ```
 
-> 🕐 Last synchronized: **2026-11-20 23:46 UTC**
+> 🕐 Last synchronized: **2026-11-21 22:54 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 
