@@ -5,7 +5,7 @@
     "name": "String",
     "tagId": "10"
   },
-  "updatedAt": "2026-11-21T13:01:00.057Z",
+  "updatedAt": "2026-11-22T08:22:07.555Z",
   "problems": [
     {
       "frontendId": "3",
@@ -464,6 +464,26 @@
           "path": "1927-sum-game/1927-sum-game.java",
           "sha": "cf1a81e7acd8fcbd762d47bab1994897fe249ae0",
           "lastSyncedAt": "2026-08-23T07:52:28.753Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2124",
+      "title": "Check if All A's Appears Before All B's",
+      "slug": "check-if-all-as-appears-before-all-bs",
+      "problemName": "2124-check-if-all-as-appears-before-all-bs",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
+      "folderPath": "2124-check-if-all-as-appears-before-all-bs/",
+      "readmePath": "2124-check-if-all-as-appears-before-all-bs/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2124-check-if-all-as-appears-before-all-bs.java",
+          "path": "2124-check-if-all-as-appears-before-all-bs/2124-check-if-all-as-appears-before-all-bs.java",
+          "sha": "207c53cd352f1a1709fb80624aae9728843902da",
+          "lastSyncedAt": "2026-11-22T08:22:07.555Z"
         }
       ]
     },
