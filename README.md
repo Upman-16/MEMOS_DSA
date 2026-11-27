@@ -52,22 +52,22 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 | 📊 Metric | 🔥 Progress |
 | :--- | ---: |
-| **Total Solved** | **256** |
-| 🟢 Easy | **132** |
+| **Total Solved** | **257** |
+| 🟢 Easy | **133** |
 | 🟡 Medium | **96** |
 | 🔴 Hard | **28** |
 | 🔥 Current Streak | **38 days** |
 | 🏆 Best Streak | **38 days** |
-| 📅 Active Days | **119** |
+| 📅 Active Days | **120** |
 
 ### 📈 Difficulty Distribution
 
 ```text
-🟢 Easy      ██████████░░░░░░░░░░  132
-🟡 Medium    ████████░░░░░░░░░░░░  96
+🟢 Easy      ██████████░░░░░░░░░░  133
+🟡 Medium    ███████░░░░░░░░░░░░░  96
 🔴 Hard      ██░░░░░░░░░░░░░░░░░░  28
 
-             TOTAL → 256
+             TOTAL → 257
 ```
 
 ### 🧩 Automatic Topic Statistics
@@ -78,7 +78,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | 🏷️ Topic | Problems |
 | :--- | ---: |
 | `Array` | **109** |
-| `Math` | **53** |
+| `Math` | **54** |
 | `Hash Table` | **46** |
 | `String` | **39** |
 | `Two Pointers` | **22** |
@@ -90,7 +90,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 | `Prefix Sum` | **12** |
 | `Bit Manipulation` | **11** |
 | `Counting` | **11** |
-| `Simulation` | **9** |
+| `Simulation` | **10** |
 | `Linked List` | **8** |
 | `Stack` | **8** |
 | `Game Theory` | **7** |
@@ -138,7 +138,7 @@ Every accepted solution here represents one more problem understood, optimized, 
 
 ```text
 Array                    ████████████████████ 109
-Math                     ██████████░░░░░░░░░░ 53
+Math                     ██████████░░░░░░░░░░ 54
 Hash Table               ████████░░░░░░░░░░░░ 46
 String                   ███████░░░░░░░░░░░░░ 39
 Two Pointers             ████░░░░░░░░░░░░░░░░ 22
@@ -150,7 +150,7 @@ Greedy                   ██░░░░░░░░░░░░░░░░�
 Prefix Sum               ██░░░░░░░░░░░░░░░░░░ 12
 Bit Manipulation         ██░░░░░░░░░░░░░░░░░░ 11
 Counting                 ██░░░░░░░░░░░░░░░░░░ 11
-Simulation               ██░░░░░░░░░░░░░░░░░░ 9
+Simulation               ██░░░░░░░░░░░░░░░░░░ 10
 Linked List              █░░░░░░░░░░░░░░░░░░░ 8
 ```
 
@@ -158,6 +158,7 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 
 | Date | Problems | Activity |
 | :--- | ---: | :--- |
+| 2026-11-26 | 1 | █ |
 | 2026-11-25 | 1 | █ |
 | 2026-11-24 | 1 | █ |
 | 2026-11-23 | 1 | █ |
@@ -171,7 +172,6 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 | 2026-11-15 | 2 | ██ |
 | 2026-11-14 | 2 | ██ |
 | 2026-11-13 | 2 | ██ |
-| 2026-11-12 | 1 | █ |
 
 ### 🧩 Latest Accepted Problems
 
@@ -182,10 +182,10 @@ Linked List              █░░░░░░░░░░░░░░░░░�
 ```text
 Current Streak : 38 days
 Best Streak    : 38 days
-Active Days    : 119
+Active Days    : 120
 ```
 
-> 🕐 Last synchronized: **2026-11-26 01:40 UTC**
+> 🕐 Last synchronized: **2026-11-27 01:34 UTC**
 
 <!-- LEETCODE-DASHBOARD:END -->
 

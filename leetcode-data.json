@@ -1,13 +1,17 @@
 {
   "username": "Danger_exe_fr",
-  "total": 256,
-  "easy": 132,
+  "total": 257,
+  "easy": 133,
   "medium": 96,
   "hard": 28,
   "current_streak": 38,
   "best_streak": 38,
-  "active_days": 119,
+  "active_days": 120,
   "recent_activity": [
+    {
+      "date": "2026-11-26",
+      "count": 1
+    },
     {
       "date": "2026-11-25",
       "count": 1
@@ -59,10 +63,6 @@
     {
       "date": "2026-11-13",
       "count": 2
-    },
-    {
-      "date": "2026-11-12",
-      "count": 1
     }
   ],
   "recent_submissions": [],
@@ -73,7 +73,7 @@
     ],
     [
       "Math",
-      53
+      54
     ],
     [
       "Hash Table",
@@ -121,7 +121,7 @@
     ],
     [
       "Simulation",
-      9
+      10
     ],
     [
       "Linked List",
@@ -947,6 +947,10 @@
       "Tree",
       "Depth-First Search"
     ],
+    "stone-removal-game": [
+      "Math",
+      "Simulation"
+    ],
     "minimum-positive-sum-subarray": [
       "Array",
       "Sliding Window",
@@ -1154,5 +1158,5 @@
     ],
     "create-grid-with-exactly-one-path": []
   },
-  "updated": "2026-11-26 01:40 UTC"
+  "updated": "2026-11-27 01:34 UTC"
 }
